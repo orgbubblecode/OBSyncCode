@@ -175,7 +175,6 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Logging
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Options.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Primitives.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.dll
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFrameworkCore.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Remotion.Linq.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Renci.SshNet.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\System.Buffers.dll
@@ -201,8 +200,6 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Logging
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Logging.Abstractions.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Options.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Extensions.Primitives.xml
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.xml
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFrameworkCore.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Remotion.Linq.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Renci.SshNet.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\System.Buffers.xml
@@ -219,13 +216,14 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySqlConnector.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\System.Threading.Tasks.Extensions.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySqlConnector.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\System.Threading.Tasks.Extensions.xml
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFramework.dll
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySQL.Data.EntityFrameworkCore.Design.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Web.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\WebMatrix.Data.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\WebMatrix.WebData.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFramework.xml
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySQL.Data.EntityFrameworkCore.Design.xml
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Web.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\WebMatrix.Data.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\WebMatrix.WebData.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.Entity.EF6.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFramework.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.Entity.EF6.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Web.xml

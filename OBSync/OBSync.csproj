@@ -105,18 +105,15 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.8.0.18\lib\net452\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.8.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data.EntityFramework, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Data.EntityFrameworkCore, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.EntityFrameworkCore.8.0.18\lib\net461\MySql.Data.EntityFrameworkCore.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data.EntityFrameworkCore.Design, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.EntityFrameworkCore.Design.8.0.18\lib\net452\MySql.Data.EntityFrameworkCore.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Web, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Web.8.0.18\lib\net452\MySql.Web.dll</HintPath>
+    <Reference Include="MySql.Web, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Web.6.8.8\lib\net45\MySql.Web.dll</HintPath>
     </Reference>
     <Reference Include="MySqlConnector, Version=0.61.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
       <HintPath>..\packages\MySqlConnector.0.61.0\lib\net461\MySqlConnector.dll</HintPath>
@@ -246,11 +243,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllMyBio.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AllMyBio.edmx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -288,6 +280,156 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\OBDataSources\AllMyBioEntityDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllMyBioEntityDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\AllMyBioEntityDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\AllMyBioEntityDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\domain.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\facebook_accounts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\facebook_posts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_caption.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_coupons.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_custom_page.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_file_manager.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_groups.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_lang.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_lang_list.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_options.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_packages.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_payment_history.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_payment_subscriptions.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_proxies.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_purchase.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_sessions.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\general_users.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_accounts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_activities.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_activities_log.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_analytics.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_analytics_stats.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_posts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\instagram_sessions.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\link.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\linkedin_accounts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\linkedin_posts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\OrgBubbleEntityDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrgBubbleEntityDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\OrgBubbleEntityDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\OrgBubbleEntityDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\package.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\page.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\payment.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\pinterest_accounts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\pinterest_posts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\project.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\setting.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\track_links.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\twitter_accounts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\twitter_posts.cs">
+      <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\user.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\users_logs.cs">
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -299,6 +441,26 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\OBDataSources\AllMyBioEntityDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>AllMyBioEntityDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OBDataSources\AllMyBioEntityDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>AllMyBioEntityDataModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OBDataSources\OrgBubbleEntityDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>OrgBubbleEntityDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OBDataSources\OrgBubbleEntityDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>OrgBubbleEntityDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -320,12 +482,19 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="AllMyBio.edmx">
+    <EntityDeploy Include="Models\OBDataSources\AllMyBioEntityDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AllMyBio.Designer.cs</LastGenOutput>
+      <LastGenOutput>AllMyBioEntityDataModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="AllMyBio.edmx.diagram">
-      <DependentUpon>AllMyBio.edmx</DependentUpon>
+    <Content Include="Models\OBDataSources\AllMyBioEntityDataModel.edmx.diagram">
+      <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OBDataSources\OrgBubbleEntityDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OrgBubbleEntityDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OBDataSources\OrgBubbleEntityDataModel.edmx.diagram">
+      <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -333,7 +502,9 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -350,7 +521,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -377,9 +547,14 @@
     <Content Include="Content\bootstrap-theme.css.map" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
