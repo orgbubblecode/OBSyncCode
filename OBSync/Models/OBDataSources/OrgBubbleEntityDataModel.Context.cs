@@ -25,35 +25,35 @@ namespace OBSync.Models.OBDataSources
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<facebook_accounts> facebook_accounts { get; set; }
-        public virtual DbSet<facebook_posts> facebook_posts { get; set; }
-        public virtual DbSet<general_caption> general_caption { get; set; }
-        public virtual DbSet<general_coupons> general_coupons { get; set; }
-        public virtual DbSet<general_custom_page> general_custom_page { get; set; }
-        public virtual DbSet<general_file_manager> general_file_manager { get; set; }
-        public virtual DbSet<general_groups> general_groups { get; set; }
-        public virtual DbSet<general_lang> general_lang { get; set; }
-        public virtual DbSet<general_lang_list> general_lang_list { get; set; }
-        public virtual DbSet<general_options> general_options { get; set; }
-        public virtual DbSet<general_packages> general_packages { get; set; }
-        public virtual DbSet<general_payment_history> general_payment_history { get; set; }
-        public virtual DbSet<general_payment_subscriptions> general_payment_subscriptions { get; set; }
-        public virtual DbSet<general_proxies> general_proxies { get; set; }
-        public virtual DbSet<general_purchase> general_purchase { get; set; }
-        public virtual DbSet<general_users> general_users { get; set; }
-        public virtual DbSet<instagram_accounts> instagram_accounts { get; set; }
-        public virtual DbSet<instagram_activities> instagram_activities { get; set; }
-        public virtual DbSet<instagram_activities_log> instagram_activities_log { get; set; }
-        public virtual DbSet<instagram_analytics> instagram_analytics { get; set; }
-        public virtual DbSet<instagram_analytics_stats> instagram_analytics_stats { get; set; }
-        public virtual DbSet<instagram_posts> instagram_posts { get; set; }
-        public virtual DbSet<instagram_sessions> instagram_sessions { get; set; }
-        public virtual DbSet<linkedin_accounts> linkedin_accounts { get; set; }
-        public virtual DbSet<linkedin_posts> linkedin_posts { get; set; }
-        public virtual DbSet<pinterest_accounts> pinterest_accounts { get; set; }
-        public virtual DbSet<pinterest_posts> pinterest_posts { get; set; }
-        public virtual DbSet<twitter_accounts> twitter_accounts { get; set; }
-        public virtual DbSet<twitter_posts> twitter_posts { get; set; }
-        public virtual DbSet<general_sessions> general_sessions { get; set; }
+        public virtual DbSet<OrgBubble.facebook_accounts> facebook_accounts { get; set; }
+        public virtual DbSet<OrgBubble.facebook_posts> facebook_posts { get; set; }
+        public virtual DbSet<OrgBubble.general_caption> general_caption { get; set; }
+        public virtual DbSet<OrgBubble.general_coupons> general_coupons { get; set; }
+        public virtual DbSet<OrgBubble.general_custom_page> general_custom_page { get; set; }
+        public virtual DbSet<OrgBubble.general_file_manager> general_file_manager { get; set; }
+        public virtual DbSet<OrgBubble.general_groups> general_groups { get; set; }
+        public virtual DbSet<OrgBubble.general_lang> general_lang { get; set; }
+        public virtual DbSet<OrgBubble.general_lang_list> general_lang_list { get; set; }
+        public virtual DbSet<OrgBubble.general_options> general_options { get; set; }
+        public virtual DbSet<OrgBubble.general_packages> general_packages { get; set; }
+        public virtual DbSet<OrgBubble.general_payment_history> general_payment_history { get; set; }
+        public virtual DbSet<OrgBubble.general_payment_subscriptions> general_payment_subscriptions { get; set; }
+        public virtual DbSet<OrgBubble.general_proxies> general_proxies { get; set; }
+        public virtual DbSet<OrgBubble.general_purchase> general_purchase { get; set; }
+        public virtual DbSet<OrgBubble.general_users> general_users { get; set; }
+        public virtual DbSet<OrgBubble.instagram_accounts> instagram_accounts { get; set; }
+        public virtual DbSet<OrgBubble.instagram_activities> instagram_activities { get; set; }
+        public virtual DbSet<OrgBubble.instagram_activities_log> instagram_activities_log { get; set; }
+        public virtual DbSet<OrgBubble.instagram_analytics> instagram_analytics { get; set; }
+        public virtual DbSet<OrgBubble.instagram_analytics_stats> instagram_analytics_stats { get; set; }
+        public virtual DbSet<OrgBubble.instagram_posts> instagram_posts { get; set; }
+        public virtual DbSet<OrgBubble.instagram_sessions> instagram_sessions { get; set; }
+        public virtual DbSet<OrgBubble.linkedin_accounts> linkedin_accounts { get; set; }
+        public virtual DbSet<OrgBubble.linkedin_posts> linkedin_posts { get; set; }
+        public virtual DbSet<OrgBubble.pinterest_accounts> pinterest_accounts { get; set; }
+        public virtual DbSet<OrgBubble.pinterest_posts> pinterest_posts { get; set; }
+        public virtual DbSet<OrgBubble.twitter_accounts> twitter_accounts { get; set; }
+        public virtual DbSet<OrgBubble.twitter_posts> twitter_posts { get; set; }
+        public virtual DbSet<OrgBubble.general_sessions> general_sessions { get; set; }
     }
 }

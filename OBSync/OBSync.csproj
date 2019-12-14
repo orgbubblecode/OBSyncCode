@@ -18,7 +18,7 @@
     <AssemblyName>OBSync</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -123,6 +123,12 @@
     </Reference>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SugarRestSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SugarRestSharp.1.0.0\lib\net45\SugarRestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -275,7 +281,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CRMOpsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestdomainsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -450,6 +458,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
       <LastGenOutput>AllMyBioEntityDataModel.cs</LastGenOutput>
+      <CustomToolNamespace>AllMyBio</CustomToolNamespace>
     </Content>
     <Content Include="Models\OBDataSources\OrgBubbleEntityDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -460,6 +469,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
       <LastGenOutput>OrgBubbleEntityDataModel.cs</LastGenOutput>
+      <CustomToolNamespace>OrgBubble</CustomToolNamespace>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -485,6 +495,7 @@
     <EntityDeploy Include="Models\OBDataSources\AllMyBioEntityDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AllMyBioEntityDataModel.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>AllMyBio</CustomToolNamespace>
     </EntityDeploy>
     <Content Include="Models\OBDataSources\AllMyBioEntityDataModel.edmx.diagram">
       <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
@@ -492,6 +503,7 @@
     <EntityDeploy Include="Models\OBDataSources\OrgBubbleEntityDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>OrgBubbleEntityDataModel.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>OrgBubble</CustomToolNamespace>
     </EntityDeploy>
     <Content Include="Models\OBDataSources\OrgBubbleEntityDataModel.edmx.diagram">
       <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
@@ -574,7 +586,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52464</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60660/</IISUrl>
+          <IISUrl>http://localhost/OBSync</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

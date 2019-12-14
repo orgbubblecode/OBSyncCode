@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OBSync.Models.OBDataSources
+namespace OrgBubble
 {
     using System;
     using System.Collections.Generic;

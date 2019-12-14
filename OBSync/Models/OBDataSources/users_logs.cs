@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OBSync.Models.OBDataSources
+namespace AllMyBio
 {
     using System;
     using System.Collections.Generic;
