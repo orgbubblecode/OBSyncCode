@@ -9,6 +9,8 @@ using AllMyBio;
 using OrgBubble;
 using OBSync.Models.OBDataSources;
 
+using OBSync.Models;
+
 
 
 
@@ -22,20 +24,41 @@ namespace OBSync.Controllers
 
         [Route("api/CRMOps/CheckDatabaseConnectivity")]
         [HttpPost]
-        public List<KeyValuePair<string, bool>> CheckDatabaseConnectivity(string OBAuthCode)
+        public OBAPIResponse CheckDatabaseConnectivity(string OBAuthCode)
         {
 
+
+            OBAPIResponse Response = new OBAPIResponse();
+
+
+            try
+            {
+
+           
 
             var list = new List<KeyValuePair<string, bool>>() {
                  new KeyValuePair<string, bool>(obDb.Database.Connection.Database, obDb.Database.Exists()),
                  new KeyValuePair<string, bool>(ambDb.Database.Connection.Database, ambDb.Database.Exists())
             };
 
-            return list;
+
+                Response.success = obDb.Database.Exists() && ambDb.Database.Exists();
+                Response.data = list;
+                Response.message = "hello";
 
 
+                return Response;
 
+            }
+            catch (Exception)
+            {
 
+                return Response;
+
+                throw;
+            }
+
+            
 
 
         }
