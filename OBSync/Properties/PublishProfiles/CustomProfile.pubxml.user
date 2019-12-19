@@ -209,10 +209,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/18/2018 08:44:54</publishTime>
     </File>
     <File Include="bin/OBSync.dll">
-      <publishTime>12/14/2019 22:00:57</publishTime>
+      <publishTime>12/15/2019 21:29:55</publishTime>
     </File>
     <File Include="bin/OBSync.pdb">
-      <publishTime>12/14/2019 22:00:57</publishTime>
+      <publishTime>12/15/2019 21:29:55</publishTime>
     </File>
     <File Include="bin/pt-BR/Microsoft.Data.SqlClient.resources.dll">
       <publishTime>09/26/2019 20:43:28</publishTime>
@@ -773,7 +773,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/01/2019 21:47:13</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/14/2019 22:00:59</publishTime>
+      <publishTime>12/15/2019 21:23:35</publishTime>
     </File>
   </ItemGroup>
 </Project>
