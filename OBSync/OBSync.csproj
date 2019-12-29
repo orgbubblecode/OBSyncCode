@@ -205,13 +205,12 @@
     <Reference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.3.1.0\lib\netstandard2.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.18\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.Entity.6.8.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.EntityFramework.8.0.18\lib\net452\MySql.Data.EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.EntityFramework, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Web, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Web.6.8.8\lib\net45\MySql.Web.dll</HintPath>
     </Reference>
@@ -451,6 +450,45 @@
     <Compile Include="Models\Helpers\SuiteCRM.cs" />
     <Compile Include="Models\Helpers\Utilities.cs" />
     <Compile Include="Models\OBAPIEnumEntityType.cs" />
+    <Compile Include="Models\OBDataSources\account.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\accounts_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\accounts_bugs.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\accounts_cases.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\accounts_contacts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\accounts_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\accounts_opportunities.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\acl_actions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\acl_roles.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\acl_roles_actions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\acl_roles_users.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\address_book.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\alert.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\AllMyBioEntityDataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -466,14 +504,350 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\OBDataSources\am_projecttemplates.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_projecttemplates_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_projecttemplates_contacts_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_projecttemplates_project_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_projecttemplates_users_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_tasktemplates.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_tasktemplates_am_projecttemplates_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\am_tasktemplates_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aobh_businesshours.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aod_index.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aod_indexevent.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aod_indexevent_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aod_index_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aok_knowledgebase.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aok_knowledgebase_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aok_knowledgebase_categories.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aok_knowledge_base_categories.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aok_knowledge_base_categories_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aop_case_events.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aop_case_events_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aop_case_updates.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aop_case_updates_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aor_charts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aor_conditions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aor_fields.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aor_reports.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aor_reports_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aor_scheduled_reports.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_contracts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_contracts_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_contracts_documents.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_invoices.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_invoices_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_line_item_groups.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_line_item_groups_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_pdf_templates.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_pdf_templates_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_products.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_products_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_products_quotes.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_products_quotes_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_product_categories.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_product_categories_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_quotes.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_quotes_aos_invoices_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_quotes_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_quotes_os_contracts_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aos_quotes_project_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aow_actions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aow_conditions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aow_processed.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aow_processed_aow_actions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aow_workflow.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\aow_workflow_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\bug.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\bugs_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\call.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\calls_contacts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\calls_leads.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\calls_reschedule.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\calls_reschedule_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\calls_users.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\campaign.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\campaigns_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\campaign_log.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\campaign_trkrs.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\case.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\cases_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\cases_bugs.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\cases_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\contact.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\contacts_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\contacts_bugs.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\contacts_cases.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\contacts_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\contacts_users.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\cron_remove_documents.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\currency.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\document.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\documents_accounts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\documents_bugs.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\documents_cases.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\documents_contacts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\documents_opportunities.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\document_revisions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\domain.cs">
       <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\eapm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\emailman.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\emails_beans.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\emails_email_addr_rel.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\emails_text.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email_addresses.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email_addresses_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email_addr_bean_rel.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email_marketing.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email_marketing_prospect_lists.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\email_templates.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\facebook_accounts.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\facebook_posts.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\favorite.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fields_meta_data.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\folder.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\folders_rel.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\folders_subscriptions.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events_contacts_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events_fp_event_delegates_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events_fp_event_locations_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events_leads_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_events_prospects_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_event_locations.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_event_locations_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\fp_event_locations_fp_events_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\general_caption.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
@@ -520,6 +894,18 @@
     <Compile Include="Models\OBDataSources\general_users.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OBDataSources\import_maps.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\inbound_email.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\inbound_email_autoreply.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\inbound_email_cache_ts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\instagram_accounts.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
@@ -541,6 +927,48 @@
     <Compile Include="Models\OBDataSources\instagram_sessions.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_address_cache.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_address_cache_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_areas.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_areas_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_maps.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_maps_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_maps_jjwg_areas_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_maps_jjwg_markers_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_markers.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\jjwg_markers_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\job_queue.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\lead.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\leads_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\leads_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\link.cs">
       <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
     </Compile>
@@ -551,12 +979,70 @@
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBAPIEntitiesTracker.cs" />
+    <Compile Include="Models\OBDataSources\linked_documents.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\meeting.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\meetings_contacts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\meetings_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\meetings_leads.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\meetings_users.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\note.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\oauth2clients.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\oauth2tokens.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\oauth_consumer.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\oauth_nonce.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\oauth_tokens.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\OBCRM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OBCRM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\OBCRM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\OBCRM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OBCRM.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\OBSyncOLTP.cs" />
+    <Compile Include="Models\OBDataSources\opportunities_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\opportunities_contacts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\opportunities_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\opportunity.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\OrgBubbleEntityDataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -571,6 +1057,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\outbound_email.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\outbound_email_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\package.cs">
       <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
@@ -588,10 +1080,151 @@
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\project.cs">
-      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\projects_accounts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\projects_bugs.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\projects_cases.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\projects_contacts.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\projects_opportunities.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\projects_products.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\project_contacts_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\project_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\project_task.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\project_task_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\project_users_1_c.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\prospect.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\prospects_cstm.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\prospect_lists.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\prospect_lists_prospects.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\prospect_list_campaigns.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\relationship.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\release.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\reminder.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\reminders_invitees.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\role.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\roles_modules.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\roles_users.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\saved_search.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\scheduler.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\securitygroup.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\securitygroups_acl_roles.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\securitygroups_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\securitygroups_default.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\securitygroups_records.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\securitygroups_users.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\setting.cs">
       <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\spot.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\sugarfeed.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\survey.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestion.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestionoption.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestionoptions_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestionoptions_surveyquestionresponses.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestionrespons.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestionresponses_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyquestions_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyrespons.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveyresponses_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\surveys_audit.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\task.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\templatesectionline.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\tracker.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\track_links.cs">
       <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
@@ -602,13 +1235,31 @@
     <Compile Include="Models\OBDataSources\twitter_posts.cs">
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OBDataSources\upgrade_history.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\user.cs">
-      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\users_last_import.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\users_logs.cs">
       <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBAPIResponse.cs" />
+    <Compile Include="Models\OBDataSources\users_password_link.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\users_signatures.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\user_preferences.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\vcal.cs">
+      <DependentUpon>OBCRM.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -633,6 +1284,16 @@
       <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
       <LastGenOutput>AllMyBioEntityDataModel.cs</LastGenOutput>
       <CustomToolNamespace>AllMyBio</CustomToolNamespace>
+    </Content>
+    <Content Include="Models\OBDataSources\OBCRM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>OBCRM.Context.cs</LastGenOutput>
+      <DependentUpon>OBCRM.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\OBDataSources\OBCRM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>OBCRM.cs</LastGenOutput>
+      <DependentUpon>OBCRM.edmx</DependentUpon>
     </Content>
     <Content Include="Models\OBDataSources\OrgBubbleEntityDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

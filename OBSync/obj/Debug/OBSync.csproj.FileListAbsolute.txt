@@ -178,7 +178,7 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.VisualStudio.Web.C
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.Web.Infrastructure.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.dll
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.Entity.EF6.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFramework.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Web.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySqlConnector.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NameParser.dll
@@ -275,6 +275,8 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.VisualStudio.Web.C
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.EntityFramework.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySqlConnector.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Newtonsoft.Json.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NuGet.Frameworks.xml
@@ -378,4 +380,3 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.csproj.CoreComp
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.csproj.CopyComplete
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.pdb
-D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MySql.Data.xml
