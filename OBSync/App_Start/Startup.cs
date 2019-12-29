@@ -26,6 +26,11 @@ namespace OBSync.App_Start
             };
             app.UseOAuthAuthorizationServer(option);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+
+
+
+
+
         }
     }
 }

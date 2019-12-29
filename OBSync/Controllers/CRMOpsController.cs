@@ -168,10 +168,74 @@ namespace OBSync.Controllers
                     //request.Options.QueryPredicates.Add(new QueryPredicate("orgbubbleid_c", QueryOperator.Equal, oOBUser.id));
 
                     //request.Options.Query = String.Concat("contacts.email1='", oOBUser.email, "' or contacts.orgbubbleid_c ='", oOBUser.id,"'");
-                    request.Options.Query = String.Concat("contacts.id IN (SELECT bean_id FROM email_addr_bean_rel eabr JOIN email_addresses ea ON (eabr.email_address_id = ea.id) WHERE bean_module = 'Contacts' AND ea.email_address_caps = '", "phone.kid.info@example.tw", "' AND eabr.deleted=0)");
+                    request.Options.Query = String.Concat("contacts.id IN (SELECT bean_id FROM email_addr_bean_rel eabr JOIN email_addresses ea ON (eabr.email_address_id = ea.id) WHERE bean_module = 'Contacts' AND ea.email_address_caps = '", oOBUser.email, "' AND eabr.deleted=0)");
                     //request.Options.QueryPredicates = new List<QueryPredicate>();
 
                     SugarRestResponse response = client.Execute<Contact>(request);
+
+                 //
+                    if (response.Data.GetType() == typeof(List<Contact>) &&
+                        ((List<Contact>)response.Data).Count > 0)
+                    {
+
+                        //Update
+
+                        List<Contact> oContacsReturned = (List<Contact>)response.Data;
+                        Contact oContactTuUpdate = oContacsReturned.FirstOrDefault();
+                        
+
+                    }
+                    else
+                    {
+
+                        Account oNewAccount = new Account()
+                        {
+                            Name = oOBUser.email.ToUpper(),
+                            AssignedUserId = "6fa5fc21-77d4-ca8d-9e83-5de1a1d5f2ba"
+                        };
+                        var oNewAccountrRequest = new SugarRestRequest("Accounts", RequestType.Create);
+                        oNewAccountrRequest.Parameter = oNewAccount;
+                        List<string> selectNewAccountFields = new List<string>();
+                        selectNewAccountFields.Add(nameof(Account.Name));
+                        selectNewAccountFields.Add(nameof(Account.AssignedUserId));
+                        oNewAccountrRequest.Options.SelectFields = selectNewAccountFields;
+                        SugarRestResponse oNewAccountrRequestResponse = client.Execute(oNewAccountrRequest);
+
+
+                        string striCreatedAccountID = (string)oNewAccountrRequestResponse.Data;
+
+
+
+
+
+
+
+                        //Create Contact 
+                        Contact oContactToCreate = new Contact(){
+                                    FirstName  =  Models.Helpers.Utilities.NameObject(oOBUser.fullname).First ,
+                                    LastName = Models.Helpers.Utilities.NameObject(oOBUser.fullname).Last
+                                };
+
+                        var oNewConntactRequest = new SugarRestRequest("Contacts", RequestType.Create);
+                        oNewConntactRequest.Parameter = oContactToCreate;
+                        List<string> selectNewContactFields = new List<string>();
+                        selectNewContactFields.Add(nameof(Contact.FirstName));
+                        selectNewContactFields.Add(nameof(Contact.LastName));
+                        oNewConntactRequest.Options.SelectFields = selectNewContactFields;
+                        SugarRestResponse oNewConntactResponse = client.Execute(oNewConntactRequest);
+
+                        string strCreatedContact = (string)oNewConntactResponse.Data;
+
+
+                        var oLinkAccountToContact = new SugarRestRequest(RequestType.LinkedBulkRead);
+
+
+
+
+                    }
+                  
+
+
 
 
                 }
@@ -219,34 +283,71 @@ namespace OBSync.Controllers
 
             //Account info
             // Option 1 - Read by known type typeof(Account).
-            var accountRequest = new SugarRestRequest(RequestType.ReadById);
-            accountRequest.Parameter = "1d30bf4d-0f91-b46b-a389-5dd5c91680d1"; //5D Investments
-            SugarRestResponse accountResponse = client.Execute<Account>(accountRequest);
-            Account account = (Account)accountResponse.Data;
+            //var accountRequest = new SugarRestRequest(RequestType.ReadById);
+            //accountRequest.Parameter = "1d30bf4d-0f91-b46b-a389-5dd5c91680d1"; //5D Investments
+            //SugarRestResponse accountResponse = client.Execute<Account>(accountRequest);
+            //Account account = (Account)accountResponse.Data;
 
 
 
             // Option 2 - Read by known SugarCRM module name - "Contacts".
-            var contactRequest = new SugarRestRequest("Contacts", RequestType.ReadById);
-            contactRequest.Parameter = "16a50e00-8aba-c748-71a1-5dd5c947ec6a";
-            SugarRestResponse contactRresponse = client.Execute(contactRequest);
-            Contact contact = (Contact)contactRresponse.Data;
+            //var contactRequest = new SugarRestRequest("Contacts", RequestType.ReadById);
+            //contactRequest.Parameter = "16a50e00-8aba-c748-71a1-5dd5c947ec6a";
+            //SugarRestResponse contactRresponse = client.Execute(contactRequest);
+            //Contact contact = (Contact)contactRresponse.Data;
 
 
 
-            var createAccountRequest = new SugarRestRequest("Accounts", RequestType.Create);
-            SugarRestSharp.Models.Account actTest = new SugarRestSharp.Models.Account {
-                Name = "Test from API",
-                Website = "www.OrgBubble.com"
-            };
-            createAccountRequest.Parameter = actTest;
+            //var createAccountRequest = new SugarRestRequest("Accounts", RequestType.Create);
+            //SugarRestSharp.Models.Account actTest = new SugarRestSharp.Models.Account {
+            //    Name = "Test from API",
+            //    Website = "www.OrgBubble.com"
+            //};
+            //createAccountRequest.Parameter = actTest;
 
-            List<string> selectFields = new List<string>();
-            selectFields.Add(nameof(SugarRestSharp.Models.Account.Name));
-            selectFields.Add(nameof(SugarRestSharp.Models.Account.Website));
+            //List<string> selectFields = new List<string>();
+            //selectFields.Add(nameof(SugarRestSharp.Models.Account.Name));
+            //selectFields.Add(nameof(SugarRestSharp.Models.Account.Website));
 
-            createAccountRequest.Options.SelectFields = selectFields;
-            SugarRestResponse response = client.Execute(createAccountRequest);
+            //createAccountRequest.Options.SelectFields = selectFields;
+            //SugarRestResponse response = client.Execute(createAccountRequest);
+
+
+
+            string accountId = "1ea2d1c7-4ac3-3b4b-9c67-5dd5c944178a";
+
+            var request = new SugarRestRequest("Accounts",RequestType.LinkedReadById);
+            request.Parameter = accountId;
+
+            List<string> selectedFields = new List<string>();
+            selectedFields.Add(nameof(Account.Id));
+            selectedFields.Add(nameof(Account.Name));
+            selectedFields.Add(nameof(Account.Industry));
+            selectedFields.Add(nameof(Account.Website));
+            selectedFields.Add(nameof(Account.ShippingAddressCity));
+
+            request.Options.SelectFields = selectedFields;
+
+            Dictionary<object, List<string>> linkedListInfo = new Dictionary<object, List<string>>();
+
+            List<string> selectContactFields = new List<string>();
+            selectContactFields.Add(nameof(Contact.FirstName));
+            selectContactFields.Add(nameof(Contact.LastName));
+            selectContactFields.Add(nameof(Contact.Title));
+            selectContactFields.Add(nameof(Contact.Description));
+            selectContactFields.Add(nameof(Contact.PrimaryAddressPostalcode));
+
+            linkedListInfo[typeof(Contact)] = selectContactFields;
+
+            request.Options.LinkedModules = linkedListInfo;
+
+            SugarRestResponse response = client.Execute<Account>(request);
+
+
+
+
+
+
 
             Response.data = response;
 
