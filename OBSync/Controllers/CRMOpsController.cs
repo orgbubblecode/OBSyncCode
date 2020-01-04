@@ -16,6 +16,7 @@ using SugarRestSharp.Models;
 using Elmah;
 using RestSharp;
 using Newtonsoft.Json;
+using OBSync.Models.OBDataSources;
 
 namespace OBSync.Controllers
 {
@@ -25,9 +26,10 @@ namespace OBSync.Controllers
         private AllMyBioDbEntities ambDb = new AllMyBioDbEntities();
         private OrgBubbleDbEntities obDb = new OrgBubbleDbEntities();
         private OBSyncOLTP OBSyncDB = new OBSyncOLTP();
+        private OBCRMDbEntities OBCRMDB = new OBCRMDbEntities();
 
 
- 
+
         [Route("api/CRMOps/CheckDatabaseConnectivity")]
         [HttpPost]
         public OBAPIResponse CheckDatabaseConnectivity(string OBAuthCode)
@@ -88,8 +90,13 @@ namespace OBSync.Controllers
 
 
 
+            List<OBAPIResponse> lst = OBSync.Models.Helpers.SuiteCRM.UpdateOrgBubbleUsersBasicInformation();
 
-            
+
+
+
+
+
 
             //string sugarCrmUrl = "https://crm.orgbubble.com/service/v4_1/rest.php";
             //string sugarCrmUsername = "obapiuser";
@@ -197,18 +204,14 @@ namespace OBSync.Controllers
                         oNewAccountrRequest.Parameter = oNewAccount;
                         List<string> selectNewAccountFields = new List<string>();
                         selectNewAccountFields.Add(nameof(Account.Name));
-                        selectNewAccountFields.Add(nameof(Account.AssignedUserId));
+                        selectNewAccountFields.Add(nameof(Account.AssignedUserId));                
                         oNewAccountrRequest.Options.SelectFields = selectNewAccountFields;
                         SugarRestResponse oNewAccountrRequestResponse = client.Execute(oNewAccountrRequest);
 
 
                         string striCreatedAccountID = (string)oNewAccountrRequestResponse.Data;
 
-
-
-
-
-
+                                                                                          
 
                         //Create Contact 
                         Contact oContactToCreate = new Contact(){

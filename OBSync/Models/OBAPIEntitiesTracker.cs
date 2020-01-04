@@ -11,6 +11,13 @@ namespace OBSync.Models
         [Key]
         public int OBAPIEntitiesTrackerID { get; set; }
 
+        public string OBAPIEntityID { get; set; } = "";
+
+        public int OBAPIEntityTypeID { get; set; } = 0;
+
+        public string OBAPISugarCRMID { get; set; } = "";
+
+        public int OBAPISugarModuleID { get; set; } = 0;
 
 
     }

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OBSync.Models.OBDataSources
+namespace AllMyBio
 {
     using System;
     using System.Data.Entity;
@@ -25,15 +25,15 @@ namespace OBSync.Models.OBDataSources
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<AllMyBio.domain> domains { get; set; }
-        public virtual DbSet<AllMyBio.link> links { get; set; }
-        public virtual DbSet<AllMyBio.package> packages { get; set; }
-        public virtual DbSet<AllMyBio.page> pages { get; set; }
-        public virtual DbSet<AllMyBio.payment> payments { get; set; }
-        public virtual DbSet<AllMyBio.project> projects { get; set; }
-        public virtual DbSet<AllMyBio.setting> settings { get; set; }
-        public virtual DbSet<AllMyBio.track_links> track_links { get; set; }
-        public virtual DbSet<AllMyBio.user> users { get; set; }
-        public virtual DbSet<AllMyBio.users_logs> users_logs { get; set; }
+        public virtual DbSet<domain> domains { get; set; }
+        public virtual DbSet<link> links { get; set; }
+        public virtual DbSet<package> packages { get; set; }
+        public virtual DbSet<page> pages { get; set; }
+        public virtual DbSet<payment> payments { get; set; }
+        public virtual DbSet<project> projects { get; set; }
+        public virtual DbSet<setting> settings { get; set; }
+        public virtual DbSet<track_links> track_links { get; set; }
+        public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<users_logs> users_logs { get; set; }
     }
 }

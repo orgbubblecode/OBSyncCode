@@ -54,6 +54,9 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="Description, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Description.1.0.0\lib\Description.dll</HintPath>
+    </Reference>
     <Reference Include="dotnet-aspnet-codegenerator-design, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.VisualStudio.Web.CodeGeneration.Design.3.1.0\lib\net461\dotnet-aspnet-codegenerator-design.exe</HintPath>
     </Reference>
@@ -445,6 +448,7 @@
     </Compile>
     <Compile Include="Models\ApplicationAuthProvider.cs" />
     <Compile Include="Models\AuthRepository.cs" />
+    <Compile Include="Models\Helpers\Extensions.cs" />
     <Compile Include="Models\Helpers\Network.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Helpers\SuiteCRM.cs" />
@@ -493,6 +497,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AllMyBioEntityDataModel.Context.tt</DependentUpon>
+      <CustomToolNamespace>AllMyBio</CustomToolNamespace>
     </Compile>
     <Compile Include="Models\OBDataSources\AllMyBioEntityDataModel.cs">
       <AutoGen>True</AutoGen>
@@ -1080,7 +1085,7 @@
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\project.cs">
-      <DependentUpon>OBCRM.tt</DependentUpon>
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\projects_accounts.cs">
       <DependentUpon>OBCRM.tt</DependentUpon>
@@ -1239,7 +1244,7 @@
       <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\user.cs">
-      <DependentUpon>OBCRM.tt</DependentUpon>
+      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\users_last_import.cs">
       <DependentUpon>OBCRM.tt</DependentUpon>
@@ -1278,6 +1283,7 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AllMyBioEntityDataModel.edmx</DependentUpon>
       <LastGenOutput>AllMyBioEntityDataModel.Context.cs</LastGenOutput>
+      <CustomToolNamespace>AllMyBio</CustomToolNamespace>
     </Content>
     <Content Include="Models\OBDataSources\AllMyBioEntityDataModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

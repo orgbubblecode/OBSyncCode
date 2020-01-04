@@ -3889,224 +3889,224 @@ FROM `address_book` AS `address_book`</DefiningQuery>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="OBCRM" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-        <EntityContainer Name="OBCRMContainer" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="accounts" EntityType="OBCRM.account" />
-          <EntitySet Name="accounts_audit" EntityType="OBCRM.accounts_audit" />
-          <EntitySet Name="accounts_bugs" EntityType="OBCRM.accounts_bugs" />
-          <EntitySet Name="accounts_cases" EntityType="OBCRM.accounts_cases" />
-          <EntitySet Name="accounts_contacts" EntityType="OBCRM.accounts_contacts" />
-          <EntitySet Name="accounts_cstm" EntityType="OBCRM.accounts_cstm" />
-          <EntitySet Name="accounts_opportunities" EntityType="OBCRM.accounts_opportunities" />
-          <EntitySet Name="acl_actions" EntityType="OBCRM.acl_actions" />
-          <EntitySet Name="acl_roles" EntityType="OBCRM.acl_roles" />
-          <EntitySet Name="acl_roles_actions" EntityType="OBCRM.acl_roles_actions" />
-          <EntitySet Name="acl_roles_users" EntityType="OBCRM.acl_roles_users" />
-          <EntitySet Name="alerts" EntityType="OBCRM.alert" />
-          <EntitySet Name="am_projecttemplates" EntityType="OBCRM.am_projecttemplates" />
-          <EntitySet Name="am_projecttemplates_audit" EntityType="OBCRM.am_projecttemplates_audit" />
-          <EntitySet Name="am_projecttemplates_contacts_1_c" EntityType="OBCRM.am_projecttemplates_contacts_1_c" />
-          <EntitySet Name="am_projecttemplates_project_1_c" EntityType="OBCRM.am_projecttemplates_project_1_c" />
-          <EntitySet Name="am_projecttemplates_users_1_c" EntityType="OBCRM.am_projecttemplates_users_1_c" />
-          <EntitySet Name="am_tasktemplates" EntityType="OBCRM.am_tasktemplates" />
-          <EntitySet Name="am_tasktemplates_am_projecttemplates_c" EntityType="OBCRM.am_tasktemplates_am_projecttemplates_c" />
-          <EntitySet Name="am_tasktemplates_audit" EntityType="OBCRM.am_tasktemplates_audit" />
-          <EntitySet Name="aobh_businesshours" EntityType="OBCRM.aobh_businesshours" />
-          <EntitySet Name="aod_index" EntityType="OBCRM.aod_index" />
-          <EntitySet Name="aod_index_audit" EntityType="OBCRM.aod_index_audit" />
-          <EntitySet Name="aod_indexevent" EntityType="OBCRM.aod_indexevent" />
-          <EntitySet Name="aod_indexevent_audit" EntityType="OBCRM.aod_indexevent_audit" />
-          <EntitySet Name="aok_knowledge_base_categories" EntityType="OBCRM.aok_knowledge_base_categories" />
-          <EntitySet Name="aok_knowledge_base_categories_audit" EntityType="OBCRM.aok_knowledge_base_categories_audit" />
-          <EntitySet Name="aok_knowledgebase" EntityType="OBCRM.aok_knowledgebase" />
-          <EntitySet Name="aok_knowledgebase_audit" EntityType="OBCRM.aok_knowledgebase_audit" />
-          <EntitySet Name="aok_knowledgebase_categories" EntityType="OBCRM.aok_knowledgebase_categories" />
-          <EntitySet Name="aop_case_events" EntityType="OBCRM.aop_case_events" />
-          <EntitySet Name="aop_case_events_audit" EntityType="OBCRM.aop_case_events_audit" />
-          <EntitySet Name="aop_case_updates" EntityType="OBCRM.aop_case_updates" />
-          <EntitySet Name="aop_case_updates_audit" EntityType="OBCRM.aop_case_updates_audit" />
-          <EntitySet Name="aor_charts" EntityType="OBCRM.aor_charts" />
-          <EntitySet Name="aor_conditions" EntityType="OBCRM.aor_conditions" />
-          <EntitySet Name="aor_fields" EntityType="OBCRM.aor_fields" />
-          <EntitySet Name="aor_reports" EntityType="OBCRM.aor_reports" />
-          <EntitySet Name="aor_reports_audit" EntityType="OBCRM.aor_reports_audit" />
-          <EntitySet Name="aor_scheduled_reports" EntityType="OBCRM.aor_scheduled_reports" />
-          <EntitySet Name="aos_contracts" EntityType="OBCRM.aos_contracts" />
-          <EntitySet Name="aos_contracts_audit" EntityType="OBCRM.aos_contracts_audit" />
-          <EntitySet Name="aos_contracts_documents" EntityType="OBCRM.aos_contracts_documents" />
-          <EntitySet Name="aos_invoices" EntityType="OBCRM.aos_invoices" />
-          <EntitySet Name="aos_invoices_audit" EntityType="OBCRM.aos_invoices_audit" />
-          <EntitySet Name="aos_line_item_groups" EntityType="OBCRM.aos_line_item_groups" />
-          <EntitySet Name="aos_line_item_groups_audit" EntityType="OBCRM.aos_line_item_groups_audit" />
-          <EntitySet Name="aos_pdf_templates" EntityType="OBCRM.aos_pdf_templates" />
-          <EntitySet Name="aos_pdf_templates_audit" EntityType="OBCRM.aos_pdf_templates_audit" />
-          <EntitySet Name="aos_product_categories" EntityType="OBCRM.aos_product_categories" />
-          <EntitySet Name="aos_product_categories_audit" EntityType="OBCRM.aos_product_categories_audit" />
-          <EntitySet Name="aos_products" EntityType="OBCRM.aos_products" />
-          <EntitySet Name="aos_products_audit" EntityType="OBCRM.aos_products_audit" />
-          <EntitySet Name="aos_products_quotes" EntityType="OBCRM.aos_products_quotes" />
-          <EntitySet Name="aos_products_quotes_audit" EntityType="OBCRM.aos_products_quotes_audit" />
-          <EntitySet Name="aos_quotes" EntityType="OBCRM.aos_quotes" />
-          <EntitySet Name="aos_quotes_aos_invoices_c" EntityType="OBCRM.aos_quotes_aos_invoices_c" />
-          <EntitySet Name="aos_quotes_audit" EntityType="OBCRM.aos_quotes_audit" />
-          <EntitySet Name="aos_quotes_os_contracts_c" EntityType="OBCRM.aos_quotes_os_contracts_c" />
-          <EntitySet Name="aos_quotes_project_c" EntityType="OBCRM.aos_quotes_project_c" />
-          <EntitySet Name="aow_actions" EntityType="OBCRM.aow_actions" />
-          <EntitySet Name="aow_conditions" EntityType="OBCRM.aow_conditions" />
-          <EntitySet Name="aow_processed" EntityType="OBCRM.aow_processed" />
-          <EntitySet Name="aow_processed_aow_actions" EntityType="OBCRM.aow_processed_aow_actions" />
-          <EntitySet Name="aow_workflow" EntityType="OBCRM.aow_workflow" />
-          <EntitySet Name="aow_workflow_audit" EntityType="OBCRM.aow_workflow_audit" />
-          <EntitySet Name="bugs" EntityType="OBCRM.bug" />
-          <EntitySet Name="bugs_audit" EntityType="OBCRM.bugs_audit" />
-          <EntitySet Name="calls" EntityType="OBCRM.call" />
-          <EntitySet Name="calls_contacts" EntityType="OBCRM.calls_contacts" />
-          <EntitySet Name="calls_leads" EntityType="OBCRM.calls_leads" />
-          <EntitySet Name="calls_reschedule" EntityType="OBCRM.calls_reschedule" />
-          <EntitySet Name="calls_reschedule_audit" EntityType="OBCRM.calls_reschedule_audit" />
-          <EntitySet Name="calls_users" EntityType="OBCRM.calls_users" />
-          <EntitySet Name="campaign_log" EntityType="OBCRM.campaign_log" />
-          <EntitySet Name="campaign_trkrs" EntityType="OBCRM.campaign_trkrs" />
-          <EntitySet Name="campaigns" EntityType="OBCRM.campaign" />
-          <EntitySet Name="campaigns_audit" EntityType="OBCRM.campaigns_audit" />
-          <EntitySet Name="cases" EntityType="OBCRM.case" />
-          <EntitySet Name="cases_audit" EntityType="OBCRM.cases_audit" />
-          <EntitySet Name="cases_bugs" EntityType="OBCRM.cases_bugs" />
-          <EntitySet Name="cases_cstm" EntityType="OBCRM.cases_cstm" />
-          <EntitySet Name="contacts" EntityType="OBCRM.contact" />
-          <EntitySet Name="contacts_audit" EntityType="OBCRM.contacts_audit" />
-          <EntitySet Name="contacts_bugs" EntityType="OBCRM.contacts_bugs" />
-          <EntitySet Name="contacts_cases" EntityType="OBCRM.contacts_cases" />
-          <EntitySet Name="contacts_cstm" EntityType="OBCRM.contacts_cstm" />
-          <EntitySet Name="contacts_users" EntityType="OBCRM.contacts_users" />
-          <EntitySet Name="cron_remove_documents" EntityType="OBCRM.cron_remove_documents" />
-          <EntitySet Name="currencies" EntityType="OBCRM.currency" />
-          <EntitySet Name="document_revisions" EntityType="OBCRM.document_revisions" />
-          <EntitySet Name="documents" EntityType="OBCRM.document" />
-          <EntitySet Name="documents_accounts" EntityType="OBCRM.documents_accounts" />
-          <EntitySet Name="documents_bugs" EntityType="OBCRM.documents_bugs" />
-          <EntitySet Name="documents_cases" EntityType="OBCRM.documents_cases" />
-          <EntitySet Name="documents_contacts" EntityType="OBCRM.documents_contacts" />
-          <EntitySet Name="documents_opportunities" EntityType="OBCRM.documents_opportunities" />
-          <EntitySet Name="eapms" EntityType="OBCRM.eapm" />
-          <EntitySet Name="email_addr_bean_rel" EntityType="OBCRM.email_addr_bean_rel" />
-          <EntitySet Name="email_addresses" EntityType="OBCRM.email_addresses" />
-          <EntitySet Name="email_addresses_audit" EntityType="OBCRM.email_addresses_audit" />
-          <EntitySet Name="email_marketing" EntityType="OBCRM.email_marketing" />
-          <EntitySet Name="email_marketing_prospect_lists" EntityType="OBCRM.email_marketing_prospect_lists" />
-          <EntitySet Name="email_templates" EntityType="OBCRM.email_templates" />
-          <EntitySet Name="emailmen" EntityType="OBCRM.emailman" />
-          <EntitySet Name="emails" EntityType="OBCRM.email" />
-          <EntitySet Name="emails_beans" EntityType="OBCRM.emails_beans" />
-          <EntitySet Name="emails_email_addr_rel" EntityType="OBCRM.emails_email_addr_rel" />
-          <EntitySet Name="emails_text" EntityType="OBCRM.emails_text" />
-          <EntitySet Name="favorites" EntityType="OBCRM.favorite" />
-          <EntitySet Name="fields_meta_data" EntityType="OBCRM.fields_meta_data" />
-          <EntitySet Name="folders" EntityType="OBCRM.folder" />
-          <EntitySet Name="folders_rel" EntityType="OBCRM.folders_rel" />
-          <EntitySet Name="folders_subscriptions" EntityType="OBCRM.folders_subscriptions" />
-          <EntitySet Name="fp_event_locations" EntityType="OBCRM.fp_event_locations" />
-          <EntitySet Name="fp_event_locations_audit" EntityType="OBCRM.fp_event_locations_audit" />
-          <EntitySet Name="fp_event_locations_fp_events_1_c" EntityType="OBCRM.fp_event_locations_fp_events_1_c" />
-          <EntitySet Name="fp_events" EntityType="OBCRM.fp_events" />
-          <EntitySet Name="fp_events_audit" EntityType="OBCRM.fp_events_audit" />
-          <EntitySet Name="fp_events_contacts_c" EntityType="OBCRM.fp_events_contacts_c" />
-          <EntitySet Name="fp_events_fp_event_delegates_1_c" EntityType="OBCRM.fp_events_fp_event_delegates_1_c" />
-          <EntitySet Name="fp_events_fp_event_locations_1_c" EntityType="OBCRM.fp_events_fp_event_locations_1_c" />
-          <EntitySet Name="fp_events_leads_1_c" EntityType="OBCRM.fp_events_leads_1_c" />
-          <EntitySet Name="fp_events_prospects_1_c" EntityType="OBCRM.fp_events_prospects_1_c" />
-          <EntitySet Name="import_maps" EntityType="OBCRM.import_maps" />
-          <EntitySet Name="inbound_email" EntityType="OBCRM.inbound_email" />
-          <EntitySet Name="inbound_email_autoreply" EntityType="OBCRM.inbound_email_autoreply" />
-          <EntitySet Name="inbound_email_cache_ts" EntityType="OBCRM.inbound_email_cache_ts" />
-          <EntitySet Name="jjwg_address_cache" EntityType="OBCRM.jjwg_address_cache" />
-          <EntitySet Name="jjwg_address_cache_audit" EntityType="OBCRM.jjwg_address_cache_audit" />
-          <EntitySet Name="jjwg_areas" EntityType="OBCRM.jjwg_areas" />
-          <EntitySet Name="jjwg_areas_audit" EntityType="OBCRM.jjwg_areas_audit" />
-          <EntitySet Name="jjwg_maps" EntityType="OBCRM.jjwg_maps" />
-          <EntitySet Name="jjwg_maps_audit" EntityType="OBCRM.jjwg_maps_audit" />
-          <EntitySet Name="jjwg_maps_jjwg_areas_c" EntityType="OBCRM.jjwg_maps_jjwg_areas_c" />
-          <EntitySet Name="jjwg_maps_jjwg_markers_c" EntityType="OBCRM.jjwg_maps_jjwg_markers_c" />
-          <EntitySet Name="jjwg_markers" EntityType="OBCRM.jjwg_markers" />
-          <EntitySet Name="jjwg_markers_audit" EntityType="OBCRM.jjwg_markers_audit" />
-          <EntitySet Name="job_queue" EntityType="OBCRM.job_queue" />
-          <EntitySet Name="leads" EntityType="OBCRM.lead" />
-          <EntitySet Name="leads_audit" EntityType="OBCRM.leads_audit" />
-          <EntitySet Name="leads_cstm" EntityType="OBCRM.leads_cstm" />
-          <EntitySet Name="linked_documents" EntityType="OBCRM.linked_documents" />
-          <EntitySet Name="meetings" EntityType="OBCRM.meeting" />
-          <EntitySet Name="meetings_contacts" EntityType="OBCRM.meetings_contacts" />
-          <EntitySet Name="meetings_cstm" EntityType="OBCRM.meetings_cstm" />
-          <EntitySet Name="meetings_leads" EntityType="OBCRM.meetings_leads" />
-          <EntitySet Name="meetings_users" EntityType="OBCRM.meetings_users" />
-          <EntitySet Name="notes" EntityType="OBCRM.note" />
-          <EntitySet Name="oauth_consumer" EntityType="OBCRM.oauth_consumer" />
-          <EntitySet Name="oauth_nonce" EntityType="OBCRM.oauth_nonce" />
-          <EntitySet Name="oauth_tokens" EntityType="OBCRM.oauth_tokens" />
-          <EntitySet Name="oauth2clients" EntityType="OBCRM.oauth2clients" />
-          <EntitySet Name="oauth2tokens" EntityType="OBCRM.oauth2tokens" />
-          <EntitySet Name="opportunities" EntityType="OBCRM.opportunity" />
-          <EntitySet Name="opportunities_audit" EntityType="OBCRM.opportunities_audit" />
-          <EntitySet Name="opportunities_contacts" EntityType="OBCRM.opportunities_contacts" />
-          <EntitySet Name="opportunities_cstm" EntityType="OBCRM.opportunities_cstm" />
-          <EntitySet Name="outbound_email" EntityType="OBCRM.outbound_email" />
-          <EntitySet Name="outbound_email_audit" EntityType="OBCRM.outbound_email_audit" />
-          <EntitySet Name="projects" EntityType="OBCRM.project" />
-          <EntitySet Name="project_contacts_1_c" EntityType="OBCRM.project_contacts_1_c" />
-          <EntitySet Name="project_cstm" EntityType="OBCRM.project_cstm" />
-          <EntitySet Name="project_task" EntityType="OBCRM.project_task" />
-          <EntitySet Name="project_task_audit" EntityType="OBCRM.project_task_audit" />
-          <EntitySet Name="project_users_1_c" EntityType="OBCRM.project_users_1_c" />
-          <EntitySet Name="projects_accounts" EntityType="OBCRM.projects_accounts" />
-          <EntitySet Name="projects_bugs" EntityType="OBCRM.projects_bugs" />
-          <EntitySet Name="projects_cases" EntityType="OBCRM.projects_cases" />
-          <EntitySet Name="projects_contacts" EntityType="OBCRM.projects_contacts" />
-          <EntitySet Name="projects_opportunities" EntityType="OBCRM.projects_opportunities" />
-          <EntitySet Name="projects_products" EntityType="OBCRM.projects_products" />
-          <EntitySet Name="prospect_list_campaigns" EntityType="OBCRM.prospect_list_campaigns" />
-          <EntitySet Name="prospect_lists" EntityType="OBCRM.prospect_lists" />
-          <EntitySet Name="prospect_lists_prospects" EntityType="OBCRM.prospect_lists_prospects" />
-          <EntitySet Name="prospects" EntityType="OBCRM.prospect" />
-          <EntitySet Name="prospects_cstm" EntityType="OBCRM.prospects_cstm" />
-          <EntitySet Name="relationships" EntityType="OBCRM.relationship" />
-          <EntitySet Name="releases" EntityType="OBCRM.release" />
-          <EntitySet Name="reminders" EntityType="OBCRM.reminder" />
-          <EntitySet Name="reminders_invitees" EntityType="OBCRM.reminders_invitees" />
-          <EntitySet Name="roles" EntityType="OBCRM.role" />
-          <EntitySet Name="roles_modules" EntityType="OBCRM.roles_modules" />
-          <EntitySet Name="roles_users" EntityType="OBCRM.roles_users" />
-          <EntitySet Name="saved_search" EntityType="OBCRM.saved_search" />
-          <EntitySet Name="schedulers" EntityType="OBCRM.scheduler" />
-          <EntitySet Name="securitygroups" EntityType="OBCRM.securitygroup" />
-          <EntitySet Name="securitygroups_acl_roles" EntityType="OBCRM.securitygroups_acl_roles" />
-          <EntitySet Name="securitygroups_audit" EntityType="OBCRM.securitygroups_audit" />
-          <EntitySet Name="securitygroups_default" EntityType="OBCRM.securitygroups_default" />
-          <EntitySet Name="securitygroups_records" EntityType="OBCRM.securitygroups_records" />
-          <EntitySet Name="securitygroups_users" EntityType="OBCRM.securitygroups_users" />
-          <EntitySet Name="spots" EntityType="OBCRM.spot" />
-          <EntitySet Name="sugarfeeds" EntityType="OBCRM.sugarfeed" />
-          <EntitySet Name="surveyquestionoptions" EntityType="OBCRM.surveyquestionoption" />
-          <EntitySet Name="surveyquestionoptions_audit" EntityType="OBCRM.surveyquestionoptions_audit" />
-          <EntitySet Name="surveyquestionoptions_surveyquestionresponses" EntityType="OBCRM.surveyquestionoptions_surveyquestionresponses" />
-          <EntitySet Name="surveyquestionresponses" EntityType="OBCRM.surveyquestionrespons" />
-          <EntitySet Name="surveyquestionresponses_audit" EntityType="OBCRM.surveyquestionresponses_audit" />
-          <EntitySet Name="surveyquestions" EntityType="OBCRM.surveyquestion" />
-          <EntitySet Name="surveyquestions_audit" EntityType="OBCRM.surveyquestions_audit" />
-          <EntitySet Name="surveyresponses" EntityType="OBCRM.surveyrespons" />
-          <EntitySet Name="surveyresponses_audit" EntityType="OBCRM.surveyresponses_audit" />
-          <EntitySet Name="surveys" EntityType="OBCRM.survey" />
-          <EntitySet Name="surveys_audit" EntityType="OBCRM.surveys_audit" />
-          <EntitySet Name="tasks" EntityType="OBCRM.task" />
-          <EntitySet Name="templatesectionlines" EntityType="OBCRM.templatesectionline" />
-          <EntitySet Name="trackers" EntityType="OBCRM.tracker" />
-          <EntitySet Name="upgrade_history" EntityType="OBCRM.upgrade_history" />
-          <EntitySet Name="user_preferences" EntityType="OBCRM.user_preferences" />
-          <EntitySet Name="users" EntityType="OBCRM.user" />
-          <EntitySet Name="users_last_import" EntityType="OBCRM.users_last_import" />
-          <EntitySet Name="users_password_link" EntityType="OBCRM.users_password_link" />
-          <EntitySet Name="users_signatures" EntityType="OBCRM.users_signatures" />
-          <EntitySet Name="vcals" EntityType="OBCRM.vcal" />
-          <EntitySet Name="address_book" EntityType="OBCRM.address_book" />
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="OBCRMDbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="OBCRMDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="accounts" EntityType="OBCRMDbModel.account" />
+          <EntitySet Name="accounts_audit" EntityType="OBCRMDbModel.accounts_audit" />
+          <EntitySet Name="accounts_bugs" EntityType="OBCRMDbModel.accounts_bugs" />
+          <EntitySet Name="accounts_cases" EntityType="OBCRMDbModel.accounts_cases" />
+          <EntitySet Name="accounts_contacts" EntityType="OBCRMDbModel.accounts_contacts" />
+          <EntitySet Name="accounts_cstm" EntityType="OBCRMDbModel.accounts_cstm" />
+          <EntitySet Name="accounts_opportunities" EntityType="OBCRMDbModel.accounts_opportunities" />
+          <EntitySet Name="acl_actions" EntityType="OBCRMDbModel.acl_actions" />
+          <EntitySet Name="acl_roles" EntityType="OBCRMDbModel.acl_roles" />
+          <EntitySet Name="acl_roles_actions" EntityType="OBCRMDbModel.acl_roles_actions" />
+          <EntitySet Name="acl_roles_users" EntityType="OBCRMDbModel.acl_roles_users" />
+          <EntitySet Name="alerts" EntityType="OBCRMDbModel.alert" />
+          <EntitySet Name="am_projecttemplates" EntityType="OBCRMDbModel.am_projecttemplates" />
+          <EntitySet Name="am_projecttemplates_audit" EntityType="OBCRMDbModel.am_projecttemplates_audit" />
+          <EntitySet Name="am_projecttemplates_contacts_1_c" EntityType="OBCRMDbModel.am_projecttemplates_contacts_1_c" />
+          <EntitySet Name="am_projecttemplates_project_1_c" EntityType="OBCRMDbModel.am_projecttemplates_project_1_c" />
+          <EntitySet Name="am_projecttemplates_users_1_c" EntityType="OBCRMDbModel.am_projecttemplates_users_1_c" />
+          <EntitySet Name="am_tasktemplates" EntityType="OBCRMDbModel.am_tasktemplates" />
+          <EntitySet Name="am_tasktemplates_am_projecttemplates_c" EntityType="OBCRMDbModel.am_tasktemplates_am_projecttemplates_c" />
+          <EntitySet Name="am_tasktemplates_audit" EntityType="OBCRMDbModel.am_tasktemplates_audit" />
+          <EntitySet Name="aobh_businesshours" EntityType="OBCRMDbModel.aobh_businesshours" />
+          <EntitySet Name="aod_index" EntityType="OBCRMDbModel.aod_index" />
+          <EntitySet Name="aod_index_audit" EntityType="OBCRMDbModel.aod_index_audit" />
+          <EntitySet Name="aod_indexevent" EntityType="OBCRMDbModel.aod_indexevent" />
+          <EntitySet Name="aod_indexevent_audit" EntityType="OBCRMDbModel.aod_indexevent_audit" />
+          <EntitySet Name="aok_knowledge_base_categories" EntityType="OBCRMDbModel.aok_knowledge_base_categories" />
+          <EntitySet Name="aok_knowledge_base_categories_audit" EntityType="OBCRMDbModel.aok_knowledge_base_categories_audit" />
+          <EntitySet Name="aok_knowledgebase" EntityType="OBCRMDbModel.aok_knowledgebase" />
+          <EntitySet Name="aok_knowledgebase_audit" EntityType="OBCRMDbModel.aok_knowledgebase_audit" />
+          <EntitySet Name="aok_knowledgebase_categories" EntityType="OBCRMDbModel.aok_knowledgebase_categories" />
+          <EntitySet Name="aop_case_events" EntityType="OBCRMDbModel.aop_case_events" />
+          <EntitySet Name="aop_case_events_audit" EntityType="OBCRMDbModel.aop_case_events_audit" />
+          <EntitySet Name="aop_case_updates" EntityType="OBCRMDbModel.aop_case_updates" />
+          <EntitySet Name="aop_case_updates_audit" EntityType="OBCRMDbModel.aop_case_updates_audit" />
+          <EntitySet Name="aor_charts" EntityType="OBCRMDbModel.aor_charts" />
+          <EntitySet Name="aor_conditions" EntityType="OBCRMDbModel.aor_conditions" />
+          <EntitySet Name="aor_fields" EntityType="OBCRMDbModel.aor_fields" />
+          <EntitySet Name="aor_reports" EntityType="OBCRMDbModel.aor_reports" />
+          <EntitySet Name="aor_reports_audit" EntityType="OBCRMDbModel.aor_reports_audit" />
+          <EntitySet Name="aor_scheduled_reports" EntityType="OBCRMDbModel.aor_scheduled_reports" />
+          <EntitySet Name="aos_contracts" EntityType="OBCRMDbModel.aos_contracts" />
+          <EntitySet Name="aos_contracts_audit" EntityType="OBCRMDbModel.aos_contracts_audit" />
+          <EntitySet Name="aos_contracts_documents" EntityType="OBCRMDbModel.aos_contracts_documents" />
+          <EntitySet Name="aos_invoices" EntityType="OBCRMDbModel.aos_invoices" />
+          <EntitySet Name="aos_invoices_audit" EntityType="OBCRMDbModel.aos_invoices_audit" />
+          <EntitySet Name="aos_line_item_groups" EntityType="OBCRMDbModel.aos_line_item_groups" />
+          <EntitySet Name="aos_line_item_groups_audit" EntityType="OBCRMDbModel.aos_line_item_groups_audit" />
+          <EntitySet Name="aos_pdf_templates" EntityType="OBCRMDbModel.aos_pdf_templates" />
+          <EntitySet Name="aos_pdf_templates_audit" EntityType="OBCRMDbModel.aos_pdf_templates_audit" />
+          <EntitySet Name="aos_product_categories" EntityType="OBCRMDbModel.aos_product_categories" />
+          <EntitySet Name="aos_product_categories_audit" EntityType="OBCRMDbModel.aos_product_categories_audit" />
+          <EntitySet Name="aos_products" EntityType="OBCRMDbModel.aos_products" />
+          <EntitySet Name="aos_products_audit" EntityType="OBCRMDbModel.aos_products_audit" />
+          <EntitySet Name="aos_products_quotes" EntityType="OBCRMDbModel.aos_products_quotes" />
+          <EntitySet Name="aos_products_quotes_audit" EntityType="OBCRMDbModel.aos_products_quotes_audit" />
+          <EntitySet Name="aos_quotes" EntityType="OBCRMDbModel.aos_quotes" />
+          <EntitySet Name="aos_quotes_aos_invoices_c" EntityType="OBCRMDbModel.aos_quotes_aos_invoices_c" />
+          <EntitySet Name="aos_quotes_audit" EntityType="OBCRMDbModel.aos_quotes_audit" />
+          <EntitySet Name="aos_quotes_os_contracts_c" EntityType="OBCRMDbModel.aos_quotes_os_contracts_c" />
+          <EntitySet Name="aos_quotes_project_c" EntityType="OBCRMDbModel.aos_quotes_project_c" />
+          <EntitySet Name="aow_actions" EntityType="OBCRMDbModel.aow_actions" />
+          <EntitySet Name="aow_conditions" EntityType="OBCRMDbModel.aow_conditions" />
+          <EntitySet Name="aow_processed" EntityType="OBCRMDbModel.aow_processed" />
+          <EntitySet Name="aow_processed_aow_actions" EntityType="OBCRMDbModel.aow_processed_aow_actions" />
+          <EntitySet Name="aow_workflow" EntityType="OBCRMDbModel.aow_workflow" />
+          <EntitySet Name="aow_workflow_audit" EntityType="OBCRMDbModel.aow_workflow_audit" />
+          <EntitySet Name="bugs" EntityType="OBCRMDbModel.bug" />
+          <EntitySet Name="bugs_audit" EntityType="OBCRMDbModel.bugs_audit" />
+          <EntitySet Name="calls" EntityType="OBCRMDbModel.call" />
+          <EntitySet Name="calls_contacts" EntityType="OBCRMDbModel.calls_contacts" />
+          <EntitySet Name="calls_leads" EntityType="OBCRMDbModel.calls_leads" />
+          <EntitySet Name="calls_reschedule" EntityType="OBCRMDbModel.calls_reschedule" />
+          <EntitySet Name="calls_reschedule_audit" EntityType="OBCRMDbModel.calls_reschedule_audit" />
+          <EntitySet Name="calls_users" EntityType="OBCRMDbModel.calls_users" />
+          <EntitySet Name="campaign_log" EntityType="OBCRMDbModel.campaign_log" />
+          <EntitySet Name="campaign_trkrs" EntityType="OBCRMDbModel.campaign_trkrs" />
+          <EntitySet Name="campaigns" EntityType="OBCRMDbModel.campaign" />
+          <EntitySet Name="campaigns_audit" EntityType="OBCRMDbModel.campaigns_audit" />
+          <EntitySet Name="cases" EntityType="OBCRMDbModel.case" />
+          <EntitySet Name="cases_audit" EntityType="OBCRMDbModel.cases_audit" />
+          <EntitySet Name="cases_bugs" EntityType="OBCRMDbModel.cases_bugs" />
+          <EntitySet Name="cases_cstm" EntityType="OBCRMDbModel.cases_cstm" />
+          <EntitySet Name="contacts" EntityType="OBCRMDbModel.contact" />
+          <EntitySet Name="contacts_audit" EntityType="OBCRMDbModel.contacts_audit" />
+          <EntitySet Name="contacts_bugs" EntityType="OBCRMDbModel.contacts_bugs" />
+          <EntitySet Name="contacts_cases" EntityType="OBCRMDbModel.contacts_cases" />
+          <EntitySet Name="contacts_cstm" EntityType="OBCRMDbModel.contacts_cstm" />
+          <EntitySet Name="contacts_users" EntityType="OBCRMDbModel.contacts_users" />
+          <EntitySet Name="cron_remove_documents" EntityType="OBCRMDbModel.cron_remove_documents" />
+          <EntitySet Name="currencies" EntityType="OBCRMDbModel.currency" />
+          <EntitySet Name="document_revisions" EntityType="OBCRMDbModel.document_revisions" />
+          <EntitySet Name="documents" EntityType="OBCRMDbModel.document" />
+          <EntitySet Name="documents_accounts" EntityType="OBCRMDbModel.documents_accounts" />
+          <EntitySet Name="documents_bugs" EntityType="OBCRMDbModel.documents_bugs" />
+          <EntitySet Name="documents_cases" EntityType="OBCRMDbModel.documents_cases" />
+          <EntitySet Name="documents_contacts" EntityType="OBCRMDbModel.documents_contacts" />
+          <EntitySet Name="documents_opportunities" EntityType="OBCRMDbModel.documents_opportunities" />
+          <EntitySet Name="eapms" EntityType="OBCRMDbModel.eapm" />
+          <EntitySet Name="email_addr_bean_rel" EntityType="OBCRMDbModel.email_addr_bean_rel" />
+          <EntitySet Name="email_addresses" EntityType="OBCRMDbModel.email_addresses" />
+          <EntitySet Name="email_addresses_audit" EntityType="OBCRMDbModel.email_addresses_audit" />
+          <EntitySet Name="email_marketing" EntityType="OBCRMDbModel.email_marketing" />
+          <EntitySet Name="email_marketing_prospect_lists" EntityType="OBCRMDbModel.email_marketing_prospect_lists" />
+          <EntitySet Name="email_templates" EntityType="OBCRMDbModel.email_templates" />
+          <EntitySet Name="emailmen" EntityType="OBCRMDbModel.emailman" />
+          <EntitySet Name="emails" EntityType="OBCRMDbModel.email" />
+          <EntitySet Name="emails_beans" EntityType="OBCRMDbModel.emails_beans" />
+          <EntitySet Name="emails_email_addr_rel" EntityType="OBCRMDbModel.emails_email_addr_rel" />
+          <EntitySet Name="emails_text" EntityType="OBCRMDbModel.emails_text" />
+          <EntitySet Name="favorites" EntityType="OBCRMDbModel.favorite" />
+          <EntitySet Name="fields_meta_data" EntityType="OBCRMDbModel.fields_meta_data" />
+          <EntitySet Name="folders" EntityType="OBCRMDbModel.folder" />
+          <EntitySet Name="folders_rel" EntityType="OBCRMDbModel.folders_rel" />
+          <EntitySet Name="folders_subscriptions" EntityType="OBCRMDbModel.folders_subscriptions" />
+          <EntitySet Name="fp_event_locations" EntityType="OBCRMDbModel.fp_event_locations" />
+          <EntitySet Name="fp_event_locations_audit" EntityType="OBCRMDbModel.fp_event_locations_audit" />
+          <EntitySet Name="fp_event_locations_fp_events_1_c" EntityType="OBCRMDbModel.fp_event_locations_fp_events_1_c" />
+          <EntitySet Name="fp_events" EntityType="OBCRMDbModel.fp_events" />
+          <EntitySet Name="fp_events_audit" EntityType="OBCRMDbModel.fp_events_audit" />
+          <EntitySet Name="fp_events_contacts_c" EntityType="OBCRMDbModel.fp_events_contacts_c" />
+          <EntitySet Name="fp_events_fp_event_delegates_1_c" EntityType="OBCRMDbModel.fp_events_fp_event_delegates_1_c" />
+          <EntitySet Name="fp_events_fp_event_locations_1_c" EntityType="OBCRMDbModel.fp_events_fp_event_locations_1_c" />
+          <EntitySet Name="fp_events_leads_1_c" EntityType="OBCRMDbModel.fp_events_leads_1_c" />
+          <EntitySet Name="fp_events_prospects_1_c" EntityType="OBCRMDbModel.fp_events_prospects_1_c" />
+          <EntitySet Name="import_maps" EntityType="OBCRMDbModel.import_maps" />
+          <EntitySet Name="inbound_email" EntityType="OBCRMDbModel.inbound_email" />
+          <EntitySet Name="inbound_email_autoreply" EntityType="OBCRMDbModel.inbound_email_autoreply" />
+          <EntitySet Name="inbound_email_cache_ts" EntityType="OBCRMDbModel.inbound_email_cache_ts" />
+          <EntitySet Name="jjwg_address_cache" EntityType="OBCRMDbModel.jjwg_address_cache" />
+          <EntitySet Name="jjwg_address_cache_audit" EntityType="OBCRMDbModel.jjwg_address_cache_audit" />
+          <EntitySet Name="jjwg_areas" EntityType="OBCRMDbModel.jjwg_areas" />
+          <EntitySet Name="jjwg_areas_audit" EntityType="OBCRMDbModel.jjwg_areas_audit" />
+          <EntitySet Name="jjwg_maps" EntityType="OBCRMDbModel.jjwg_maps" />
+          <EntitySet Name="jjwg_maps_audit" EntityType="OBCRMDbModel.jjwg_maps_audit" />
+          <EntitySet Name="jjwg_maps_jjwg_areas_c" EntityType="OBCRMDbModel.jjwg_maps_jjwg_areas_c" />
+          <EntitySet Name="jjwg_maps_jjwg_markers_c" EntityType="OBCRMDbModel.jjwg_maps_jjwg_markers_c" />
+          <EntitySet Name="jjwg_markers" EntityType="OBCRMDbModel.jjwg_markers" />
+          <EntitySet Name="jjwg_markers_audit" EntityType="OBCRMDbModel.jjwg_markers_audit" />
+          <EntitySet Name="job_queue" EntityType="OBCRMDbModel.job_queue" />
+          <EntitySet Name="leads" EntityType="OBCRMDbModel.lead" />
+          <EntitySet Name="leads_audit" EntityType="OBCRMDbModel.leads_audit" />
+          <EntitySet Name="leads_cstm" EntityType="OBCRMDbModel.leads_cstm" />
+          <EntitySet Name="linked_documents" EntityType="OBCRMDbModel.linked_documents" />
+          <EntitySet Name="meetings" EntityType="OBCRMDbModel.meeting" />
+          <EntitySet Name="meetings_contacts" EntityType="OBCRMDbModel.meetings_contacts" />
+          <EntitySet Name="meetings_cstm" EntityType="OBCRMDbModel.meetings_cstm" />
+          <EntitySet Name="meetings_leads" EntityType="OBCRMDbModel.meetings_leads" />
+          <EntitySet Name="meetings_users" EntityType="OBCRMDbModel.meetings_users" />
+          <EntitySet Name="notes" EntityType="OBCRMDbModel.note" />
+          <EntitySet Name="oauth_consumer" EntityType="OBCRMDbModel.oauth_consumer" />
+          <EntitySet Name="oauth_nonce" EntityType="OBCRMDbModel.oauth_nonce" />
+          <EntitySet Name="oauth_tokens" EntityType="OBCRMDbModel.oauth_tokens" />
+          <EntitySet Name="oauth2clients" EntityType="OBCRMDbModel.oauth2clients" />
+          <EntitySet Name="oauth2tokens" EntityType="OBCRMDbModel.oauth2tokens" />
+          <EntitySet Name="opportunities" EntityType="OBCRMDbModel.opportunity" />
+          <EntitySet Name="opportunities_audit" EntityType="OBCRMDbModel.opportunities_audit" />
+          <EntitySet Name="opportunities_contacts" EntityType="OBCRMDbModel.opportunities_contacts" />
+          <EntitySet Name="opportunities_cstm" EntityType="OBCRMDbModel.opportunities_cstm" />
+          <EntitySet Name="outbound_email" EntityType="OBCRMDbModel.outbound_email" />
+          <EntitySet Name="outbound_email_audit" EntityType="OBCRMDbModel.outbound_email_audit" />
+          <EntitySet Name="projects" EntityType="OBCRMDbModel.project" />
+          <EntitySet Name="project_contacts_1_c" EntityType="OBCRMDbModel.project_contacts_1_c" />
+          <EntitySet Name="project_cstm" EntityType="OBCRMDbModel.project_cstm" />
+          <EntitySet Name="project_task" EntityType="OBCRMDbModel.project_task" />
+          <EntitySet Name="project_task_audit" EntityType="OBCRMDbModel.project_task_audit" />
+          <EntitySet Name="project_users_1_c" EntityType="OBCRMDbModel.project_users_1_c" />
+          <EntitySet Name="projects_accounts" EntityType="OBCRMDbModel.projects_accounts" />
+          <EntitySet Name="projects_bugs" EntityType="OBCRMDbModel.projects_bugs" />
+          <EntitySet Name="projects_cases" EntityType="OBCRMDbModel.projects_cases" />
+          <EntitySet Name="projects_contacts" EntityType="OBCRMDbModel.projects_contacts" />
+          <EntitySet Name="projects_opportunities" EntityType="OBCRMDbModel.projects_opportunities" />
+          <EntitySet Name="projects_products" EntityType="OBCRMDbModel.projects_products" />
+          <EntitySet Name="prospect_list_campaigns" EntityType="OBCRMDbModel.prospect_list_campaigns" />
+          <EntitySet Name="prospect_lists" EntityType="OBCRMDbModel.prospect_lists" />
+          <EntitySet Name="prospect_lists_prospects" EntityType="OBCRMDbModel.prospect_lists_prospects" />
+          <EntitySet Name="prospects" EntityType="OBCRMDbModel.prospect" />
+          <EntitySet Name="prospects_cstm" EntityType="OBCRMDbModel.prospects_cstm" />
+          <EntitySet Name="relationships" EntityType="OBCRMDbModel.relationship" />
+          <EntitySet Name="releases" EntityType="OBCRMDbModel.release" />
+          <EntitySet Name="reminders" EntityType="OBCRMDbModel.reminder" />
+          <EntitySet Name="reminders_invitees" EntityType="OBCRMDbModel.reminders_invitees" />
+          <EntitySet Name="roles" EntityType="OBCRMDbModel.role" />
+          <EntitySet Name="roles_modules" EntityType="OBCRMDbModel.roles_modules" />
+          <EntitySet Name="roles_users" EntityType="OBCRMDbModel.roles_users" />
+          <EntitySet Name="saved_search" EntityType="OBCRMDbModel.saved_search" />
+          <EntitySet Name="schedulers" EntityType="OBCRMDbModel.scheduler" />
+          <EntitySet Name="securitygroups" EntityType="OBCRMDbModel.securitygroup" />
+          <EntitySet Name="securitygroups_acl_roles" EntityType="OBCRMDbModel.securitygroups_acl_roles" />
+          <EntitySet Name="securitygroups_audit" EntityType="OBCRMDbModel.securitygroups_audit" />
+          <EntitySet Name="securitygroups_default" EntityType="OBCRMDbModel.securitygroups_default" />
+          <EntitySet Name="securitygroups_records" EntityType="OBCRMDbModel.securitygroups_records" />
+          <EntitySet Name="securitygroups_users" EntityType="OBCRMDbModel.securitygroups_users" />
+          <EntitySet Name="spots" EntityType="OBCRMDbModel.spot" />
+          <EntitySet Name="sugarfeeds" EntityType="OBCRMDbModel.sugarfeed" />
+          <EntitySet Name="surveyquestionoptions" EntityType="OBCRMDbModel.surveyquestionoption" />
+          <EntitySet Name="surveyquestionoptions_audit" EntityType="OBCRMDbModel.surveyquestionoptions_audit" />
+          <EntitySet Name="surveyquestionoptions_surveyquestionresponses" EntityType="OBCRMDbModel.surveyquestionoptions_surveyquestionresponses" />
+          <EntitySet Name="surveyquestionresponses" EntityType="OBCRMDbModel.surveyquestionrespons" />
+          <EntitySet Name="surveyquestionresponses_audit" EntityType="OBCRMDbModel.surveyquestionresponses_audit" />
+          <EntitySet Name="surveyquestions" EntityType="OBCRMDbModel.surveyquestion" />
+          <EntitySet Name="surveyquestions_audit" EntityType="OBCRMDbModel.surveyquestions_audit" />
+          <EntitySet Name="surveyresponses" EntityType="OBCRMDbModel.surveyrespons" />
+          <EntitySet Name="surveyresponses_audit" EntityType="OBCRMDbModel.surveyresponses_audit" />
+          <EntitySet Name="surveys" EntityType="OBCRMDbModel.survey" />
+          <EntitySet Name="surveys_audit" EntityType="OBCRMDbModel.surveys_audit" />
+          <EntitySet Name="tasks" EntityType="OBCRMDbModel.task" />
+          <EntitySet Name="templatesectionlines" EntityType="OBCRMDbModel.templatesectionline" />
+          <EntitySet Name="trackers" EntityType="OBCRMDbModel.tracker" />
+          <EntitySet Name="upgrade_history" EntityType="OBCRMDbModel.upgrade_history" />
+          <EntitySet Name="user_preferences" EntityType="OBCRMDbModel.user_preferences" />
+          <EntitySet Name="users" EntityType="OBCRMDbModel.user" />
+          <EntitySet Name="users_last_import" EntityType="OBCRMDbModel.users_last_import" />
+          <EntitySet Name="users_password_link" EntityType="OBCRMDbModel.users_password_link" />
+          <EntitySet Name="users_signatures" EntityType="OBCRMDbModel.users_signatures" />
+          <EntitySet Name="vcals" EntityType="OBCRMDbModel.vcal" />
+          <EntitySet Name="address_book" EntityType="OBCRMDbModel.address_book" />
         </EntityContainer>
         <EntityType Name="account">
           <Key>
@@ -7717,9 +7717,9 @@ FROM `address_book` AS `address_book`</DefiningQuery>
       <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
         <Alias Key="Model" Value="Model1" />
         <Alias Key="Target" Value="Model1.Store" />
-        <EntityContainerMapping CdmEntityContainer="OBCRMContainer" StorageEntityContainer="Model1StoreContainer">
+        <EntityContainerMapping CdmEntityContainer="OBCRMDbEntities" StorageEntityContainer="Model1StoreContainer">
           <EntitySetMapping Name="accounts">
-            <EntityTypeMapping TypeName="OBCRM.account">
+            <EntityTypeMapping TypeName="OBCRMDbModel.account">
               <MappingFragment StoreEntitySet="accounts">
                 <ScalarProperty Name="campaign_id" ColumnName="campaign_id" />
                 <ScalarProperty Name="sic_code" ColumnName="sic_code" />
@@ -7758,7 +7758,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="accounts_audit">
-            <EntityTypeMapping TypeName="OBCRM.accounts_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.accounts_audit">
               <MappingFragment StoreEntitySet="accounts_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -7774,7 +7774,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="accounts_bugs">
-            <EntityTypeMapping TypeName="OBCRM.accounts_bugs">
+            <EntityTypeMapping TypeName="OBCRMDbModel.accounts_bugs">
               <MappingFragment StoreEntitySet="accounts_bugs">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -7785,7 +7785,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="accounts_cases">
-            <EntityTypeMapping TypeName="OBCRM.accounts_cases">
+            <EntityTypeMapping TypeName="OBCRMDbModel.accounts_cases">
               <MappingFragment StoreEntitySet="accounts_cases">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -7796,7 +7796,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="accounts_contacts">
-            <EntityTypeMapping TypeName="OBCRM.accounts_contacts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.accounts_contacts">
               <MappingFragment StoreEntitySet="accounts_contacts">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -7807,7 +7807,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="accounts_cstm">
-            <EntityTypeMapping TypeName="OBCRM.accounts_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.accounts_cstm">
               <MappingFragment StoreEntitySet="accounts_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -7818,7 +7818,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="accounts_opportunities">
-            <EntityTypeMapping TypeName="OBCRM.accounts_opportunities">
+            <EntityTypeMapping TypeName="OBCRMDbModel.accounts_opportunities">
               <MappingFragment StoreEntitySet="accounts_opportunities">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -7829,7 +7829,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="acl_actions">
-            <EntityTypeMapping TypeName="OBCRM.acl_actions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.acl_actions">
               <MappingFragment StoreEntitySet="acl_actions">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="aclaccess" ColumnName="aclaccess" />
@@ -7845,7 +7845,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="acl_roles">
-            <EntityTypeMapping TypeName="OBCRM.acl_roles">
+            <EntityTypeMapping TypeName="OBCRMDbModel.acl_roles">
               <MappingFragment StoreEntitySet="acl_roles">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="description" ColumnName="description" />
@@ -7859,7 +7859,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="acl_roles_actions">
-            <EntityTypeMapping TypeName="OBCRM.acl_roles_actions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.acl_roles_actions">
               <MappingFragment StoreEntitySet="acl_roles_actions">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -7871,7 +7871,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="acl_roles_users">
-            <EntityTypeMapping TypeName="OBCRM.acl_roles_users">
+            <EntityTypeMapping TypeName="OBCRMDbModel.acl_roles_users">
               <MappingFragment StoreEntitySet="acl_roles_users">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -7882,7 +7882,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="alerts">
-            <EntityTypeMapping TypeName="OBCRM.alert">
+            <EntityTypeMapping TypeName="OBCRMDbModel.alert">
               <MappingFragment StoreEntitySet="alerts">
                 <ScalarProperty Name="reminder_id" ColumnName="reminder_id" />
                 <ScalarProperty Name="url_redirect" ColumnName="url_redirect" />
@@ -7902,7 +7902,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_projecttemplates">
-            <EntityTypeMapping TypeName="OBCRM.am_projecttemplates">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_projecttemplates">
               <MappingFragment StoreEntitySet="am_projecttemplates">
                 <ScalarProperty Name="override_business_hours" ColumnName="override_business_hours" />
                 <ScalarProperty Name="priority" ColumnName="priority" />
@@ -7920,7 +7920,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_projecttemplates_audit">
-            <EntityTypeMapping TypeName="OBCRM.am_projecttemplates_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_projecttemplates_audit">
               <MappingFragment StoreEntitySet="am_projecttemplates_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -7936,7 +7936,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_projecttemplates_contacts_1_c">
-            <EntityTypeMapping TypeName="OBCRM.am_projecttemplates_contacts_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_projecttemplates_contacts_1_c">
               <MappingFragment StoreEntitySet="am_projecttemplates_contacts_1_c">
                 <ScalarProperty Name="contacts_idb" ColumnName="contacts_idb" />
                 <ScalarProperty Name="am_projecttemplates_ida" ColumnName="am_projecttemplates_ida" />
@@ -7947,7 +7947,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_projecttemplates_project_1_c">
-            <EntityTypeMapping TypeName="OBCRM.am_projecttemplates_project_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_projecttemplates_project_1_c">
               <MappingFragment StoreEntitySet="am_projecttemplates_project_1_c">
                 <ScalarProperty Name="am_projecttemplates_project_1project_idb" ColumnName="am_projecttemplates_project_1project_idb" />
                 <ScalarProperty Name="am_projecttemplates_project_1am_projecttemplates_ida" ColumnName="am_projecttemplates_project_1am_projecttemplates_ida" />
@@ -7958,7 +7958,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_projecttemplates_users_1_c">
-            <EntityTypeMapping TypeName="OBCRM.am_projecttemplates_users_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_projecttemplates_users_1_c">
               <MappingFragment StoreEntitySet="am_projecttemplates_users_1_c">
                 <ScalarProperty Name="users_idb" ColumnName="users_idb" />
                 <ScalarProperty Name="am_projecttemplates_ida" ColumnName="am_projecttemplates_ida" />
@@ -7969,7 +7969,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_tasktemplates">
-            <EntityTypeMapping TypeName="OBCRM.am_tasktemplates">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_tasktemplates">
               <MappingFragment StoreEntitySet="am_tasktemplates">
                 <ScalarProperty Name="duration" ColumnName="duration" />
                 <ScalarProperty Name="utilization" ColumnName="utilization" />
@@ -7995,7 +7995,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_tasktemplates_am_projecttemplates_c">
-            <EntityTypeMapping TypeName="OBCRM.am_tasktemplates_am_projecttemplates_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_tasktemplates_am_projecttemplates_c">
               <MappingFragment StoreEntitySet="am_tasktemplates_am_projecttemplates_c">
                 <ScalarProperty Name="am_tasktemplates_am_projecttemplatesam_tasktemplates_idb" ColumnName="am_tasktemplates_am_projecttemplatesam_tasktemplates_idb" />
                 <ScalarProperty Name="am_tasktemplates_am_projecttemplatesam_projecttemplates_ida" ColumnName="am_tasktemplates_am_projecttemplatesam_projecttemplates_ida" />
@@ -8006,7 +8006,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="am_tasktemplates_audit">
-            <EntityTypeMapping TypeName="OBCRM.am_tasktemplates_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.am_tasktemplates_audit">
               <MappingFragment StoreEntitySet="am_tasktemplates_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8022,7 +8022,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aobh_businesshours">
-            <EntityTypeMapping TypeName="OBCRM.aobh_businesshours">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aobh_businesshours">
               <MappingFragment StoreEntitySet="aobh_businesshours">
                 <ScalarProperty Name="day" ColumnName="day" />
                 <ScalarProperty Name="open_status" ColumnName="open_status" />
@@ -8040,7 +8040,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aod_index">
-            <EntityTypeMapping TypeName="OBCRM.aod_index">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aod_index">
               <MappingFragment StoreEntitySet="aod_index">
                 <ScalarProperty Name="location" ColumnName="location" />
                 <ScalarProperty Name="last_optimised" ColumnName="last_optimised" />
@@ -8057,7 +8057,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aod_index_audit">
-            <EntityTypeMapping TypeName="OBCRM.aod_index_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aod_index_audit">
               <MappingFragment StoreEntitySet="aod_index_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8073,7 +8073,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aod_indexevent">
-            <EntityTypeMapping TypeName="OBCRM.aod_indexevent">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aod_indexevent">
               <MappingFragment StoreEntitySet="aod_indexevent">
                 <ScalarProperty Name="record_module" ColumnName="record_module" />
                 <ScalarProperty Name="record_id" ColumnName="record_id" />
@@ -8092,7 +8092,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aod_indexevent_audit">
-            <EntityTypeMapping TypeName="OBCRM.aod_indexevent_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aod_indexevent_audit">
               <MappingFragment StoreEntitySet="aod_indexevent_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8108,7 +8108,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aok_knowledge_base_categories">
-            <EntityTypeMapping TypeName="OBCRM.aok_knowledge_base_categories">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aok_knowledge_base_categories">
               <MappingFragment StoreEntitySet="aok_knowledge_base_categories">
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
@@ -8123,7 +8123,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aok_knowledge_base_categories_audit">
-            <EntityTypeMapping TypeName="OBCRM.aok_knowledge_base_categories_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aok_knowledge_base_categories_audit">
               <MappingFragment StoreEntitySet="aok_knowledge_base_categories_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8139,7 +8139,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aok_knowledgebase">
-            <EntityTypeMapping TypeName="OBCRM.aok_knowledgebase">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aok_knowledgebase">
               <MappingFragment StoreEntitySet="aok_knowledgebase">
                 <ScalarProperty Name="user_id1_c" ColumnName="user_id1_c" />
                 <ScalarProperty Name="user_id_c" ColumnName="user_id_c" />
@@ -8159,7 +8159,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aok_knowledgebase_audit">
-            <EntityTypeMapping TypeName="OBCRM.aok_knowledgebase_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aok_knowledgebase_audit">
               <MappingFragment StoreEntitySet="aok_knowledgebase_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8175,7 +8175,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aok_knowledgebase_categories">
-            <EntityTypeMapping TypeName="OBCRM.aok_knowledgebase_categories">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aok_knowledgebase_categories">
               <MappingFragment StoreEntitySet="aok_knowledgebase_categories">
                 <ScalarProperty Name="aok_knowledge_base_categories_id" ColumnName="aok_knowledge_base_categories_id" />
                 <ScalarProperty Name="aok_knowledgebase_id" ColumnName="aok_knowledgebase_id" />
@@ -8186,7 +8186,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aop_case_events">
-            <EntityTypeMapping TypeName="OBCRM.aop_case_events">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aop_case_events">
               <MappingFragment StoreEntitySet="aop_case_events">
                 <ScalarProperty Name="case_id" ColumnName="case_id" />
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
@@ -8202,7 +8202,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aop_case_events_audit">
-            <EntityTypeMapping TypeName="OBCRM.aop_case_events_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aop_case_events_audit">
               <MappingFragment StoreEntitySet="aop_case_events_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8218,7 +8218,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aop_case_updates">
-            <EntityTypeMapping TypeName="OBCRM.aop_case_updates">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aop_case_updates">
               <MappingFragment StoreEntitySet="aop_case_updates">
                 <ScalarProperty Name="internal" ColumnName="internal" />
                 <ScalarProperty Name="contact_id" ColumnName="contact_id" />
@@ -8236,7 +8236,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aop_case_updates_audit">
-            <EntityTypeMapping TypeName="OBCRM.aop_case_updates_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aop_case_updates_audit">
               <MappingFragment StoreEntitySet="aop_case_updates_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8252,7 +8252,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aor_charts">
-            <EntityTypeMapping TypeName="OBCRM.aor_charts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aor_charts">
               <MappingFragment StoreEntitySet="aor_charts">
                 <ScalarProperty Name="y_field" ColumnName="y_field" />
                 <ScalarProperty Name="x_field" ColumnName="x_field" />
@@ -8270,7 +8270,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aor_conditions">
-            <EntityTypeMapping TypeName="OBCRM.aor_conditions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aor_conditions">
               <MappingFragment StoreEntitySet="aor_conditions">
                 <ScalarProperty Name="parameter" ColumnName="parameter" />
                 <ScalarProperty Name="value" ColumnName="value" />
@@ -8294,7 +8294,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aor_fields">
-            <EntityTypeMapping TypeName="OBCRM.aor_fields">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aor_fields">
               <MappingFragment StoreEntitySet="aor_fields">
                 <ScalarProperty Name="group_display" ColumnName="group_display" />
                 <ScalarProperty Name="group_order" ColumnName="group_order" />
@@ -8323,7 +8323,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aor_reports">
-            <EntityTypeMapping TypeName="OBCRM.aor_reports">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aor_reports">
               <MappingFragment StoreEntitySet="aor_reports">
                 <ScalarProperty Name="graphs_per_row" ColumnName="graphs_per_row" />
                 <ScalarProperty Name="report_module" ColumnName="report_module" />
@@ -8340,7 +8340,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aor_reports_audit">
-            <EntityTypeMapping TypeName="OBCRM.aor_reports_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aor_reports_audit">
               <MappingFragment StoreEntitySet="aor_reports_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8356,7 +8356,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aor_scheduled_reports">
-            <EntityTypeMapping TypeName="OBCRM.aor_scheduled_reports">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aor_scheduled_reports">
               <MappingFragment StoreEntitySet="aor_scheduled_reports">
                 <ScalarProperty Name="aor_report_id" ColumnName="aor_report_id" />
                 <ScalarProperty Name="email_recipients" ColumnName="email_recipients" />
@@ -8375,7 +8375,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_contracts">
-            <EntityTypeMapping TypeName="OBCRM.aos_contracts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_contracts">
               <MappingFragment StoreEntitySet="aos_contracts">
                 <ScalarProperty Name="total_amount_usdollar" ColumnName="total_amount_usdollar" />
                 <ScalarProperty Name="total_amount" ColumnName="total_amount" />
@@ -8420,7 +8420,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_contracts_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_contracts_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_contracts_audit">
               <MappingFragment StoreEntitySet="aos_contracts_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8436,7 +8436,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_contracts_documents">
-            <EntityTypeMapping TypeName="OBCRM.aos_contracts_documents">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_contracts_documents">
               <MappingFragment StoreEntitySet="aos_contracts_documents">
                 <ScalarProperty Name="document_revision_id" ColumnName="document_revision_id" />
                 <ScalarProperty Name="documents_id" ColumnName="documents_id" />
@@ -8448,7 +8448,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_invoices">
-            <EntityTypeMapping TypeName="OBCRM.aos_invoices">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_invoices">
               <MappingFragment StoreEntitySet="aos_invoices">
                 <ScalarProperty Name="subtotal_tax_amount_usdollar" ColumnName="subtotal_tax_amount_usdollar" />
                 <ScalarProperty Name="subtotal_tax_amount" ColumnName="subtotal_tax_amount" />
@@ -8500,7 +8500,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_invoices_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_invoices_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_invoices_audit">
               <MappingFragment StoreEntitySet="aos_invoices_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8516,7 +8516,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_line_item_groups">
-            <EntityTypeMapping TypeName="OBCRM.aos_line_item_groups">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_line_item_groups">
               <MappingFragment StoreEntitySet="aos_line_item_groups">
                 <ScalarProperty Name="currency_id" ColumnName="currency_id" />
                 <ScalarProperty Name="number" ColumnName="number" />
@@ -8547,7 +8547,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_line_item_groups_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_line_item_groups_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_line_item_groups_audit">
               <MappingFragment StoreEntitySet="aos_line_item_groups_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8563,7 +8563,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_pdf_templates">
-            <EntityTypeMapping TypeName="OBCRM.aos_pdf_templates">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_pdf_templates">
               <MappingFragment StoreEntitySet="aos_pdf_templates">
                 <ScalarProperty Name="orientation" ColumnName="orientation" />
                 <ScalarProperty Name="page_size" ColumnName="page_size" />
@@ -8590,7 +8590,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_pdf_templates_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_pdf_templates_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_pdf_templates_audit">
               <MappingFragment StoreEntitySet="aos_pdf_templates_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8606,7 +8606,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_product_categories">
-            <EntityTypeMapping TypeName="OBCRM.aos_product_categories">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_product_categories">
               <MappingFragment StoreEntitySet="aos_product_categories">
                 <ScalarProperty Name="parent_category_id" ColumnName="parent_category_id" />
                 <ScalarProperty Name="is_parent" ColumnName="is_parent" />
@@ -8623,7 +8623,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_product_categories_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_product_categories_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_product_categories_audit">
               <MappingFragment StoreEntitySet="aos_product_categories_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8639,7 +8639,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_products">
-            <EntityTypeMapping TypeName="OBCRM.aos_products">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_products">
               <MappingFragment StoreEntitySet="aos_products">
                 <ScalarProperty Name="aos_product_category_id" ColumnName="aos_product_category_id" />
                 <ScalarProperty Name="product_image" ColumnName="product_image" />
@@ -8667,7 +8667,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_products_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_products_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_products_audit">
               <MappingFragment StoreEntitySet="aos_products_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8683,7 +8683,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_products_quotes">
-            <EntityTypeMapping TypeName="OBCRM.aos_products_quotes">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_products_quotes">
               <MappingFragment StoreEntitySet="aos_products_quotes">
                 <ScalarProperty Name="group_id" ColumnName="group_id" />
                 <ScalarProperty Name="product_id" ColumnName="product_id" />
@@ -8723,7 +8723,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_products_quotes_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_products_quotes_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_products_quotes_audit">
               <MappingFragment StoreEntitySet="aos_products_quotes_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8739,7 +8739,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_quotes">
-            <EntityTypeMapping TypeName="OBCRM.aos_quotes">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_quotes">
               <MappingFragment StoreEntitySet="aos_quotes">
                 <ScalarProperty Name="subtotal_tax_amount_usdollar" ColumnName="subtotal_tax_amount_usdollar" />
                 <ScalarProperty Name="subtotal_tax_amount" ColumnName="subtotal_tax_amount" />
@@ -8794,7 +8794,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_quotes_aos_invoices_c">
-            <EntityTypeMapping TypeName="OBCRM.aos_quotes_aos_invoices_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_quotes_aos_invoices_c">
               <MappingFragment StoreEntitySet="aos_quotes_aos_invoices_c">
                 <ScalarProperty Name="aos_quotes6b83nvoices_idb" ColumnName="aos_quotes6b83nvoices_idb" />
                 <ScalarProperty Name="aos_quotes77d9_quotes_ida" ColumnName="aos_quotes77d9_quotes_ida" />
@@ -8805,7 +8805,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_quotes_audit">
-            <EntityTypeMapping TypeName="OBCRM.aos_quotes_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_quotes_audit">
               <MappingFragment StoreEntitySet="aos_quotes_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8821,7 +8821,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_quotes_os_contracts_c">
-            <EntityTypeMapping TypeName="OBCRM.aos_quotes_os_contracts_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_quotes_os_contracts_c">
               <MappingFragment StoreEntitySet="aos_quotes_os_contracts_c">
                 <ScalarProperty Name="aos_quotes4dc0ntracts_idb" ColumnName="aos_quotes4dc0ntracts_idb" />
                 <ScalarProperty Name="aos_quotese81e_quotes_ida" ColumnName="aos_quotese81e_quotes_ida" />
@@ -8832,7 +8832,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aos_quotes_project_c">
-            <EntityTypeMapping TypeName="OBCRM.aos_quotes_project_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aos_quotes_project_c">
               <MappingFragment StoreEntitySet="aos_quotes_project_c">
                 <ScalarProperty Name="aos_quotes7207project_idb" ColumnName="aos_quotes7207project_idb" />
                 <ScalarProperty Name="aos_quotes1112_quotes_ida" ColumnName="aos_quotes1112_quotes_ida" />
@@ -8843,7 +8843,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aow_actions">
-            <EntityTypeMapping TypeName="OBCRM.aow_actions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aow_actions">
               <MappingFragment StoreEntitySet="aow_actions">
                 <ScalarProperty Name="parameters" ColumnName="parameters" />
                 <ScalarProperty Name="action" ColumnName="action" />
@@ -8861,7 +8861,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aow_conditions">
-            <EntityTypeMapping TypeName="OBCRM.aow_conditions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aow_conditions">
               <MappingFragment StoreEntitySet="aow_conditions">
                 <ScalarProperty Name="value" ColumnName="value" />
                 <ScalarProperty Name="value_type" ColumnName="value_type" />
@@ -8882,7 +8882,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aow_processed">
-            <EntityTypeMapping TypeName="OBCRM.aow_processed">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aow_processed">
               <MappingFragment StoreEntitySet="aow_processed">
                 <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="parent_type" ColumnName="parent_type" />
@@ -8900,7 +8900,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aow_processed_aow_actions">
-            <EntityTypeMapping TypeName="OBCRM.aow_processed_aow_actions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aow_processed_aow_actions">
               <MappingFragment StoreEntitySet="aow_processed_aow_actions">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -8912,7 +8912,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aow_workflow">
-            <EntityTypeMapping TypeName="OBCRM.aow_workflow">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aow_workflow">
               <MappingFragment StoreEntitySet="aow_workflow">
                 <ScalarProperty Name="multiple_runs" ColumnName="multiple_runs" />
                 <ScalarProperty Name="run_when" ColumnName="run_when" />
@@ -8932,7 +8932,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="aow_workflow_audit">
-            <EntityTypeMapping TypeName="OBCRM.aow_workflow_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.aow_workflow_audit">
               <MappingFragment StoreEntitySet="aow_workflow_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8948,7 +8948,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="bugs">
-            <EntityTypeMapping TypeName="OBCRM.bug">
+            <EntityTypeMapping TypeName="OBCRMDbModel.bug">
               <MappingFragment StoreEntitySet="bugs">
                 <ScalarProperty Name="product_category" ColumnName="product_category" />
                 <ScalarProperty Name="source" ColumnName="source" />
@@ -8973,7 +8973,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="bugs_audit">
-            <EntityTypeMapping TypeName="OBCRM.bugs_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.bugs_audit">
               <MappingFragment StoreEntitySet="bugs_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -8989,7 +8989,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="calls">
-            <EntityTypeMapping TypeName="OBCRM.call">
+            <EntityTypeMapping TypeName="OBCRMDbModel.call">
               <MappingFragment StoreEntitySet="calls">
                 <ScalarProperty Name="recurring_source" ColumnName="recurring_source" />
                 <ScalarProperty Name="repeat_parent_id" ColumnName="repeat_parent_id" />
@@ -9023,7 +9023,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="calls_contacts">
-            <EntityTypeMapping TypeName="OBCRM.calls_contacts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.calls_contacts">
               <MappingFragment StoreEntitySet="calls_contacts">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9036,7 +9036,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="calls_leads">
-            <EntityTypeMapping TypeName="OBCRM.calls_leads">
+            <EntityTypeMapping TypeName="OBCRMDbModel.calls_leads">
               <MappingFragment StoreEntitySet="calls_leads">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9049,7 +9049,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="calls_reschedule">
-            <EntityTypeMapping TypeName="OBCRM.calls_reschedule">
+            <EntityTypeMapping TypeName="OBCRMDbModel.calls_reschedule">
               <MappingFragment StoreEntitySet="calls_reschedule">
                 <ScalarProperty Name="call_id" ColumnName="call_id" />
                 <ScalarProperty Name="reason" ColumnName="reason" />
@@ -9066,7 +9066,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="calls_reschedule_audit">
-            <EntityTypeMapping TypeName="OBCRM.calls_reschedule_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.calls_reschedule_audit">
               <MappingFragment StoreEntitySet="calls_reschedule_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9082,7 +9082,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="calls_users">
-            <EntityTypeMapping TypeName="OBCRM.calls_users">
+            <EntityTypeMapping TypeName="OBCRMDbModel.calls_users">
               <MappingFragment StoreEntitySet="calls_users">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9095,7 +9095,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="campaign_log">
-            <EntityTypeMapping TypeName="OBCRM.campaign_log">
+            <EntityTypeMapping TypeName="OBCRMDbModel.campaign_log">
               <MappingFragment StoreEntitySet="campaign_log">
                 <ScalarProperty Name="marketing_id" ColumnName="marketing_id" />
                 <ScalarProperty Name="more_information" ColumnName="more_information" />
@@ -9117,7 +9117,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="campaign_trkrs">
-            <EntityTypeMapping TypeName="OBCRM.campaign_trkrs">
+            <EntityTypeMapping TypeName="OBCRMDbModel.campaign_trkrs">
               <MappingFragment StoreEntitySet="campaign_trkrs">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="is_optout" ColumnName="is_optout" />
@@ -9134,7 +9134,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="campaigns">
-            <EntityTypeMapping TypeName="OBCRM.campaign">
+            <EntityTypeMapping TypeName="OBCRMDbModel.campaign">
               <MappingFragment StoreEntitySet="campaigns">
                 <ScalarProperty Name="survey_id" ColumnName="survey_id" />
                 <ScalarProperty Name="frequency" ColumnName="frequency" />
@@ -9166,7 +9166,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="campaigns_audit">
-            <EntityTypeMapping TypeName="OBCRM.campaigns_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.campaigns_audit">
               <MappingFragment StoreEntitySet="campaigns_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9182,7 +9182,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cases">
-            <EntityTypeMapping TypeName="OBCRM.case">
+            <EntityTypeMapping TypeName="OBCRMDbModel.case">
               <MappingFragment StoreEntitySet="cases">
                 <ScalarProperty Name="contact_created_by_id" ColumnName="contact_created_by_id" />
                 <ScalarProperty Name="state" ColumnName="state" />
@@ -9206,7 +9206,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cases_audit">
-            <EntityTypeMapping TypeName="OBCRM.cases_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.cases_audit">
               <MappingFragment StoreEntitySet="cases_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9222,7 +9222,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cases_bugs">
-            <EntityTypeMapping TypeName="OBCRM.cases_bugs">
+            <EntityTypeMapping TypeName="OBCRMDbModel.cases_bugs">
               <MappingFragment StoreEntitySet="cases_bugs">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9233,7 +9233,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cases_cstm">
-            <EntityTypeMapping TypeName="OBCRM.cases_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.cases_cstm">
               <MappingFragment StoreEntitySet="cases_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -9244,7 +9244,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contacts">
-            <EntityTypeMapping TypeName="OBCRM.contact">
+            <EntityTypeMapping TypeName="OBCRMDbModel.contact">
               <MappingFragment StoreEntitySet="contacts">
                 <ScalarProperty Name="portal_user_type" ColumnName="portal_user_type" />
                 <ScalarProperty Name="portal_account_disabled" ColumnName="portal_account_disabled" />
@@ -9292,7 +9292,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contacts_audit">
-            <EntityTypeMapping TypeName="OBCRM.contacts_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.contacts_audit">
               <MappingFragment StoreEntitySet="contacts_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9308,7 +9308,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contacts_bugs">
-            <EntityTypeMapping TypeName="OBCRM.contacts_bugs">
+            <EntityTypeMapping TypeName="OBCRMDbModel.contacts_bugs">
               <MappingFragment StoreEntitySet="contacts_bugs">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9320,7 +9320,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contacts_cases">
-            <EntityTypeMapping TypeName="OBCRM.contacts_cases">
+            <EntityTypeMapping TypeName="OBCRMDbModel.contacts_cases">
               <MappingFragment StoreEntitySet="contacts_cases">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9332,7 +9332,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contacts_cstm">
-            <EntityTypeMapping TypeName="OBCRM.contacts_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.contacts_cstm">
               <MappingFragment StoreEntitySet="contacts_cstm">
                 <ScalarProperty Name="orgbubblepackage_c" ColumnName="orgbubblepackage_c" />
                 <ScalarProperty Name="allmybiopackage_c" ColumnName="allmybiopackage_c" />
@@ -9351,7 +9351,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="contacts_users">
-            <EntityTypeMapping TypeName="OBCRM.contacts_users">
+            <EntityTypeMapping TypeName="OBCRMDbModel.contacts_users">
               <MappingFragment StoreEntitySet="contacts_users">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9362,7 +9362,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="cron_remove_documents">
-            <EntityTypeMapping TypeName="OBCRM.cron_remove_documents">
+            <EntityTypeMapping TypeName="OBCRMDbModel.cron_remove_documents">
               <MappingFragment StoreEntitySet="cron_remove_documents">
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
                 <ScalarProperty Name="module" ColumnName="module" />
@@ -9372,7 +9372,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="currencies">
-            <EntityTypeMapping TypeName="OBCRM.currency">
+            <EntityTypeMapping TypeName="OBCRMDbModel.currency">
               <MappingFragment StoreEntitySet="currencies">
                 <ScalarProperty Name="created_by" ColumnName="created_by" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9388,7 +9388,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="document_revisions">
-            <EntityTypeMapping TypeName="OBCRM.document_revisions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.document_revisions">
               <MappingFragment StoreEntitySet="document_revisions">
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
@@ -9408,7 +9408,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="documents">
-            <EntityTypeMapping TypeName="OBCRM.document">
+            <EntityTypeMapping TypeName="OBCRMDbModel.document">
               <MappingFragment StoreEntitySet="documents">
                 <ScalarProperty Name="template_type" ColumnName="template_type" />
                 <ScalarProperty Name="is_template" ColumnName="is_template" />
@@ -9436,7 +9436,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="documents_accounts">
-            <EntityTypeMapping TypeName="OBCRM.documents_accounts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.documents_accounts">
               <MappingFragment StoreEntitySet="documents_accounts">
                 <ScalarProperty Name="account_id" ColumnName="account_id" />
                 <ScalarProperty Name="document_id" ColumnName="document_id" />
@@ -9447,7 +9447,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="documents_bugs">
-            <EntityTypeMapping TypeName="OBCRM.documents_bugs">
+            <EntityTypeMapping TypeName="OBCRMDbModel.documents_bugs">
               <MappingFragment StoreEntitySet="documents_bugs">
                 <ScalarProperty Name="bug_id" ColumnName="bug_id" />
                 <ScalarProperty Name="document_id" ColumnName="document_id" />
@@ -9458,7 +9458,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="documents_cases">
-            <EntityTypeMapping TypeName="OBCRM.documents_cases">
+            <EntityTypeMapping TypeName="OBCRMDbModel.documents_cases">
               <MappingFragment StoreEntitySet="documents_cases">
                 <ScalarProperty Name="case_id" ColumnName="case_id" />
                 <ScalarProperty Name="document_id" ColumnName="document_id" />
@@ -9469,7 +9469,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="documents_contacts">
-            <EntityTypeMapping TypeName="OBCRM.documents_contacts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.documents_contacts">
               <MappingFragment StoreEntitySet="documents_contacts">
                 <ScalarProperty Name="contact_id" ColumnName="contact_id" />
                 <ScalarProperty Name="document_id" ColumnName="document_id" />
@@ -9480,7 +9480,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="documents_opportunities">
-            <EntityTypeMapping TypeName="OBCRM.documents_opportunities">
+            <EntityTypeMapping TypeName="OBCRMDbModel.documents_opportunities">
               <MappingFragment StoreEntitySet="documents_opportunities">
                 <ScalarProperty Name="opportunity_id" ColumnName="opportunity_id" />
                 <ScalarProperty Name="document_id" ColumnName="document_id" />
@@ -9491,7 +9491,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="eapms">
-            <EntityTypeMapping TypeName="OBCRM.eapm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.eapm">
               <MappingFragment StoreEntitySet="eapm">
                 <ScalarProperty Name="validated" ColumnName="validated" />
                 <ScalarProperty Name="oauth_secret" ColumnName="oauth_secret" />
@@ -9515,7 +9515,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="email_addr_bean_rel">
-            <EntityTypeMapping TypeName="OBCRM.email_addr_bean_rel">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email_addr_bean_rel">
               <MappingFragment StoreEntitySet="email_addr_bean_rel">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9530,7 +9530,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="email_addresses">
-            <EntityTypeMapping TypeName="OBCRM.email_addresses">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email_addresses">
               <MappingFragment StoreEntitySet="email_addresses">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9549,7 +9549,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="email_addresses_audit">
-            <EntityTypeMapping TypeName="OBCRM.email_addresses_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email_addresses_audit">
               <MappingFragment StoreEntitySet="email_addresses_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9565,7 +9565,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="email_marketing">
-            <EntityTypeMapping TypeName="OBCRM.email_marketing">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email_marketing">
               <MappingFragment StoreEntitySet="email_marketing">
                 <ScalarProperty Name="all_prospect_lists" ColumnName="all_prospect_lists" />
                 <ScalarProperty Name="outbound_email_id" ColumnName="outbound_email_id" />
@@ -9589,7 +9589,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="email_marketing_prospect_lists">
-            <EntityTypeMapping TypeName="OBCRM.email_marketing_prospect_lists">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email_marketing_prospect_lists">
               <MappingFragment StoreEntitySet="email_marketing_prospect_lists">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9600,7 +9600,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="email_templates">
-            <EntityTypeMapping TypeName="OBCRM.email_templates">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email_templates">
               <MappingFragment StoreEntitySet="email_templates">
                 <ScalarProperty Name="type" ColumnName="type" />
                 <ScalarProperty Name="text_only" ColumnName="text_only" />
@@ -9621,7 +9621,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="emailmen">
-            <EntityTypeMapping TypeName="OBCRM.emailman">
+            <EntityTypeMapping TypeName="OBCRMDbModel.emailman">
               <MappingFragment StoreEntitySet="emailman">
                 <ScalarProperty Name="related_confirm_opt_in" ColumnName="related_confirm_opt_in" />
                 <ScalarProperty Name="related_type" ColumnName="related_type" />
@@ -9643,7 +9643,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="emails">
-            <EntityTypeMapping TypeName="OBCRM.email">
+            <EntityTypeMapping TypeName="OBCRMDbModel.email">
               <MappingFragment StoreEntitySet="emails">
                 <ScalarProperty Name="category_id" ColumnName="category_id" />
                 <ScalarProperty Name="uid" ColumnName="uid" />
@@ -9671,7 +9671,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="emails_beans">
-            <EntityTypeMapping TypeName="OBCRM.emails_beans">
+            <EntityTypeMapping TypeName="OBCRMDbModel.emails_beans">
               <MappingFragment StoreEntitySet="emails_beans">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -9684,7 +9684,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="emails_email_addr_rel">
-            <EntityTypeMapping TypeName="OBCRM.emails_email_addr_rel">
+            <EntityTypeMapping TypeName="OBCRMDbModel.emails_email_addr_rel">
               <MappingFragment StoreEntitySet="emails_email_addr_rel">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="email_address_id" ColumnName="email_address_id" />
@@ -9695,7 +9695,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="emails_text">
-            <EntityTypeMapping TypeName="OBCRM.emails_text">
+            <EntityTypeMapping TypeName="OBCRMDbModel.emails_text">
               <MappingFragment StoreEntitySet="emails_text">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="raw_source" ColumnName="raw_source" />
@@ -9711,7 +9711,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="favorites">
-            <EntityTypeMapping TypeName="OBCRM.favorite">
+            <EntityTypeMapping TypeName="OBCRMDbModel.favorite">
               <MappingFragment StoreEntitySet="favorites">
                 <ScalarProperty Name="parent_type" ColumnName="parent_type" />
                 <ScalarProperty Name="parent_id" ColumnName="parent_id" />
@@ -9728,7 +9728,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fields_meta_data">
-            <EntityTypeMapping TypeName="OBCRM.fields_meta_data">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fields_meta_data">
               <MappingFragment StoreEntitySet="fields_meta_data">
                 <ScalarProperty Name="ext4" ColumnName="ext4" />
                 <ScalarProperty Name="ext3" ColumnName="ext3" />
@@ -9755,7 +9755,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="folders">
-            <EntityTypeMapping TypeName="OBCRM.folder">
+            <EntityTypeMapping TypeName="OBCRMDbModel.folder">
               <MappingFragment StoreEntitySet="folders">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="modified_by" ColumnName="modified_by" />
@@ -9773,7 +9773,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="folders_rel">
-            <EntityTypeMapping TypeName="OBCRM.folders_rel">
+            <EntityTypeMapping TypeName="OBCRMDbModel.folders_rel">
               <MappingFragment StoreEntitySet="folders_rel">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="polymorphic_id" ColumnName="polymorphic_id" />
@@ -9784,7 +9784,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="folders_subscriptions">
-            <EntityTypeMapping TypeName="OBCRM.folders_subscriptions">
+            <EntityTypeMapping TypeName="OBCRMDbModel.folders_subscriptions">
               <MappingFragment StoreEntitySet="folders_subscriptions">
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
                 <ScalarProperty Name="folder_id" ColumnName="folder_id" />
@@ -9793,7 +9793,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_event_locations">
-            <EntityTypeMapping TypeName="OBCRM.fp_event_locations">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_event_locations">
               <MappingFragment StoreEntitySet="fp_event_locations">
                 <ScalarProperty Name="capacity" ColumnName="capacity" />
                 <ScalarProperty Name="address_state" ColumnName="address_state" />
@@ -9814,7 +9814,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_event_locations_audit">
-            <EntityTypeMapping TypeName="OBCRM.fp_event_locations_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_event_locations_audit">
               <MappingFragment StoreEntitySet="fp_event_locations_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9830,7 +9830,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_event_locations_fp_events_1_c">
-            <EntityTypeMapping TypeName="OBCRM.fp_event_locations_fp_events_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_event_locations_fp_events_1_c">
               <MappingFragment StoreEntitySet="fp_event_locations_fp_events_1_c">
                 <ScalarProperty Name="fp_event_locations_fp_events_1fp_events_idb" ColumnName="fp_event_locations_fp_events_1fp_events_idb" />
                 <ScalarProperty Name="fp_event_locations_fp_events_1fp_event_locations_ida" ColumnName="fp_event_locations_fp_events_1fp_event_locations_ida" />
@@ -9841,7 +9841,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events">
-            <EntityTypeMapping TypeName="OBCRM.fp_events">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events">
               <MappingFragment StoreEntitySet="fp_events">
                 <ScalarProperty Name="activity_status_type" ColumnName="activity_status_type" />
                 <ScalarProperty Name="decline_redirect" ColumnName="decline_redirect" />
@@ -9866,7 +9866,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events_audit">
-            <EntityTypeMapping TypeName="OBCRM.fp_events_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events_audit">
               <MappingFragment StoreEntitySet="fp_events_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -9882,7 +9882,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events_contacts_c">
-            <EntityTypeMapping TypeName="OBCRM.fp_events_contacts_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events_contacts_c">
               <MappingFragment StoreEntitySet="fp_events_contacts_c">
                 <ScalarProperty Name="email_responded" ColumnName="email_responded" />
                 <ScalarProperty Name="accept_status" ColumnName="accept_status" />
@@ -9896,7 +9896,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events_fp_event_delegates_1_c">
-            <EntityTypeMapping TypeName="OBCRM.fp_events_fp_event_delegates_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events_fp_event_delegates_1_c">
               <MappingFragment StoreEntitySet="fp_events_fp_event_delegates_1_c">
                 <ScalarProperty Name="fp_events_fp_event_delegates_1fp_event_delegates_idb" ColumnName="fp_events_fp_event_delegates_1fp_event_delegates_idb" />
                 <ScalarProperty Name="fp_events_fp_event_delegates_1fp_events_ida" ColumnName="fp_events_fp_event_delegates_1fp_events_ida" />
@@ -9907,7 +9907,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events_fp_event_locations_1_c">
-            <EntityTypeMapping TypeName="OBCRM.fp_events_fp_event_locations_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events_fp_event_locations_1_c">
               <MappingFragment StoreEntitySet="fp_events_fp_event_locations_1_c">
                 <ScalarProperty Name="fp_events_fp_event_locations_1fp_event_locations_idb" ColumnName="fp_events_fp_event_locations_1fp_event_locations_idb" />
                 <ScalarProperty Name="fp_events_fp_event_locations_1fp_events_ida" ColumnName="fp_events_fp_event_locations_1fp_events_ida" />
@@ -9918,7 +9918,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events_leads_1_c">
-            <EntityTypeMapping TypeName="OBCRM.fp_events_leads_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events_leads_1_c">
               <MappingFragment StoreEntitySet="fp_events_leads_1_c">
                 <ScalarProperty Name="email_responded" ColumnName="email_responded" />
                 <ScalarProperty Name="accept_status" ColumnName="accept_status" />
@@ -9932,7 +9932,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="fp_events_prospects_1_c">
-            <EntityTypeMapping TypeName="OBCRM.fp_events_prospects_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.fp_events_prospects_1_c">
               <MappingFragment StoreEntitySet="fp_events_prospects_1_c">
                 <ScalarProperty Name="email_responded" ColumnName="email_responded" />
                 <ScalarProperty Name="accept_status" ColumnName="accept_status" />
@@ -9946,7 +9946,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="import_maps">
-            <EntityTypeMapping TypeName="OBCRM.import_maps">
+            <EntityTypeMapping TypeName="OBCRMDbModel.import_maps">
               <MappingFragment StoreEntitySet="import_maps">
                 <ScalarProperty Name="is_published" ColumnName="is_published" />
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
@@ -9966,7 +9966,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="inbound_email">
-            <EntityTypeMapping TypeName="OBCRM.inbound_email">
+            <EntityTypeMapping TypeName="OBCRMDbModel.inbound_email">
               <MappingFragment StoreEntitySet="inbound_email">
                 <ScalarProperty Name="groupfolder_id" ColumnName="groupfolder_id" />
                 <ScalarProperty Name="is_personal" ColumnName="is_personal" />
@@ -9993,7 +9993,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="inbound_email_autoreply">
-            <EntityTypeMapping TypeName="OBCRM.inbound_email_autoreply">
+            <EntityTypeMapping TypeName="OBCRMDbModel.inbound_email_autoreply">
               <MappingFragment StoreEntitySet="inbound_email_autoreply">
                 <ScalarProperty Name="ie_id" ColumnName="ie_id" />
                 <ScalarProperty Name="autoreplied_to" ColumnName="autoreplied_to" />
@@ -10005,7 +10005,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="inbound_email_cache_ts">
-            <EntityTypeMapping TypeName="OBCRM.inbound_email_cache_ts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.inbound_email_cache_ts">
               <MappingFragment StoreEntitySet="inbound_email_cache_ts">
                 <ScalarProperty Name="ie_timestamp" ColumnName="ie_timestamp" />
                 <ScalarProperty Name="id" ColumnName="id" />
@@ -10013,7 +10013,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_address_cache">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_address_cache">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_address_cache">
               <MappingFragment StoreEntitySet="jjwg_address_cache">
                 <ScalarProperty Name="lng" ColumnName="lng" />
                 <ScalarProperty Name="lat" ColumnName="lat" />
@@ -10030,7 +10030,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_address_cache_audit">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_address_cache_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_address_cache_audit">
               <MappingFragment StoreEntitySet="jjwg_address_cache_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10046,7 +10046,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_areas">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_areas">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_areas">
               <MappingFragment StoreEntitySet="jjwg_areas">
                 <ScalarProperty Name="coordinates" ColumnName="coordinates" />
                 <ScalarProperty Name="country" ColumnName="country" />
@@ -10065,7 +10065,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_areas_audit">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_areas_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_areas_audit">
               <MappingFragment StoreEntitySet="jjwg_areas_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10081,7 +10081,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_maps">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_maps">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_maps">
               <MappingFragment StoreEntitySet="jjwg_maps">
                 <ScalarProperty Name="parent_id" ColumnName="parent_id" />
                 <ScalarProperty Name="parent_type" ColumnName="parent_type" />
@@ -10101,7 +10101,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_maps_audit">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_maps_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_maps_audit">
               <MappingFragment StoreEntitySet="jjwg_maps_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10117,7 +10117,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_maps_jjwg_areas_c">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_maps_jjwg_areas_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_maps_jjwg_areas_c">
               <MappingFragment StoreEntitySet="jjwg_maps_jjwg_areas_c">
                 <ScalarProperty Name="jjwg_maps_41f2g_areas_idb" ColumnName="jjwg_maps_41f2g_areas_idb" />
                 <ScalarProperty Name="jjwg_maps_5304wg_maps_ida" ColumnName="jjwg_maps_5304wg_maps_ida" />
@@ -10128,7 +10128,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_maps_jjwg_markers_c">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_maps_jjwg_markers_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_maps_jjwg_markers_c">
               <MappingFragment StoreEntitySet="jjwg_maps_jjwg_markers_c">
                 <ScalarProperty Name="jjwg_maps_2e31markers_idb" ColumnName="jjwg_maps_2e31markers_idb" />
                 <ScalarProperty Name="jjwg_maps_b229wg_maps_ida" ColumnName="jjwg_maps_b229wg_maps_ida" />
@@ -10139,7 +10139,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_markers">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_markers">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_markers">
               <MappingFragment StoreEntitySet="jjwg_markers">
                 <ScalarProperty Name="marker_image" ColumnName="marker_image" />
                 <ScalarProperty Name="jjwg_maps_lng" ColumnName="jjwg_maps_lng" />
@@ -10160,7 +10160,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="jjwg_markers_audit">
-            <EntityTypeMapping TypeName="OBCRM.jjwg_markers_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.jjwg_markers_audit">
               <MappingFragment StoreEntitySet="jjwg_markers_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10176,7 +10176,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="job_queue">
-            <EntityTypeMapping TypeName="OBCRM.job_queue">
+            <EntityTypeMapping TypeName="OBCRMDbModel.job_queue">
               <MappingFragment StoreEntitySet="job_queue">
                 <ScalarProperty Name="percent_complete" ColumnName="percent_complete" />
                 <ScalarProperty Name="client" ColumnName="client" />
@@ -10201,7 +10201,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="leads">
-            <EntityTypeMapping TypeName="OBCRM.lead">
+            <EntityTypeMapping TypeName="OBCRMDbModel.lead">
               <MappingFragment StoreEntitySet="leads">
                 <ScalarProperty Name="website" ColumnName="website" />
                 <ScalarProperty Name="portal_app" ColumnName="portal_app" />
@@ -10261,7 +10261,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="leads_audit">
-            <EntityTypeMapping TypeName="OBCRM.leads_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.leads_audit">
               <MappingFragment StoreEntitySet="leads_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10277,7 +10277,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="leads_cstm">
-            <EntityTypeMapping TypeName="OBCRM.leads_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.leads_cstm">
               <MappingFragment StoreEntitySet="leads_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -10288,7 +10288,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="linked_documents">
-            <EntityTypeMapping TypeName="OBCRM.linked_documents">
+            <EntityTypeMapping TypeName="OBCRMDbModel.linked_documents">
               <MappingFragment StoreEntitySet="linked_documents">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10301,7 +10301,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="meetings">
-            <EntityTypeMapping TypeName="OBCRM.meeting">
+            <EntityTypeMapping TypeName="OBCRMDbModel.meeting">
               <MappingFragment StoreEntitySet="meetings">
                 <ScalarProperty Name="gsync_lastsync" ColumnName="gsync_lastsync" />
                 <ScalarProperty Name="gsync_id" ColumnName="gsync_id" />
@@ -10345,7 +10345,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="meetings_contacts">
-            <EntityTypeMapping TypeName="OBCRM.meetings_contacts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.meetings_contacts">
               <MappingFragment StoreEntitySet="meetings_contacts">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10358,7 +10358,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="meetings_cstm">
-            <EntityTypeMapping TypeName="OBCRM.meetings_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.meetings_cstm">
               <MappingFragment StoreEntitySet="meetings_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -10369,7 +10369,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="meetings_leads">
-            <EntityTypeMapping TypeName="OBCRM.meetings_leads">
+            <EntityTypeMapping TypeName="OBCRMDbModel.meetings_leads">
               <MappingFragment StoreEntitySet="meetings_leads">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10382,7 +10382,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="meetings_users">
-            <EntityTypeMapping TypeName="OBCRM.meetings_users">
+            <EntityTypeMapping TypeName="OBCRMDbModel.meetings_users">
               <MappingFragment StoreEntitySet="meetings_users">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10395,7 +10395,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="notes">
-            <EntityTypeMapping TypeName="OBCRM.note">
+            <EntityTypeMapping TypeName="OBCRMDbModel.note">
               <MappingFragment StoreEntitySet="notes">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="description" ColumnName="description" />
@@ -10417,7 +10417,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="oauth_consumer">
-            <EntityTypeMapping TypeName="OBCRM.oauth_consumer">
+            <EntityTypeMapping TypeName="OBCRMDbModel.oauth_consumer">
               <MappingFragment StoreEntitySet="oauth_consumer">
                 <ScalarProperty Name="c_secret" ColumnName="c_secret" />
                 <ScalarProperty Name="c_key" ColumnName="c_key" />
@@ -10434,7 +10434,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="oauth_nonce">
-            <EntityTypeMapping TypeName="OBCRM.oauth_nonce">
+            <EntityTypeMapping TypeName="OBCRMDbModel.oauth_nonce">
               <MappingFragment StoreEntitySet="oauth_nonce">
                 <ScalarProperty Name="nonce_ts" ColumnName="nonce_ts" />
                 <ScalarProperty Name="nonce" ColumnName="nonce" />
@@ -10443,7 +10443,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="oauth_tokens">
-            <EntityTypeMapping TypeName="OBCRM.oauth_tokens">
+            <EntityTypeMapping TypeName="OBCRMDbModel.oauth_tokens">
               <MappingFragment StoreEntitySet="oauth_tokens">
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
                 <ScalarProperty Name="callback_url" ColumnName="callback_url" />
@@ -10458,7 +10458,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="oauth2clients">
-            <EntityTypeMapping TypeName="OBCRM.oauth2clients">
+            <EntityTypeMapping TypeName="OBCRMDbModel.oauth2clients">
               <MappingFragment StoreEntitySet="oauth2clients">
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
                 <ScalarProperty Name="duration_unit" ColumnName="duration_unit" />
@@ -10480,7 +10480,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="oauth2tokens">
-            <EntityTypeMapping TypeName="OBCRM.oauth2tokens">
+            <EntityTypeMapping TypeName="OBCRMDbModel.oauth2tokens">
               <MappingFragment StoreEntitySet="oauth2tokens">
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
                 <ScalarProperty Name="client" ColumnName="client" />
@@ -10504,7 +10504,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="opportunities">
-            <EntityTypeMapping TypeName="OBCRM.opportunity">
+            <EntityTypeMapping TypeName="OBCRMDbModel.opportunity">
               <MappingFragment StoreEntitySet="opportunities">
                 <ScalarProperty Name="probability" ColumnName="probability" />
                 <ScalarProperty Name="sales_stage" ColumnName="sales_stage" />
@@ -10529,7 +10529,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="opportunities_audit">
-            <EntityTypeMapping TypeName="OBCRM.opportunities_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.opportunities_audit">
               <MappingFragment StoreEntitySet="opportunities_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10545,7 +10545,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="opportunities_contacts">
-            <EntityTypeMapping TypeName="OBCRM.opportunities_contacts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.opportunities_contacts">
               <MappingFragment StoreEntitySet="opportunities_contacts">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10557,7 +10557,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="opportunities_cstm">
-            <EntityTypeMapping TypeName="OBCRM.opportunities_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.opportunities_cstm">
               <MappingFragment StoreEntitySet="opportunities_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -10568,7 +10568,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="outbound_email">
-            <EntityTypeMapping TypeName="OBCRM.outbound_email">
+            <EntityTypeMapping TypeName="OBCRMDbModel.outbound_email">
               <MappingFragment StoreEntitySet="outbound_email">
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
@@ -10594,7 +10594,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="outbound_email_audit">
-            <EntityTypeMapping TypeName="OBCRM.outbound_email_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.outbound_email_audit">
               <MappingFragment StoreEntitySet="outbound_email_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10610,7 +10610,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects">
-            <EntityTypeMapping TypeName="OBCRM.project">
+            <EntityTypeMapping TypeName="OBCRMDbModel.project">
               <MappingFragment StoreEntitySet="project">
                 <ScalarProperty Name="override_business_hours" ColumnName="override_business_hours" />
                 <ScalarProperty Name="priority" ColumnName="priority" />
@@ -10630,7 +10630,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="project_contacts_1_c">
-            <EntityTypeMapping TypeName="OBCRM.project_contacts_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.project_contacts_1_c">
               <MappingFragment StoreEntitySet="project_contacts_1_c">
                 <ScalarProperty Name="project_contacts_1contacts_idb" ColumnName="project_contacts_1contacts_idb" />
                 <ScalarProperty Name="project_contacts_1project_ida" ColumnName="project_contacts_1project_ida" />
@@ -10641,7 +10641,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="project_cstm">
-            <EntityTypeMapping TypeName="OBCRM.project_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.project_cstm">
               <MappingFragment StoreEntitySet="project_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -10652,7 +10652,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="project_task">
-            <EntityTypeMapping TypeName="OBCRM.project_task">
+            <EntityTypeMapping TypeName="OBCRMDbModel.project_task">
               <MappingFragment StoreEntitySet="project_task">
                 <ScalarProperty Name="utilization" ColumnName="utilization" />
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
@@ -10690,7 +10690,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="project_task_audit">
-            <EntityTypeMapping TypeName="OBCRM.project_task_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.project_task_audit">
               <MappingFragment StoreEntitySet="project_task_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -10706,7 +10706,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="project_users_1_c">
-            <EntityTypeMapping TypeName="OBCRM.project_users_1_c">
+            <EntityTypeMapping TypeName="OBCRMDbModel.project_users_1_c">
               <MappingFragment StoreEntitySet="project_users_1_c">
                 <ScalarProperty Name="project_users_1users_idb" ColumnName="project_users_1users_idb" />
                 <ScalarProperty Name="project_users_1project_ida" ColumnName="project_users_1project_ida" />
@@ -10717,7 +10717,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects_accounts">
-            <EntityTypeMapping TypeName="OBCRM.projects_accounts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.projects_accounts">
               <MappingFragment StoreEntitySet="projects_accounts">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10728,7 +10728,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects_bugs">
-            <EntityTypeMapping TypeName="OBCRM.projects_bugs">
+            <EntityTypeMapping TypeName="OBCRMDbModel.projects_bugs">
               <MappingFragment StoreEntitySet="projects_bugs">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10739,7 +10739,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects_cases">
-            <EntityTypeMapping TypeName="OBCRM.projects_cases">
+            <EntityTypeMapping TypeName="OBCRMDbModel.projects_cases">
               <MappingFragment StoreEntitySet="projects_cases">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10750,7 +10750,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects_contacts">
-            <EntityTypeMapping TypeName="OBCRM.projects_contacts">
+            <EntityTypeMapping TypeName="OBCRMDbModel.projects_contacts">
               <MappingFragment StoreEntitySet="projects_contacts">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10761,7 +10761,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects_opportunities">
-            <EntityTypeMapping TypeName="OBCRM.projects_opportunities">
+            <EntityTypeMapping TypeName="OBCRMDbModel.projects_opportunities">
               <MappingFragment StoreEntitySet="projects_opportunities">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10772,7 +10772,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="projects_products">
-            <EntityTypeMapping TypeName="OBCRM.projects_products">
+            <EntityTypeMapping TypeName="OBCRMDbModel.projects_products">
               <MappingFragment StoreEntitySet="projects_products">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10783,7 +10783,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="prospect_list_campaigns">
-            <EntityTypeMapping TypeName="OBCRM.prospect_list_campaigns">
+            <EntityTypeMapping TypeName="OBCRMDbModel.prospect_list_campaigns">
               <MappingFragment StoreEntitySet="prospect_list_campaigns">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10794,7 +10794,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="prospect_lists">
-            <EntityTypeMapping TypeName="OBCRM.prospect_lists">
+            <EntityTypeMapping TypeName="OBCRMDbModel.prospect_lists">
               <MappingFragment StoreEntitySet="prospect_lists">
                 <ScalarProperty Name="domain_name" ColumnName="domain_name" />
                 <ScalarProperty Name="description" ColumnName="description" />
@@ -10811,7 +10811,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="prospect_lists_prospects">
-            <EntityTypeMapping TypeName="OBCRM.prospect_lists_prospects">
+            <EntityTypeMapping TypeName="OBCRMDbModel.prospect_lists_prospects">
               <MappingFragment StoreEntitySet="prospect_lists_prospects">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10823,7 +10823,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="prospects">
-            <EntityTypeMapping TypeName="OBCRM.prospect">
+            <EntityTypeMapping TypeName="OBCRMDbModel.prospect">
               <MappingFragment StoreEntitySet="prospects">
                 <ScalarProperty Name="campaign_id" ColumnName="campaign_id" />
                 <ScalarProperty Name="account_name" ColumnName="account_name" />
@@ -10869,7 +10869,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="prospects_cstm">
-            <EntityTypeMapping TypeName="OBCRM.prospects_cstm">
+            <EntityTypeMapping TypeName="OBCRMDbModel.prospects_cstm">
               <MappingFragment StoreEntitySet="prospects_cstm">
                 <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
                 <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
@@ -10880,7 +10880,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="relationships">
-            <EntityTypeMapping TypeName="OBCRM.relationship">
+            <EntityTypeMapping TypeName="OBCRMDbModel.relationship">
               <MappingFragment StoreEntitySet="relationships">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="reverse" ColumnName="reverse" />
@@ -10902,7 +10902,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="releases">
-            <EntityTypeMapping TypeName="OBCRM.release">
+            <EntityTypeMapping TypeName="OBCRMDbModel.release">
               <MappingFragment StoreEntitySet="releases">
                 <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="list_order" ColumnName="list_order" />
@@ -10917,7 +10917,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reminders">
-            <EntityTypeMapping TypeName="OBCRM.reminder">
+            <EntityTypeMapping TypeName="OBCRMDbModel.reminder">
               <MappingFragment StoreEntitySet="reminders">
                 <ScalarProperty Name="popup_viewed" ColumnName="popup_viewed" />
                 <ScalarProperty Name="date_willexecute" ColumnName="date_willexecute" />
@@ -10941,7 +10941,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="reminders_invitees">
-            <EntityTypeMapping TypeName="OBCRM.reminders_invitees">
+            <EntityTypeMapping TypeName="OBCRMDbModel.reminders_invitees">
               <MappingFragment StoreEntitySet="reminders_invitees">
                 <ScalarProperty Name="related_invitee_module_id" ColumnName="related_invitee_module_id" />
                 <ScalarProperty Name="related_invitee_module" ColumnName="related_invitee_module" />
@@ -10959,7 +10959,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="roles">
-            <EntityTypeMapping TypeName="OBCRM.role">
+            <EntityTypeMapping TypeName="OBCRMDbModel.role">
               <MappingFragment StoreEntitySet="roles">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="modules" ColumnName="modules" />
@@ -10974,7 +10974,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="roles_modules">
-            <EntityTypeMapping TypeName="OBCRM.roles_modules">
+            <EntityTypeMapping TypeName="OBCRMDbModel.roles_modules">
               <MappingFragment StoreEntitySet="roles_modules">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10986,7 +10986,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="roles_users">
-            <EntityTypeMapping TypeName="OBCRM.roles_users">
+            <EntityTypeMapping TypeName="OBCRMDbModel.roles_users">
               <MappingFragment StoreEntitySet="roles_users">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -10997,7 +10997,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="saved_search">
-            <EntityTypeMapping TypeName="OBCRM.saved_search">
+            <EntityTypeMapping TypeName="OBCRMDbModel.saved_search">
               <MappingFragment StoreEntitySet="saved_search">
                 <ScalarProperty Name="description" ColumnName="description" />
                 <ScalarProperty Name="contents" ColumnName="contents" />
@@ -11012,7 +11012,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="schedulers">
-            <EntityTypeMapping TypeName="OBCRM.scheduler">
+            <EntityTypeMapping TypeName="OBCRMDbModel.scheduler">
               <MappingFragment StoreEntitySet="schedulers">
                 <ScalarProperty Name="catch_up" ColumnName="catch_up" />
                 <ScalarProperty Name="status" ColumnName="status" />
@@ -11034,7 +11034,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="securitygroups">
-            <EntityTypeMapping TypeName="OBCRM.securitygroup">
+            <EntityTypeMapping TypeName="OBCRMDbModel.securitygroup">
               <MappingFragment StoreEntitySet="securitygroups">
                 <ScalarProperty Name="noninheritable" ColumnName="noninheritable" />
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
@@ -11050,7 +11050,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="securitygroups_acl_roles">
-            <EntityTypeMapping TypeName="OBCRM.securitygroups_acl_roles">
+            <EntityTypeMapping TypeName="OBCRMDbModel.securitygroups_acl_roles">
               <MappingFragment StoreEntitySet="securitygroups_acl_roles">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -11061,7 +11061,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="securitygroups_audit">
-            <EntityTypeMapping TypeName="OBCRM.securitygroups_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.securitygroups_audit">
               <MappingFragment StoreEntitySet="securitygroups_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -11077,7 +11077,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="securitygroups_default">
-            <EntityTypeMapping TypeName="OBCRM.securitygroups_default">
+            <EntityTypeMapping TypeName="OBCRMDbModel.securitygroups_default">
               <MappingFragment StoreEntitySet="securitygroups_default">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_modified" ColumnName="date_modified" />
@@ -11088,7 +11088,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="securitygroups_records">
-            <EntityTypeMapping TypeName="OBCRM.securitygroups_records">
+            <EntityTypeMapping TypeName="OBCRMDbModel.securitygroups_records">
               <MappingFragment StoreEntitySet="securitygroups_records">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="created_by" ColumnName="created_by" />
@@ -11102,7 +11102,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="securitygroups_users">
-            <EntityTypeMapping TypeName="OBCRM.securitygroups_users">
+            <EntityTypeMapping TypeName="OBCRMDbModel.securitygroups_users">
               <MappingFragment StoreEntitySet="securitygroups_users">
                 <ScalarProperty Name="noninheritable" ColumnName="noninheritable" />
                 <ScalarProperty Name="primary_group" ColumnName="primary_group" />
@@ -11115,7 +11115,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="spots">
-            <EntityTypeMapping TypeName="OBCRM.spot">
+            <EntityTypeMapping TypeName="OBCRMDbModel.spot">
               <MappingFragment StoreEntitySet="spots">
                 <ScalarProperty Name="type" ColumnName="type" />
                 <ScalarProperty Name="config" ColumnName="config" />
@@ -11132,7 +11132,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="sugarfeeds">
-            <EntityTypeMapping TypeName="OBCRM.sugarfeed">
+            <EntityTypeMapping TypeName="OBCRMDbModel.sugarfeed">
               <MappingFragment StoreEntitySet="sugarfeed">
                 <ScalarProperty Name="link_type" ColumnName="link_type" />
                 <ScalarProperty Name="link_url" ColumnName="link_url" />
@@ -11151,7 +11151,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestionoptions">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestionoption">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestionoption">
               <MappingFragment StoreEntitySet="surveyquestionoptions">
                 <ScalarProperty Name="survey_question_id" ColumnName="survey_question_id" />
                 <ScalarProperty Name="sort_order" ColumnName="sort_order" />
@@ -11168,7 +11168,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestionoptions_audit">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestionoptions_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestionoptions_audit">
               <MappingFragment StoreEntitySet="surveyquestionoptions_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -11184,7 +11184,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestionoptions_surveyquestionresponses">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestionoptions_surveyquestionresponses">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestionoptions_surveyquestionresponses">
               <MappingFragment StoreEntitySet="surveyquestionoptions_surveyquestionresponses">
                 <ScalarProperty Name="surveyq10d4sponses_idb" ColumnName="surveyq10d4sponses_idb" />
                 <ScalarProperty Name="surveyq72c7options_ida" ColumnName="surveyq72c7options_ida" />
@@ -11195,7 +11195,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestionresponses">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestionrespons">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestionrespons">
               <MappingFragment StoreEntitySet="surveyquestionresponses">
                 <ScalarProperty Name="surveyresponse_id" ColumnName="surveyresponse_id" />
                 <ScalarProperty Name="surveyquestion_id" ColumnName="surveyquestion_id" />
@@ -11215,7 +11215,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestionresponses_audit">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestionresponses_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestionresponses_audit">
               <MappingFragment StoreEntitySet="surveyquestionresponses_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -11231,7 +11231,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestions">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestion">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestion">
               <MappingFragment StoreEntitySet="surveyquestions">
                 <ScalarProperty Name="survey_id" ColumnName="survey_id" />
                 <ScalarProperty Name="happiness_question" ColumnName="happiness_question" />
@@ -11250,7 +11250,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyquestions_audit">
-            <EntityTypeMapping TypeName="OBCRM.surveyquestions_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyquestions_audit">
               <MappingFragment StoreEntitySet="surveyquestions_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -11266,7 +11266,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyresponses">
-            <EntityTypeMapping TypeName="OBCRM.surveyrespons">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyrespons">
               <MappingFragment StoreEntitySet="surveyresponses">
                 <ScalarProperty Name="survey_id" ColumnName="survey_id" />
                 <ScalarProperty Name="contact_id" ColumnName="contact_id" />
@@ -11287,7 +11287,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveyresponses_audit">
-            <EntityTypeMapping TypeName="OBCRM.surveyresponses_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveyresponses_audit">
               <MappingFragment StoreEntitySet="surveyresponses_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -11303,7 +11303,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveys">
-            <EntityTypeMapping TypeName="OBCRM.survey">
+            <EntityTypeMapping TypeName="OBCRMDbModel.survey">
               <MappingFragment StoreEntitySet="surveys">
                 <ScalarProperty Name="dissatisfied_text" ColumnName="dissatisfied_text" />
                 <ScalarProperty Name="neither_text" ColumnName="neither_text" />
@@ -11323,7 +11323,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="surveys_audit">
-            <EntityTypeMapping TypeName="OBCRM.surveys_audit">
+            <EntityTypeMapping TypeName="OBCRMDbModel.surveys_audit">
               <MappingFragment StoreEntitySet="surveys_audit">
                 <ScalarProperty Name="after_value_text" ColumnName="after_value_text" />
                 <ScalarProperty Name="before_value_text" ColumnName="before_value_text" />
@@ -11339,7 +11339,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tasks">
-            <EntityTypeMapping TypeName="OBCRM.task">
+            <EntityTypeMapping TypeName="OBCRMDbModel.task">
               <MappingFragment StoreEntitySet="tasks">
                 <ScalarProperty Name="priority" ColumnName="priority" />
                 <ScalarProperty Name="contact_id" ColumnName="contact_id" />
@@ -11363,7 +11363,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="templatesectionlines">
-            <EntityTypeMapping TypeName="OBCRM.templatesectionline">
+            <EntityTypeMapping TypeName="OBCRMDbModel.templatesectionline">
               <MappingFragment StoreEntitySet="templatesectionline">
                 <ScalarProperty Name="ord" ColumnName="ord" />
                 <ScalarProperty Name="grp" ColumnName="grp" />
@@ -11380,7 +11380,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="trackers">
-            <EntityTypeMapping TypeName="OBCRM.tracker">
+            <EntityTypeMapping TypeName="OBCRMDbModel.tracker">
               <MappingFragment StoreEntitySet="tracker">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="visible" ColumnName="visible" />
@@ -11397,7 +11397,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="upgrade_history">
-            <EntityTypeMapping TypeName="OBCRM.upgrade_history">
+            <EntityTypeMapping TypeName="OBCRMDbModel.upgrade_history">
               <MappingFragment StoreEntitySet="upgrade_history">
                 <ScalarProperty Name="enabled" ColumnName="enabled" />
                 <ScalarProperty Name="date_entered" ColumnName="date_entered" />
@@ -11415,7 +11415,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="user_preferences">
-            <EntityTypeMapping TypeName="OBCRM.user_preferences">
+            <EntityTypeMapping TypeName="OBCRMDbModel.user_preferences">
               <MappingFragment StoreEntitySet="user_preferences">
                 <ScalarProperty Name="contents" ColumnName="contents" />
                 <ScalarProperty Name="assigned_user_id" ColumnName="assigned_user_id" />
@@ -11428,7 +11428,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="users">
-            <EntityTypeMapping TypeName="OBCRM.user">
+            <EntityTypeMapping TypeName="OBCRMDbModel.user">
               <MappingFragment StoreEntitySet="users">
                 <ScalarProperty Name="factor_auth_interface" ColumnName="factor_auth_interface" />
                 <ScalarProperty Name="factor_auth" ColumnName="factor_auth" />
@@ -11475,7 +11475,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="users_last_import">
-            <EntityTypeMapping TypeName="OBCRM.users_last_import">
+            <EntityTypeMapping TypeName="OBCRMDbModel.users_last_import">
               <MappingFragment StoreEntitySet="users_last_import">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="bean_id" ColumnName="bean_id" />
@@ -11487,7 +11487,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="users_password_link">
-            <EntityTypeMapping TypeName="OBCRM.users_password_link">
+            <EntityTypeMapping TypeName="OBCRMDbModel.users_password_link">
               <MappingFragment StoreEntitySet="users_password_link">
                 <ScalarProperty Name="deleted" ColumnName="deleted" />
                 <ScalarProperty Name="date_generated" ColumnName="date_generated" />
@@ -11497,7 +11497,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="users_signatures">
-            <EntityTypeMapping TypeName="OBCRM.users_signatures">
+            <EntityTypeMapping TypeName="OBCRMDbModel.users_signatures">
               <MappingFragment StoreEntitySet="users_signatures">
                 <ScalarProperty Name="signature_html" ColumnName="signature_html" />
                 <ScalarProperty Name="signature" ColumnName="signature" />
@@ -11511,7 +11511,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vcals">
-            <EntityTypeMapping TypeName="OBCRM.vcal">
+            <EntityTypeMapping TypeName="OBCRMDbModel.vcal">
               <MappingFragment StoreEntitySet="vcals">
                 <ScalarProperty Name="content" ColumnName="content" />
                 <ScalarProperty Name="source" ColumnName="source" />
@@ -11525,7 +11525,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="address_book">
-            <EntityTypeMapping TypeName="OBCRM.address_book">
+            <EntityTypeMapping TypeName="OBCRMDbModel.address_book">
               <MappingFragment StoreEntitySet="address_book">
                 <ScalarProperty Name="bean_id" ColumnName="bean_id" />
                 <ScalarProperty Name="bean" ColumnName="bean" />

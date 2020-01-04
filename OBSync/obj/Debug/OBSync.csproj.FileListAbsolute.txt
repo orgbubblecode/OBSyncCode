@@ -380,3 +380,6 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.csproj.CoreComp
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.csproj.CopyComplete
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.pdb
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Description.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Description.pdb
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Description.xml
