@@ -7,26 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AllMyBio
+namespace OBSync.Models.OBDataSources
 {
     using System;
     using System.Collections.Generic;
     
     public partial class project
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public project()
-        {
-            this.links = new HashSet<link>();
-        }
-    
-        public int project_id { get; set; }
-        public int user_id { get; set; }
+        public System.Guid id { get; set; }
+        public Nullable<System.DateTime> date_entered { get; set; }
+        public Nullable<System.DateTime> date_modified { get; set; }
+        public Nullable<System.Guid> assigned_user_id { get; set; }
+        public Nullable<System.Guid> modified_user_id { get; set; }
+        public Nullable<System.Guid> created_by { get; set; }
         public string name { get; set; }
-        public System.DateTime date { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<link> links { get; set; }
-        public virtual user user { get; set; }
+        public string description { get; set; }
+        public Nullable<bool> deleted { get; set; }
+        public Nullable<System.DateTime> estimated_start_date { get; set; }
+        public Nullable<System.DateTime> estimated_end_date { get; set; }
+        public string status { get; set; }
+        public string priority { get; set; }
+        public Nullable<bool> override_business_hours { get; set; }
     }
 }

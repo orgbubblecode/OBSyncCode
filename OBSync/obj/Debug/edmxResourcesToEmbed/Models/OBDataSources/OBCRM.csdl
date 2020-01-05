@@ -310,6 +310,14 @@
     <Property Name="jjwg_maps_lat_c" Type="Single" />
     <Property Name="jjwg_maps_geocode_status_c" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="jjwg_maps_address_c" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="allmybio_id_c" Type="Int32" />
+    <Property Name="allmybio_package_c" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="isallmybioactive_c" Type="Boolean" />
+    <Property Name="isallmybiocustomer_c" Type="Boolean" />
+    <Property Name="isorgbubbleactive_c" Type="Boolean" />
+    <Property Name="isorgbubblecustomer_c" Type="Boolean" />
+    <Property Name="orgbubbleid_c" Type="Int32" />
+    <Property Name="orgbubblepackage_c" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="accounts_opportunities">
     <Key>

@@ -12,9 +12,7 @@ namespace OBSync.Models.OBDataSources
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using AllMyBio;
-
-
+    
     public partial class OBCRMDbEntities : DbContext
     {
         public OBCRMDbEntities()

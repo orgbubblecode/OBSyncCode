@@ -92,6 +92,14 @@
     <Property Name="jjwg_maps_lat_c" Type="float" />
     <Property Name="jjwg_maps_geocode_status_c" Type="varchar" MaxLength="255" />
     <Property Name="jjwg_maps_address_c" Type="varchar" MaxLength="255" />
+    <Property Name="allmybio_id_c" Type="int" />
+    <Property Name="allmybio_package_c" Type="varchar" MaxLength="255" />
+    <Property Name="isallmybioactive_c" Type="bool" />
+    <Property Name="isallmybiocustomer_c" Type="bool" />
+    <Property Name="isorgbubbleactive_c" Type="bool" />
+    <Property Name="isorgbubblecustomer_c" Type="bool" />
+    <Property Name="orgbubbleid_c" Type="int" />
+    <Property Name="orgbubblepackage_c" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="accounts_opportunities">
     <Key>
@@ -1454,13 +1462,6 @@ warning 6002: The table/view 'def.orgbubble_obcrm.address_book' does not have a 
     <Property Name="jjwg_maps_geocode_status_c" Type="varchar" MaxLength="255" />
     <Property Name="jjwg_maps_address_c" Type="varchar" MaxLength="255" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'def.orgbubble_obcrm.config' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="config">
-          <Property Name="category" Type="varchar" MaxLength="32" />
-          <Property Name="name" Type="varchar" MaxLength="32" />
-          <Property Name="value" Type="text" />
-        </EntityType>-->
   <EntityType Name="contacts">
     <Key>
       <PropertyRef Name="id" />
@@ -1597,23 +1598,6 @@ warning 6013: The table/view 'def.orgbubble_obcrm.config' does not have a primar
     <Property Name="date_modified" Type="datetime" Precision="0" />
     <Property Name="created_by" Type="guid" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'def.orgbubble_obcrm.custom_fields' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="custom_fields">
-          <Property Name="bean_id" Type="varchar" MaxLength="36" />
-          <Property Name="set_num" Type="int" />
-          <Property Name="field0" Type="varchar" MaxLength="255" />
-          <Property Name="field1" Type="varchar" MaxLength="255" />
-          <Property Name="field2" Type="varchar" MaxLength="255" />
-          <Property Name="field3" Type="varchar" MaxLength="255" />
-          <Property Name="field4" Type="varchar" MaxLength="255" />
-          <Property Name="field5" Type="varchar" MaxLength="255" />
-          <Property Name="field6" Type="varchar" MaxLength="255" />
-          <Property Name="field7" Type="varchar" MaxLength="255" />
-          <Property Name="field8" Type="varchar" MaxLength="255" />
-          <Property Name="field9" Type="varchar" MaxLength="255" />
-          <Property Name="deleted" Type="bool" />
-        </EntityType>-->
   <EntityType Name="document_revisions">
     <Key>
       <PropertyRef Name="id" />
@@ -1780,26 +1764,6 @@ warning 6013: The table/view 'def.orgbubble_obcrm.custom_fields' does not have a
     <Property Name="before_value_text" Type="text" />
     <Property Name="after_value_text" Type="text" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'def.orgbubble_obcrm.email_cache' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="email_cache">
-          <Property Name="ie_id" Type="guid" />
-          <Property Name="mbox" Type="varchar" MaxLength="60" />
-          <Property Name="subject" Type="varchar" MaxLength="255" />
-          <Property Name="fromaddr" Type="varchar" MaxLength="100" />
-          <Property Name="toaddr" Type="varchar" MaxLength="255" />
-          <Property Name="senddate" Type="datetime" Precision="0" />
-          <Property Name="message_id" Type="varchar" MaxLength="255" />
-          <Property Name="mailsize" Type="uint" />
-          <Property Name="imap_uid" Type="uint" />
-          <Property Name="msgno" Type="uint" />
-          <Property Name="recent" Type="tinyint" />
-          <Property Name="flagged" Type="tinyint" />
-          <Property Name="answered" Type="tinyint" />
-          <Property Name="deleted" Type="tinyint" />
-          <Property Name="seen" Type="tinyint" />
-          <Property Name="draft" Type="tinyint" />
-        </EntityType>-->
   <EntityType Name="email_marketing">
     <Key>
       <PropertyRef Name="id" />
@@ -3602,15 +3566,6 @@ warning 6013: The table/view 'def.orgbubble_obcrm.email_cache' does not have a p
     <Property Name="factor_auth" Type="bool" />
     <Property Name="factor_auth_interface" Type="varchar" MaxLength="255" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6013: The table/view 'def.orgbubble_obcrm.users_feeds' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="users_feeds">
-          <Property Name="user_id" Type="varchar" MaxLength="36" />
-          <Property Name="feed_id" Type="varchar" MaxLength="36" />
-          <Property Name="rank" Type="int" />
-          <Property Name="date_modified" Type="datetime" Precision="0" />
-          <Property Name="deleted" Type="bool" />
-        </EntityType>-->
   <EntityType Name="users_last_import">
     <Key>
       <PropertyRef Name="id" />

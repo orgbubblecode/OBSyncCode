@@ -19,5 +19,13 @@ namespace OBSync.Models.OBDataSources
         public Nullable<float> jjwg_maps_lat_c { get; set; }
         public string jjwg_maps_geocode_status_c { get; set; }
         public string jjwg_maps_address_c { get; set; }
+        public Nullable<int> allmybio_id_c { get; set; }
+        public string allmybio_package_c { get; set; }
+        public Nullable<bool> isallmybioactive_c { get; set; }
+        public Nullable<bool> isallmybiocustomer_c { get; set; }
+        public Nullable<bool> isorgbubbleactive_c { get; set; }
+        public Nullable<bool> isorgbubblecustomer_c { get; set; }
+        public Nullable<int> orgbubbleid_c { get; set; }
+        public string orgbubblepackage_c { get; set; }
     }
 }

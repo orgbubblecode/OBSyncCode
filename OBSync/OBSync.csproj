@@ -1085,7 +1085,7 @@
       <DependentUpon>OrgBubbleEntityDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\project.cs">
-      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\projects_accounts.cs">
       <DependentUpon>OBCRM.tt</DependentUpon>
@@ -1244,7 +1244,7 @@
       <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\user.cs">
-      <DependentUpon>AllMyBioEntityDataModel.tt</DependentUpon>
+      <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\OBDataSources\users_last_import.cs">
       <DependentUpon>OBCRM.tt</DependentUpon>

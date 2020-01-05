@@ -94,6 +94,14 @@
     <EntitySetMapping Name="accounts_cstm">
       <EntityTypeMapping TypeName="OBCRMDbModel.accounts_cstm">
         <MappingFragment StoreEntitySet="accounts_cstm">
+          <ScalarProperty Name="orgbubblepackage_c" ColumnName="orgbubblepackage_c" />
+          <ScalarProperty Name="orgbubbleid_c" ColumnName="orgbubbleid_c" />
+          <ScalarProperty Name="isorgbubblecustomer_c" ColumnName="isorgbubblecustomer_c" />
+          <ScalarProperty Name="isorgbubbleactive_c" ColumnName="isorgbubbleactive_c" />
+          <ScalarProperty Name="isallmybiocustomer_c" ColumnName="isallmybiocustomer_c" />
+          <ScalarProperty Name="isallmybioactive_c" ColumnName="isallmybioactive_c" />
+          <ScalarProperty Name="allmybio_package_c" ColumnName="allmybio_package_c" />
+          <ScalarProperty Name="allmybio_id_c" ColumnName="allmybio_id_c" />
           <ScalarProperty Name="jjwg_maps_address_c" ColumnName="jjwg_maps_address_c" />
           <ScalarProperty Name="jjwg_maps_geocode_status_c" ColumnName="jjwg_maps_geocode_status_c" />
           <ScalarProperty Name="jjwg_maps_lat_c" ColumnName="jjwg_maps_lat_c" />

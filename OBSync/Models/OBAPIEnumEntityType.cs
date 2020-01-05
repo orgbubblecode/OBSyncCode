@@ -9,11 +9,23 @@ namespace OBSync.Models
 {
     public enum OBAPIEnumEntityType
     {
-        [Description("It can go for days without eating a single morsel. In the bulb on its back, it stores energy.")]
+        [Description("OrgBubble Account")]
+        OBAccount = 1000,
+
+        [Description("OrgBubble User Information")]
         OBUserInformation = 1001,
+
 
         OBUserLogin = 1002,
 
+
+        [Description("OrgBubble User Email Address")]
+        OBUserEmailAddress = 1003,
+
+
+
+        [Description("AllMyBio Account")]
+        AMBAccount = 2000,
         AMBUserInformation = 2001,
         AMBUserLogin = 2002
 
@@ -72,7 +84,12 @@ namespace OBSync.Models
         SurveyResponses,
         Surveys,
         Tasks,
-        Users
+        Users,
+
+        EmailAddresses,
+        EmailAddressesBeans,
+        AccountContacts
+
 
     }
 

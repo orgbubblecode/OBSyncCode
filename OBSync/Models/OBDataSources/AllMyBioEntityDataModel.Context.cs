@@ -9,9 +9,11 @@
 
 namespace AllMyBio
 {
+    using OBSync.Models.OBDataSources;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    
     
     public partial class AllMyBioDbEntities : DbContext
     {

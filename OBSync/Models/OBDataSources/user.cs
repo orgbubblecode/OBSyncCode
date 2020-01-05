@@ -7,55 +7,53 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AllMyBio
+namespace OBSync.Models.OBDataSources
 {
     using System;
     using System.Collections.Generic;
     
     public partial class user
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public user()
-        {
-            this.domains = new HashSet<domain>();
-            this.links = new HashSet<link>();
-            this.payments = new HashSet<payment>();
-            this.projects = new HashSet<project>();
-            this.users_logs = new HashSet<users_logs>();
-        }
-    
-        public int user_id { get; set; }
-        public string email { get; set; }
-        public string password { get; set; }
-        public string name { get; set; }
-        public string token_code { get; set; }
-        public string email_activation_code { get; set; }
-        public string lost_password_code { get; set; }
-        public Nullable<long> facebook_id { get; set; }
-        public Nullable<long> instagram_id { get; set; }
-        public int type { get; set; }
-        public int active { get; set; }
-        public string package_id { get; set; }
-        public Nullable<System.DateTime> package_expiration_date { get; set; }
-        public string package_settings { get; set; }
-        public Nullable<sbyte> package_trial_done { get; set; }
-        public string payment_subscription_id { get; set; }
-        public Nullable<System.DateTime> date { get; set; }
-        public string ip { get; set; }
-        public Nullable<System.DateTime> last_activity { get; set; }
-        public string last_user_agent { get; set; }
-        public Nullable<int> total_logins { get; set; }
-        public string language { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<domain> domains { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<link> links { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<payment> payments { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<project> projects { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<users_logs> users_logs { get; set; }
+        public System.Guid id { get; set; }
+        public string user_name { get; set; }
+        public string user_hash { get; set; }
+        public Nullable<bool> system_generated_password { get; set; }
+        public Nullable<System.DateTime> pwd_last_changed { get; set; }
+        public string authenticate_id { get; set; }
+        public Nullable<bool> sugar_login { get; set; }
+        public string first_name { get; set; }
+        public string last_name { get; set; }
+        public Nullable<bool> is_admin { get; set; }
+        public Nullable<bool> external_auth_only { get; set; }
+        public Nullable<bool> receive_notifications { get; set; }
+        public string description { get; set; }
+        public Nullable<System.DateTime> date_entered { get; set; }
+        public Nullable<System.DateTime> date_modified { get; set; }
+        public Nullable<System.Guid> modified_user_id { get; set; }
+        public Nullable<System.Guid> created_by { get; set; }
+        public string title { get; set; }
+        public string photo { get; set; }
+        public string department { get; set; }
+        public string phone_home { get; set; }
+        public string phone_mobile { get; set; }
+        public string phone_work { get; set; }
+        public string phone_other { get; set; }
+        public string phone_fax { get; set; }
+        public string status { get; set; }
+        public string address_street { get; set; }
+        public string address_city { get; set; }
+        public string address_state { get; set; }
+        public string address_country { get; set; }
+        public string address_postalcode { get; set; }
+        public Nullable<bool> deleted { get; set; }
+        public Nullable<bool> portal_only { get; set; }
+        public Nullable<bool> show_on_employees { get; set; }
+        public string employee_status { get; set; }
+        public string messenger_id { get; set; }
+        public string messenger_type { get; set; }
+        public Nullable<System.Guid> reports_to_id { get; set; }
+        public Nullable<bool> is_group { get; set; }
+        public Nullable<bool> factor_auth { get; set; }
+        public string factor_auth_interface { get; set; }
     }
 }

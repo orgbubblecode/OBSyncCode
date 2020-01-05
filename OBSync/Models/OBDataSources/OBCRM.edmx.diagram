@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a0d149e008a94e5bbceaa98dfb55e7de" Name="Diagram1" >
+      <Diagram DiagramId="a0d149e008a94e5bbceaa98dfb55e7de" Name="Diagram1" ZoomLevel="77" >
         <EntityTypeShape EntityType="OBCRMDbModel.account" Width="1.5" PointX="0.75" PointY="0.75" />
         <EntityTypeShape EntityType="OBCRMDbModel.accounts_audit" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="OBCRMDbModel.accounts_bugs" Width="1.5" PointX="4.75" PointY="0.75" />

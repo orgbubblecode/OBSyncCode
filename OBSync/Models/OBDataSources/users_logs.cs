@@ -9,6 +9,7 @@
 
 namespace AllMyBio
 {
+    using OBSync.Models.OBDataSources;
     using System;
     using System.Collections.Generic;
     
