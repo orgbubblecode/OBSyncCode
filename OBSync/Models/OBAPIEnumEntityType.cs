@@ -7,8 +7,13 @@ using DescriptionLibrary;
 
 namespace OBSync.Models
 {
+    
+
     public enum OBAPIEnumEntityType
     {
+        [Description("OrgBubble Account")]
+        NullVal = 0,
+
         [Description("OrgBubble Account")]
         OBAccount = 1000,
 
@@ -23,15 +28,32 @@ namespace OBSync.Models
         OBUserEmailAddress = 1003,
 
 
+        [Description("Facebook Post")]
+        OBFacebookPost = 1004,
+        [Description("Insagram Post")]
+        OBInstagramPost = 1005,
+        [Description("Twitter Post")]
+        OBTwitterPost = 1006,
+        [Description("LinkedIn Post")]
+        OBLinkedInPost = 1007,
+        [Description("Pinterests Post")]
+        OBPinterestPost = 1008,
+
+
 
         [Description("AllMyBio Account")]
         AMBAccount = 2000,
         AMBUserInformation = 2001,
-        AMBUserLogin = 2002
+        AMBUserLogin = 2002,
+
+        [Description("AllMyBio User Email Address")]
+        AMBUserEmailAddress = 2003,
 
 
 
-        
+
+
+
 
     }
 
@@ -88,7 +110,9 @@ namespace OBSync.Models
 
         EmailAddresses,
         EmailAddressesBeans,
-        AccountContacts
+        AccountContacts,
+        Notes
+   
 
 
     }

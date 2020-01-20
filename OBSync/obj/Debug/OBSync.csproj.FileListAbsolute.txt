@@ -383,3 +383,7 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\obj\Debug\OBSync.pdb
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Description.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Description.pdb
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\Description.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.VideoInfo.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.VideoInfo.xml
