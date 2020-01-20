@@ -102,7 +102,8 @@ namespace OBSync.Models.Helpers
                     Account oNewAccount = new Account()
                     {
                         Name = User.email.ToLower(),
-                        AssignedUserId = "6fa5fc21-77d4-ca8d-9e83-5de1a1d5f2ba"
+                        AssignedUserId = "6fa5fc21-77d4-ca8d-9e83-5de1a1d5f2ba",
+                   
                     };
                     var oNewAccountrRequest = new SugarRestRequest("Accounts", RequestType.Create);
                     oNewAccountrRequest.Parameter = oNewAccount;
@@ -520,12 +521,15 @@ namespace OBSync.Models.Helpers
                     Account oNewAccount = new Account()
                     {
                         Name = User.email.ToLower(),
-                        AssignedUserId = "6fa5fc21-77d4-ca8d-9e83-5de1a1d5f2ba"
+                        AssignedUserId = "6fa5fc21-77d4-ca8d-9e83-5de1a1d5f2ba",
+                        Description = SuiteCRM.GetOBUserAccountsListInHTML(User.id.ToString())
+                        
                     };
                     var oNewAccountrRequest = new SugarRestRequest("Accounts", RequestType.Create);
                     oNewAccountrRequest.Parameter = oNewAccount;
                     List<string> selectNewAccountFields = new List<string>();
                     selectNewAccountFields.Add(nameof(Account.Name));
+                    selectNewAccountFields.Add(nameof(Account.Description));
                     selectNewAccountFields.Add(nameof(Account.AssignedUserId));
                     oNewAccountrRequest.Options.SelectFields = selectNewAccountFields;
                     SugarRestResponse oNewAccountrRequestResponse = client.Execute(oNewAccountrRequest);
@@ -787,9 +791,13 @@ namespace OBSync.Models.Helpers
 
                 var updateAccountRequest = new SugarRestRequest(RequestType.Update);
                 oAccountToUpdate.Name = User.email.ToLower();
+                oAccountToUpdate.Description = SuiteCRM.GetOBUserAccountsListInHTML(User.id.ToString());
                 updateAccountRequest.Parameter = oAccountToUpdate;
                 List<string> selectAccountToUpdateFields = new List<string>();
+
                 selectAccountToUpdateFields.Add(nameof(Account.Name));
+
+
                 updateAccountRequest.Options.SelectFields = selectAccountToUpdateFields;
                 SugarRestResponse responseAccountUpdate = client.Execute<Account>(updateAccountRequest);
 
@@ -1046,12 +1054,78 @@ namespace OBSync.Models.Helpers
             }
 
             return new OBAPIEntitiesTracker();
-
-
+            
         }
 
 
+        public static string GetOBUserAccountsListInHTML (string OBUserID)
+        {
 
+            List<orgbubble_socialmedia_accounts> OBUserAccounts = obViewsDb.orgbubble_socialmedia_accounts.Where(w => w.uid == OBUserID).ToList();
+            string strHTMLTable = "<table style='width:100%'> ##HEADER## ##ROWS## </table>";
+
+            if (OBUserAccounts!= null && OBUserAccounts.Count>0)
+
+            {
+
+                var names = typeof(orgbubble_socialmedia_accounts).GetProperties()
+                        .Select(property => property.Name)
+                        .ToArray();
+
+
+
+                string strHTMLHeader = "";
+
+                foreach (string field in names)
+                {
+                    strHTMLHeader += String.Concat("<th>", field, "</th>");
+                }
+
+                strHTMLHeader = string.Concat("<tr>", strHTMLHeader, "</tr>");
+
+                string strHTMLRows = "";
+
+                foreach (orgbubble_socialmedia_accounts oAccount in OBUserAccounts)
+                {
+                    strHTMLRows += "<tr>";
+          
+                    strHTMLRows += string.Concat( "<td>", oAccount.socialmedia, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.uid, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.pid, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.type, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.url, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.status, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.changed, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.created, "</td>");
+
+                    strHTMLRows += "</tr>";
+                    
+                }
+
+
+
+
+                strHTMLTable = strHTMLTable.Replace("##HEADER##", strHTMLHeader).Replace("##ROWS##", strHTMLRows);
+
+
+                return strHTMLTable;
+            }
+            else
+            {
+                return "";
+            }
+
+
+
+
+        }
 
 
 

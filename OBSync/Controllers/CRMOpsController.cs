@@ -294,7 +294,7 @@ namespace OBSync.Controllers
             var client = OBSync.Models.Helpers.SuiteCRM.GetSuiteCRMClient();
 
 
-            Response = OBSync.Models.Helpers.SuiteCRM.UpdateOrgBubbleUsersActivities(obDb.general_users.Find(1));
+            Response = OBSync.Models.Helpers.SuiteCRM.UpdateOrgBubbleUsersBasicInformation(obDb.general_users.Find(1));
 
             return Response;
 

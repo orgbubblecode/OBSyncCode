@@ -27,5 +27,6 @@ namespace OBSync.Models.OBDataSources.Systems
         }
     
         public virtual DbSet<orgbubble_socialmedia_posts> orgbubble_socialmedia_posts { get; set; }
+        public virtual DbSet<orgbubble_socialmedia_accounts> orgbubble_socialmedia_accounts { get; set; }
     }
 }

@@ -4,7 +4,23 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="orgbubble_data_viewsModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="orgbubble_data_viewsModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.orgbubble_data_views.orgbubble_socialmedia_accounts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="orgbubble_socialmedia_accounts">
+          <Key>
+            <PropertyRef Name="socialmedia" />
+          </Key>
+          <Property Name="socialmedia" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="uid" Type="mediumtext" />
+          <Property Name="pid" Type="mediumtext" />
+          <Property Name="type" Type="mediumtext" />
+          <Property Name="fullname" Type="mediumtext" />
+          <Property Name="url" Type="mediumtext" />
+          <Property Name="status" Type="int" />
+          <Property Name="changed" Type="datetime" Precision="0" />
+          <Property Name="created" Type="datetime" Precision="0" />
+        </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'def.orgbubble_data_views.orgbubble_socialmedia_posts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="orgbubble_socialmedia_posts">
@@ -30,6 +46,19 @@ warning 6002: The table/view 'def.orgbubble_data_views.orgbubble_socialmedia_pos
           <Property Name="created" Type="datetime" Precision="0" />
         </EntityType>
         <EntityContainer Name="orgbubble_data_viewsModelStoreContainer">
+          <EntitySet Name="orgbubble_socialmedia_accounts" EntityType="Self.orgbubble_socialmedia_accounts" store:Type="Views" store:Schema="orgbubble_data_views">
+            <DefiningQuery>SELECT
+`orgbubble_socialmedia_accounts`.`socialmedia`, 
+`orgbubble_socialmedia_accounts`.`uid`, 
+`orgbubble_socialmedia_accounts`.`pid`, 
+`orgbubble_socialmedia_accounts`.`type`, 
+`orgbubble_socialmedia_accounts`.`fullname`, 
+`orgbubble_socialmedia_accounts`.`url`, 
+`orgbubble_socialmedia_accounts`.`status`, 
+`orgbubble_socialmedia_accounts`.`changed`, 
+`orgbubble_socialmedia_accounts`.`created`
+FROM `orgbubble_socialmedia_accounts` AS `orgbubble_socialmedia_accounts`</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="orgbubble_socialmedia_posts" EntityType="Self.orgbubble_socialmedia_posts" store:Type="Views" store:Schema="orgbubble_data_views">
             <DefiningQuery>SELECT
 `orgbubble_socialmedia_posts`.`socialmedia`, 
@@ -51,8 +80,7 @@ warning 6002: The table/view 'def.orgbubble_data_views.orgbubble_socialmedia_pos
 FROM `orgbubble_socialmedia_posts` AS `orgbubble_socialmedia_posts`</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="orgbubble_data_viewsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -80,7 +108,22 @@ FROM `orgbubble_socialmedia_posts` AS `orgbubble_socialmedia_posts`</DefiningQue
         </EntityType>
         <EntityContainer Name="orgbubble_data_viewsEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="orgbubble_socialmedia_posts" EntityType="Self.orgbubble_socialmedia_posts" />
+          <EntitySet Name="orgbubble_socialmedia_accounts" EntityType="orgbubble_data_viewsModel.orgbubble_socialmedia_accounts" />
         </EntityContainer>
+        <EntityType Name="orgbubble_socialmedia_accounts">
+          <Key>
+            <PropertyRef Name="socialmedia" />
+          </Key>
+          <Property Name="socialmedia" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="uid" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="pid" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="fullname" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="url" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="Int32" />
+          <Property Name="changed" Type="DateTime" />
+          <Property Name="created" Type="DateTime" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -106,6 +149,21 @@ FROM `orgbubble_socialmedia_posts` AS `orgbubble_socialmedia_posts`</DefiningQue
                 <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="changed" ColumnName="changed" />
                 <ScalarProperty Name="created" ColumnName="created" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="orgbubble_socialmedia_accounts">
+            <EntityTypeMapping TypeName="orgbubble_data_viewsModel.orgbubble_socialmedia_accounts">
+              <MappingFragment StoreEntitySet="orgbubble_socialmedia_accounts">
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="changed" ColumnName="changed" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="fullname" ColumnName="fullname" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="pid" ColumnName="pid" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="socialmedia" ColumnName="socialmedia" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

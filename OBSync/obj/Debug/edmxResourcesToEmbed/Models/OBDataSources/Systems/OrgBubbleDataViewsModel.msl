@@ -23,5 +23,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="orgbubble_socialmedia_accounts">
+      <EntityTypeMapping TypeName="orgbubble_data_viewsModel.orgbubble_socialmedia_accounts">
+        <MappingFragment StoreEntitySet="orgbubble_socialmedia_accounts">
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="changed" ColumnName="changed" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="socialmedia" ColumnName="socialmedia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

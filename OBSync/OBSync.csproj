@@ -1090,6 +1090,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OrgBubbleEntityDataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\OBDataSources\Systems\orgbubble_socialmedia_accounts.cs">
+      <DependentUpon>OrgBubbleDataViewsModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\Systems\orgbubble_socialmedia_posts.cs">
       <DependentUpon>OrgBubbleDataViewsModel.tt</DependentUpon>
     </Compile>
