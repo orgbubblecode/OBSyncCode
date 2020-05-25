@@ -94,6 +94,7 @@
     <EntitySetMapping Name="accounts_cstm">
       <EntityTypeMapping TypeName="OBCRMDbModel.accounts_cstm">
         <MappingFragment StoreEntitySet="accounts_cstm">
+          <ScalarProperty Name="more_account_information_c" ColumnName="more_account_information_c" />
           <ScalarProperty Name="orgbubblepackage_c" ColumnName="orgbubblepackage_c" />
           <ScalarProperty Name="orgbubbleid_c" ColumnName="orgbubbleid_c" />
           <ScalarProperty Name="isorgbubblecustomer_c" ColumnName="isorgbubblecustomer_c" />

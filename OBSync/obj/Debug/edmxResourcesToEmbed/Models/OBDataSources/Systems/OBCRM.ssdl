@@ -100,6 +100,7 @@
     <Property Name="isorgbubblecustomer_c" Type="bool" />
     <Property Name="orgbubbleid_c" Type="int" />
     <Property Name="orgbubblepackage_c" Type="varchar" MaxLength="255" />
+    <Property Name="more_account_information_c" Type="text" />
   </EntityType>
   <EntityType Name="accounts_opportunities">
     <Key>

@@ -101,7 +101,7 @@ namespace OBSync.Models.Helpers
 
                     Account oNewAccount = new Account()
                     {
-                        Name = User.email.ToLower(),
+                        Name = User.name.ToLower(),
                         AssignedUserId = "6fa5fc21-77d4-ca8d-9e83-5de1a1d5f2ba",
                    
                     };
@@ -369,7 +369,7 @@ namespace OBSync.Models.Helpers
                 Account oAccountToUpdate = (Account)accountReadResponse.Data;
 
                 var updateAccountRequest = new SugarRestRequest(RequestType.Update);
-                oAccountToUpdate.Name = User.email.ToLower();
+                oAccountToUpdate.Name = User.name.ToLower();
                 updateAccountRequest.Parameter = oAccountToUpdate;
                 List<string> selectAccountToUpdateFields = new List<string>();
                 selectAccountToUpdateFields.Add(nameof(Account.Name));
@@ -790,8 +790,8 @@ namespace OBSync.Models.Helpers
                 Account oAccountToUpdate = (Account)accountReadResponse.Data;
 
                 var updateAccountRequest = new SugarRestRequest(RequestType.Update);
-                oAccountToUpdate.Name = User.email.ToLower();
-                oAccountToUpdate.Description = SuiteCRM.GetOBUserAccountsListInHTML(User.id.ToString());
+                oAccountToUpdate.Name = String.Concat("OB:", User.email.ToLower());
+       
                 updateAccountRequest.Parameter = oAccountToUpdate;
                 List<string> selectAccountToUpdateFields = new List<string>();
 
@@ -832,13 +832,17 @@ namespace OBSync.Models.Helpers
                     oCRMAccountCustomInfo.orgbubblepackage_c = strPackage;
                     oCRMAccountCustomInfo.isorgbubbleactive_c = (User.status == 1 ? true : false);
 
+
+                    oCRMAccountCustomInfo.more_account_information_c = SuiteCRM.GetOBUserAccountsListInHTML(User.id.ToString()); ;
+
+
                     OBCRMDB.accounts_cstm.Add(oCRMAccountCustomInfo);
                     OBCRMDB.Entry(oCRMAccountCustomInfo).State = System.Data.Entity.EntityState.Modified;
                     OBCRMDB.SaveChanges();
 
 
 
-
+                    SuiteCRM.UpdateOrgBubbleUsersActivities(User);
 
 
 
@@ -1096,6 +1100,8 @@ namespace OBSync.Models.Helpers
                     strHTMLRows += string.Concat("<td>", oAccount.pid, "</td>");
 
                     strHTMLRows += string.Concat("<td>", oAccount.type, "</td>");
+
+                    strHTMLRows += string.Concat("<td>", oAccount.fullname, "</td>");
 
                     strHTMLRows += string.Concat("<td>", oAccount.url, "</td>");
 

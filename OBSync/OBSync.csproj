@@ -459,9 +459,94 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Helpers\OrgBubbleViewsHelper.cs" />
     <Compile Include="Models\Helpers\SuiteCRM.cs" />
+    <Compile Include="Models\Helpers\SuiteCRMFactory.cs" />
     <Compile Include="Models\Helpers\Utilities.cs" />
     <Compile Include="Models\OBAPIEnumEntityType.cs" />
     <Compile Include="Models\OBDataSourcesMetadata\OrgBubbleMetadata.cs" />
+    <Compile Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrgBubbleV7EntityDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrgBubbleV7EntityDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_account_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_caption.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_coupon_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_file_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_group_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_instagram_activities.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_instagram_activities_log.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_instagram_analytics.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_instagram_analytics_stats.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_instagram_sessions.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_language.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_language_category.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_options.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_package_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_payment_history.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_payment_subscriptions.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_posts.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_proxy_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_purchase_manager.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_sessions.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_team.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_team_member.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OBDataSources\Products\sp_users.cs">
+      <DependentUpon>OrgBubbleV7EntityDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\OBDataSources\Systems\account.cs">
       <DependentUpon>OBCRM.tt</DependentUpon>
     </Compile>
@@ -1330,6 +1415,16 @@
       <LastGenOutput>AllMyBioEntityDataModel.cs</LastGenOutput>
       <CustomToolNamespace>AllMyBio</CustomToolNamespace>
     </Content>
+    <Content Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrgBubbleV7EntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>OrgBubbleV7EntityDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OrgBubbleV7EntityDataModel.edmx</DependentUpon>
+      <LastGenOutput>OrgBubbleV7EntityDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\OBDataSources\Systems\OBCRM.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>OBCRM.Context.cs</LastGenOutput>
@@ -1413,6 +1508,13 @@
     </EntityDeploy>
     <Content Include="Models\OBDataSources\Systems\OrgBubbleDataViewsModel.edmx.diagram">
       <DependentUpon>OrgBubbleDataViewsModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OrgBubbleV7EntityDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OBDataSources\Products\OrgBubbleV7EntityDataModel.edmx.diagram">
+      <DependentUpon>OrgBubbleV7EntityDataModel.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />

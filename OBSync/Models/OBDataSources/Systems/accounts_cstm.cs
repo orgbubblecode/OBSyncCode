@@ -27,5 +27,6 @@ namespace OBSync.Models.OBDataSources.Systems
         public Nullable<bool> isorgbubblecustomer_c { get; set; }
         public Nullable<int> orgbubbleid_c { get; set; }
         public string orgbubblepackage_c { get; set; }
+        public string more_account_information_c { get; set; }
     }
 }

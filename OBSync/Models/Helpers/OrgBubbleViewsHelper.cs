@@ -207,7 +207,7 @@ namespace OBSync.Models.Helpers
                     "<li>id: - </li>" +
                     "<li>url:- </li></ul>";
 
-                this.TextMessage = oPost.result.Replace(@"\", "");
+                this.TextMessage = oPost.result?.Replace(@"\", "");
                 this.Casted = false;
 
               
@@ -251,7 +251,7 @@ namespace OBSync.Models.Helpers
                 this.data = new OrgBubblePost_data(oPost);
                 this.result = new OrgBubblePost_result(oPost);
                 this.HTML = string.Concat(this.result.HTML, " </br> </br>", this.data.HTML);
-                this.TextMessage = JsonHelper.FormatJson(oPost.result.Replace(@"\", "")) + Environment.NewLine + Environment.NewLine + JsonHelper.FormatJson(oPost.data.Replace(@"\", ""));
+                this.TextMessage = JsonHelper.FormatJson(oPost.result?.Replace(@"\", "")) + Environment.NewLine + Environment.NewLine + JsonHelper.FormatJson(oPost.data.Replace(@"\", ""));
             }
 
           

@@ -105,6 +105,7 @@
           <Property Name="isorgbubblecustomer_c" Type="bool" />
           <Property Name="orgbubbleid_c" Type="int" />
           <Property Name="orgbubblepackage_c" Type="varchar" MaxLength="255" />
+          <Property Name="more_account_information_c" Type="text" />
         </EntityType>
         <EntityType Name="accounts_opportunities">
           <Key>
@@ -4175,6 +4176,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
           <Property Name="isorgbubblecustomer_c" Type="Boolean" />
           <Property Name="orgbubbleid_c" Type="Int32" />
           <Property Name="orgbubblepackage_c" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="more_account_information_c" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="accounts_opportunities">
           <Key>
@@ -7794,6 +7796,7 @@ FROM `address_book` AS `address_book`</DefiningQuery>
           <EntitySetMapping Name="accounts_cstm">
             <EntityTypeMapping TypeName="OBCRMDbModel.accounts_cstm">
               <MappingFragment StoreEntitySet="accounts_cstm">
+                <ScalarProperty Name="more_account_information_c" ColumnName="more_account_information_c" />
                 <ScalarProperty Name="orgbubblepackage_c" ColumnName="orgbubblepackage_c" />
                 <ScalarProperty Name="orgbubbleid_c" ColumnName="orgbubbleid_c" />
                 <ScalarProperty Name="isorgbubblecustomer_c" ColumnName="isorgbubblecustomer_c" />

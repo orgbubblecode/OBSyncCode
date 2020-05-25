@@ -162,6 +162,11 @@ namespace OBSync.Models.Helpers
         private const string INDENT_STRING = "    ";
         public static string FormatJson(string str)
         {
+
+            if (str == null)
+                return "";
+
+
             var indent = 0;
             var quoted = false;
             var sb = new StringBuilder();
