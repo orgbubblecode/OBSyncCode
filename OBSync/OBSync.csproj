@@ -460,6 +460,7 @@
     </Compile>
     <Compile Include="Models\ApplicationAuthProvider.cs" />
     <Compile Include="Models\AuthRepository.cs" />
+    <Compile Include="Models\Helpers\CommunicationSubscriptions.cs" />
     <Compile Include="Models\Helpers\Extensions.cs" />
     <Compile Include="Models\Helpers\Network.cs" />
     <Compile Include="Migrations\Configuration.cs" />

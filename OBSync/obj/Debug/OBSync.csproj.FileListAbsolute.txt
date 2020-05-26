@@ -387,3 +387,6 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.VideoInfo.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.VideoInfo.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MailChimp.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\ServiceStack.Text.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\ServiceStack.Text.xml
