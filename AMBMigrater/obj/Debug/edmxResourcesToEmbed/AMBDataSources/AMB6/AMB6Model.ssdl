@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AMB6Model.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="codes">
+    <Key>
+      <PropertyRef Name="code_id" />
+    </Key>
+    <Property Name="code_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="16" />
+    <Property Name="days" Type="int" />
+    <Property Name="plan_id" Type="int" />
+    <Property Name="code" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="discount" Type="int" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+    <Property Name="redeemed" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="domains">
+    <Key>
+      <PropertyRef Name="domain_id" />
+    </Key>
+    <Property Name="domain_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="scheme" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="host" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="custom_index_url" Type="varchar" MaxLength="256" />
+    <Property Name="type" Type="tinyint" />
+    <Property Name="is_enabled" Type="tinyint" />
+    <Property Name="date" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="links">
+    <Key>
+      <PropertyRef Name="link_id" />
+    </Key>
+    <Property Name="link_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="project_id" Type="int" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="biolink_id" Type="int" />
+    <Property Name="domain_id" Type="int" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="subtype" Type="varchar" MaxLength="32" />
+    <Property Name="url" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="location_url" Type="varchar" MaxLength="512" />
+    <Property Name="clicks" Type="int" Nullable="false" />
+    <Property Name="settings" Type="text" />
+    <Property Name="order" Type="int" Nullable="false" />
+    <Property Name="start_date" Type="datetime" Precision="0" />
+    <Property Name="end_date" Type="datetime" Precision="0" />
+    <Property Name="is_enabled" Type="tinyint" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pages">
+    <Key>
+      <PropertyRef Name="page_id" />
+    </Key>
+    <Property Name="page_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pages_category_id" Type="int" />
+    <Property Name="url" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="128" />
+    <Property Name="content" Type="longtext" />
+    <Property Name="type" Type="varchar" MaxLength="16" />
+    <Property Name="position" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="order" Type="int" />
+    <Property Name="total_views" Type="int" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="last_date" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="pages_categories">
+    <Key>
+      <PropertyRef Name="pages_category_id" />
+    </Key>
+    <Property Name="pages_category_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="128" />
+    <Property Name="icon" Type="varchar" MaxLength="32" />
+    <Property Name="order" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="payments">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="plan_id" Type="int" />
+    <Property Name="processor" Type="varchar" MaxLength="16" />
+    <Property Name="type" Type="varchar" MaxLength="16" />
+    <Property Name="frequency" Type="varchar" MaxLength="16" />
+    <Property Name="payment_id" Type="varchar" MaxLength="128" />
+    <Property Name="subscription_id" Type="varchar" MaxLength="32" />
+    <Property Name="payer_id" Type="varchar" MaxLength="32" />
+    <Property Name="email" Type="varchar" MaxLength="256" />
+    <Property Name="name" Type="varchar" MaxLength="256" />
+    <Property Name="billing" Type="text" />
+    <Property Name="taxes_ids" Type="text" />
+    <Property Name="base_amount" Type="float" />
+    <Property Name="total_amount" Type="float" />
+    <Property Name="code" Type="varchar" MaxLength="32" />
+    <Property Name="discount_amount" Type="float" />
+    <Property Name="currency" Type="varchar" MaxLength="4" />
+    <Property Name="payment_proof" Type="varchar" MaxLength="40" />
+    <Property Name="status" Type="tinyint" />
+    <Property Name="date" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="plans">
+    <Key>
+      <PropertyRef Name="plan_id" />
+    </Key>
+    <Property Name="plan_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="monthly_price" Type="float" />
+    <Property Name="annual_price" Type="float" />
+    <Property Name="lifetime_price" Type="float" />
+    <Property Name="settings" Type="text" Nullable="false" />
+    <Property Name="taxes_ids" Type="text" />
+    <Property Name="status" Type="tinyint" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="projects">
+    <Key>
+      <PropertyRef Name="project_id" />
+    </Key>
+    <Property Name="project_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="redeemed_codes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="code_id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="settings">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="key" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="value" Type="longtext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="taxes">
+    <Key>
+      <PropertyRef Name="tax_id" />
+    </Key>
+    <Property Name="tax_id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="internal_name" Type="varchar" MaxLength="64" />
+    <Property Name="name" Type="varchar" MaxLength="64" />
+    <Property Name="description" Type="varchar" MaxLength="256" />
+    <Property Name="value" Type="int" />
+    <Property Name="value_type" Type="enum" />
+    <Property Name="type" Type="enum" />
+    <Property Name="billing_type" Type="enum" />
+    <Property Name="countries" Type="text" />
+    <Property Name="datetime" Type="datetime" Precision="0" />
+  </EntityType>
+  <EntityType Name="track_links">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" Nullable="false" />
+    <Property Name="project_id" Type="int" />
+    <Property Name="link_id" Type="int" Nullable="false" />
+    <Property Name="dynamic_id" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="ip" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="country_code" Type="varchar" MaxLength="8" />
+    <Property Name="os_name" Type="varchar" MaxLength="16" />
+    <Property Name="browser_name" Type="varchar" MaxLength="32" />
+    <Property Name="referrer" Type="varchar" MaxLength="512" />
+    <Property Name="device_type" Type="varchar" MaxLength="16" />
+    <Property Name="browser_language" Type="varchar" MaxLength="16" />
+    <Property Name="count" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Precision="0" Nullable="false" />
+    <Property Name="last_date" Type="datetime" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="api_key" Type="varchar" MaxLength="32" />
+    <Property Name="billing" Type="text" />
+    <Property Name="token_code" Type="varchar" MaxLength="32" />
+    <Property Name="twofa_secret" Type="varchar" MaxLength="16" />
+    <Property Name="pending_email" Type="varchar" MaxLength="128" />
+    <Property Name="email_activation_code" Type="varchar" MaxLength="32" />
+    <Property Name="lost_password_code" Type="varchar" MaxLength="32" />
+    <Property Name="facebook_id" Type="bigint" />
+    <Property Name="type" Type="int" Nullable="false" />
+    <Property Name="active" Type="int" Nullable="false" />
+    <Property Name="plan_id" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="plan_expiration_date" Type="datetime" Precision="0" />
+    <Property Name="plan_settings" Type="text" />
+    <Property Name="plan_trial_done" Type="tinyint" />
+    <Property Name="payment_subscription_id" Type="varchar" MaxLength="64" />
+    <Property Name="language" Type="varchar" MaxLength="32" />
+    <Property Name="timezone" Type="varchar" MaxLength="32" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="ip" Type="varchar" MaxLength="64" />
+    <Property Name="country" Type="varchar" MaxLength="32" />
+    <Property Name="last_activity" Type="datetime" Precision="0" />
+    <Property Name="last_user_agent" Type="text" />
+    <Property Name="total_logins" Type="int" />
+  </EntityType>
+  <EntityType Name="users_logs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="int" />
+    <Property Name="type" Type="varchar" MaxLength="64" />
+    <Property Name="date" Type="datetime" Precision="0" />
+    <Property Name="ip" Type="varchar" MaxLength="64" />
+    <Property Name="public" Type="int" />
+  </EntityType>
+  <Association Name="codes_ibfk_1">
+    <End Role="plans" Type="Self.plans" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="codes" Type="Self.codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plans">
+        <PropertyRef Name="plan_id" />
+      </Principal>
+      <Dependent Role="codes">
+        <PropertyRef Name="plan_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="domains_ibfk_1">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="domains" Type="Self.domains" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="domains">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="links_ibfk_2">
+    <End Role="projects" Type="Self.projects" Multiplicity="0..1" />
+    <End Role="links" Type="Self.links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="projects">
+        <PropertyRef Name="project_id" />
+      </Principal>
+      <Dependent Role="links">
+        <PropertyRef Name="project_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="links_ibfk_3">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="links" Type="Self.links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="links">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="pages_pages_categories_pages_category_id_fk">
+    <End Role="pages_categories" Type="Self.pages_categories" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="pages" Type="Self.pages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pages_categories">
+        <PropertyRef Name="pages_category_id" />
+      </Principal>
+      <Dependent Role="pages">
+        <PropertyRef Name="pages_category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="payments_plans_plan_id_fk">
+    <End Role="plans" Type="Self.plans" Multiplicity="0..1" />
+    <End Role="payments" Type="Self.payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plans">
+        <PropertyRef Name="plan_id" />
+      </Principal>
+      <Dependent Role="payments">
+        <PropertyRef Name="plan_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="payments_users_user_id_fk">
+    <End Role="users" Type="Self.users" Multiplicity="0..1" />
+    <End Role="payments" Type="Self.payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="payments">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="projects_ibfk_1">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="projects" Type="Self.projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="projects">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="redeemed_codes_ibfk_1">
+    <End Role="codes" Type="Self.codes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="redeemed_codes" Type="Self.redeemed_codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="codes">
+        <PropertyRef Name="code_id" />
+      </Principal>
+      <Dependent Role="redeemed_codes">
+        <PropertyRef Name="code_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="redeemed_codes_ibfk_2">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="redeemed_codes" Type="Self.redeemed_codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="redeemed_codes">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="track_links_ibfk_1">
+    <End Role="links" Type="Self.links" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="track_links" Type="Self.track_links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="links">
+        <PropertyRef Name="link_id" />
+      </Principal>
+      <Dependent Role="track_links">
+        <PropertyRef Name="link_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="track_links_projects_project_id_fk">
+    <End Role="projects" Type="Self.projects" Multiplicity="0..1" />
+    <End Role="track_links" Type="Self.track_links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="projects">
+        <PropertyRef Name="project_id" />
+      </Principal>
+      <Dependent Role="track_links">
+        <PropertyRef Name="project_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="track_links_users_user_id_fk">
+    <End Role="users" Type="Self.users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="track_links" Type="Self.track_links" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="track_links">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="users_logs_users_user_id_fk">
+    <End Role="users" Type="Self.users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="users_logs" Type="Self.users_logs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="users_logs">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AMB6ModelStoreContainer">
+    <EntitySet Name="codes" EntityType="Self.codes" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="domains" EntityType="Self.domains" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="links" EntityType="Self.links" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="pages" EntityType="Self.pages" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="pages_categories" EntityType="Self.pages_categories" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="payments" EntityType="Self.payments" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="plans" EntityType="Self.plans" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="projects" EntityType="Self.projects" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="redeemed_codes" EntityType="Self.redeemed_codes" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="settings" EntityType="Self.settings" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="taxes" EntityType="Self.taxes" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="track_links" EntityType="Self.track_links" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <EntitySet Name="users_logs" EntityType="Self.users_logs" Schema="base_script_allmy_bio" store:Type="Tables" />
+    <AssociationSet Name="codes_ibfk_1" Association="Self.codes_ibfk_1">
+      <End Role="plans" EntitySet="plans" />
+      <End Role="codes" EntitySet="codes" />
+    </AssociationSet>
+    <AssociationSet Name="domains_ibfk_1" Association="Self.domains_ibfk_1">
+      <End Role="users" EntitySet="users" />
+      <End Role="domains" EntitySet="domains" />
+    </AssociationSet>
+    <AssociationSet Name="links_ibfk_2" Association="Self.links_ibfk_2">
+      <End Role="projects" EntitySet="projects" />
+      <End Role="links" EntitySet="links" />
+    </AssociationSet>
+    <AssociationSet Name="links_ibfk_3" Association="Self.links_ibfk_3">
+      <End Role="users" EntitySet="users" />
+      <End Role="links" EntitySet="links" />
+    </AssociationSet>
+    <AssociationSet Name="pages_pages_categories_pages_category_id_fk" Association="Self.pages_pages_categories_pages_category_id_fk">
+      <End Role="pages_categories" EntitySet="pages_categories" />
+      <End Role="pages" EntitySet="pages" />
+    </AssociationSet>
+    <AssociationSet Name="payments_plans_plan_id_fk" Association="Self.payments_plans_plan_id_fk">
+      <End Role="plans" EntitySet="plans" />
+      <End Role="payments" EntitySet="payments" />
+    </AssociationSet>
+    <AssociationSet Name="payments_users_user_id_fk" Association="Self.payments_users_user_id_fk">
+      <End Role="users" EntitySet="users" />
+      <End Role="payments" EntitySet="payments" />
+    </AssociationSet>
+    <AssociationSet Name="projects_ibfk_1" Association="Self.projects_ibfk_1">
+      <End Role="users" EntitySet="users" />
+      <End Role="projects" EntitySet="projects" />
+    </AssociationSet>
+    <AssociationSet Name="redeemed_codes_ibfk_1" Association="Self.redeemed_codes_ibfk_1">
+      <End Role="codes" EntitySet="codes" />
+      <End Role="redeemed_codes" EntitySet="redeemed_codes" />
+    </AssociationSet>
+    <AssociationSet Name="redeemed_codes_ibfk_2" Association="Self.redeemed_codes_ibfk_2">
+      <End Role="users" EntitySet="users" />
+      <End Role="redeemed_codes" EntitySet="redeemed_codes" />
+    </AssociationSet>
+    <AssociationSet Name="track_links_ibfk_1" Association="Self.track_links_ibfk_1">
+      <End Role="links" EntitySet="links" />
+      <End Role="track_links" EntitySet="track_links" />
+    </AssociationSet>
+    <AssociationSet Name="track_links_projects_project_id_fk" Association="Self.track_links_projects_project_id_fk">
+      <End Role="projects" EntitySet="projects" />
+      <End Role="track_links" EntitySet="track_links" />
+    </AssociationSet>
+    <AssociationSet Name="track_links_users_user_id_fk" Association="Self.track_links_users_user_id_fk">
+      <End Role="users" EntitySet="users" />
+      <End Role="track_links" EntitySet="track_links" />
+    </AssociationSet>
+    <AssociationSet Name="users_logs_users_user_id_fk" Association="Self.users_logs_users_user_id_fk">
+      <End Role="users" EntitySet="users" />
+      <End Role="users_logs" EntitySet="users_logs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

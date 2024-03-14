@@ -23,7 +23,7 @@ namespace OBSync.Models
 
         OBUserLogin = 1002,
 
-
+       
         [Description("OrgBubble User Email Address")]
         OBUserEmailAddress = 1003,
 
@@ -52,6 +52,11 @@ namespace OBSync.Models
 
 
 
+        [Description("MailChimpAllMyBio")]
+        MailChimpAllMyBio = 3001,
+
+        [Description("MailChimpOrgBubble")]
+        MailChimpOrgBubble = 3002,
 
 
 

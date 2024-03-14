@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "MoxYV3SlzBf91bUijsRwHcAicGPSgLGHQHALA/feHT7zpq8zZ3A4XgFSQ/xol+lch7FVjy0cnWfHDsgzTjv6Gw==",
+  "success": true,
+  "projectFilePath": "D:\\WebProjects\\orgbubble.com\\CODE\\OBSync\\AMBHelper\\AMBHelper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jartr\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
+    "C:\\Users\\jartr\\.nuget\\packages\\ssh.net\\2020.0.1\\ssh.net.2020.0.1.nupkg.sha512",
+    "C:\\Users\\jartr\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512",
+    "C:\\Users\\jartr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\jartr\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\jartr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\jartr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

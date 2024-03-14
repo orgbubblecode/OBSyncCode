@@ -390,3 +390,4 @@ D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\NReco.VideoInfo.xml
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\MailChimp.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\ServiceStack.Text.dll
 D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\ServiceStack.Text.xml
+D:\WebProjects\orgbubble.com\CODE\OBSync\OBSync\bin\ConsoleWriteUx.dll

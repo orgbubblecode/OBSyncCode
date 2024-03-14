@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBSync", "OBSync\OBSync.csproj", "{AAD2C605-9FB9-4B00-9198-CDFE5541F772}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SugarRestSharp", "SugarRestSharp\SugarRestSharp.csproj", "{F0F513B8-998D-435E-92F0-42CA484D98AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMBMigrater", "AMBMigrater\AMBMigrater.csproj", "{5DFCB019-AE2B-48AF-826A-41E5261C66BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMBSync", "AMBSync\AMBSync.csproj", "{A64F3DD3-5A71-4394-B947-2FF68F03EC7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMBHelper", "AMBHelper\AMBHelper.csproj", "{BA076A13-800F-4E88-B8E9-B90E9FAA51A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMBWebReviewer", "AMBWebReviewer\AMBWebReviewer.csproj", "{605C9513-AB43-4611-B6EB-BC2A2CDF6613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +29,22 @@ Global
 		{F0F513B8-998D-435E-92F0-42CA484D98AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0F513B8-998D-435E-92F0-42CA484D98AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0F513B8-998D-435E-92F0-42CA484D98AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFCB019-AE2B-48AF-826A-41E5261C66BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFCB019-AE2B-48AF-826A-41E5261C66BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFCB019-AE2B-48AF-826A-41E5261C66BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFCB019-AE2B-48AF-826A-41E5261C66BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64F3DD3-5A71-4394-B947-2FF68F03EC7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64F3DD3-5A71-4394-B947-2FF68F03EC7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64F3DD3-5A71-4394-B947-2FF68F03EC7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64F3DD3-5A71-4394-B947-2FF68F03EC7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA076A13-800F-4E88-B8E9-B90E9FAA51A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA076A13-800F-4E88-B8E9-B90E9FAA51A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA076A13-800F-4E88-B8E9-B90E9FAA51A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA076A13-800F-4E88-B8E9-B90E9FAA51A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605C9513-AB43-4611-B6EB-BC2A2CDF6613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605C9513-AB43-4611-B6EB-BC2A2CDF6613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605C9513-AB43-4611-B6EB-BC2A2CDF6613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605C9513-AB43-4611-B6EB-BC2A2CDF6613}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

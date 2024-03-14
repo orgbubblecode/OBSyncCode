@@ -1,0 +1,17 @@
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\AMBHelper.exe
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\AMBHelper.deps.json
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\AMBHelper.runtimeconfig.json
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\AMBHelper.runtimeconfig.dev.json
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\AMBHelper.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\AMBHelper.pdb
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.csprojAssemblyReference.cache
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.AssemblyInfoInputs.cache
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.AssemblyInfo.cs
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.csproj.CoreCompileInputs.cache
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.csproj.CopyComplete
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.dll
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.pdb
+D:\WebProjects\orgbubble.com\CODE\OBSync\AMBHelper\obj\Debug\netcoreapp3.1\AMBHelper.genruntimeconfig.cache

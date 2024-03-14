@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="23532fe5333b4291941b1fba273823d5" Name="Diagram1" ZoomLevel="109">
+        <EntityTypeShape EntityType="AMB6Model.code" Width="1.5" PointX="3.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.domain" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.link" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.page" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.pages_categories" Width="1.5" PointX="5.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.payment" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.plan" Width="1.5" PointX="1.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.project" Width="1.5" PointX="3" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.redeemed_codes" Width="1.5" PointX="8.875" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.setting" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.tax" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.track_links" Width="1.5" PointX="7.5" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.user" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AMB6Model.users_logs" Width="1.5" PointX="3" PointY="30.375" IsExpanded="true" />
+        <AssociationConnector Association="AMB6Model.codes_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.redeemed_codes_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.domains_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.links_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.links_ibfk_3" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.track_links_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.pages_pages_categories_pages_category_id_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.payments_plans_plan_id_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.payments_users_user_id_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.projects_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.track_links_projects_project_id_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.redeemed_codes_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.track_links_users_user_id_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="AMB6Model.users_logs_users_user_id_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

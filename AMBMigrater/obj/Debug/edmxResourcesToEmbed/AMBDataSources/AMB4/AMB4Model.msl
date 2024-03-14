@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AMB4ModelStoreContainer" CdmEntityContainer="AMB4EntitiesCon">
+    <EntitySetMapping Name="codes">
+      <EntityTypeMapping TypeName="AMB4Model.code">
+        <MappingFragment StoreEntitySet="codes">
+          <ScalarProperty Name="code_id" ColumnName="code_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="days" ColumnName="days" />
+          <ScalarProperty Name="package_id" ColumnName="package_id" />
+          <ScalarProperty Name="code1" ColumnName="code" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="redeemed" ColumnName="redeemed" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="domains">
+      <EntityTypeMapping TypeName="AMB4Model.domain">
+        <MappingFragment StoreEntitySet="domains">
+          <ScalarProperty Name="domain_id" ColumnName="domain_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="scheme" ColumnName="scheme" />
+          <ScalarProperty Name="host" ColumnName="host" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="links">
+      <EntityTypeMapping TypeName="AMB4Model.link">
+        <MappingFragment StoreEntitySet="links">
+          <ScalarProperty Name="link_id" ColumnName="link_id" />
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="biolink_id" ColumnName="biolink_id" />
+          <ScalarProperty Name="domain_id" ColumnName="domain_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="subtype" ColumnName="subtype" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="location_url" ColumnName="location_url" />
+          <ScalarProperty Name="clicks" ColumnName="clicks" />
+          <ScalarProperty Name="settings" ColumnName="settings" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="is_enabled" ColumnName="is_enabled" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="packages">
+      <EntityTypeMapping TypeName="AMB4Model.package">
+        <MappingFragment StoreEntitySet="packages">
+          <ScalarProperty Name="package_id" ColumnName="package_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="monthly_price" ColumnName="monthly_price" />
+          <ScalarProperty Name="annual_price" ColumnName="annual_price" />
+          <ScalarProperty Name="settings" ColumnName="settings" />
+          <ScalarProperty Name="is_enabled" ColumnName="is_enabled" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pages">
+      <EntityTypeMapping TypeName="AMB4Model.page">
+        <MappingFragment StoreEntitySet="pages">
+          <ScalarProperty Name="page_id" ColumnName="page_id" />
+          <ScalarProperty Name="pages_category_id" ColumnName="pages_category_id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="total_views" ColumnName="total_views" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="last_date" ColumnName="last_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pages_categories">
+      <EntityTypeMapping TypeName="AMB4Model.pages_categories">
+        <MappingFragment StoreEntitySet="pages_categories">
+          <ScalarProperty Name="pages_category_id" ColumnName="pages_category_id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="order" ColumnName="order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payments">
+      <EntityTypeMapping TypeName="AMB4Model.payment">
+        <MappingFragment StoreEntitySet="payments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="package_id" ColumnName="package_id" />
+          <ScalarProperty Name="processor" ColumnName="processor" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="plan" ColumnName="plan" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="payment_id" ColumnName="payment_id" />
+          <ScalarProperty Name="subscription_id" ColumnName="subscription_id" />
+          <ScalarProperty Name="payer_id" ColumnName="payer_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="currency" ColumnName="currency" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="projects">
+      <EntityTypeMapping TypeName="AMB4Model.project">
+        <MappingFragment StoreEntitySet="projects">
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="redeemed_codes">
+      <EntityTypeMapping TypeName="AMB4Model.redeemed_codes">
+        <MappingFragment StoreEntitySet="redeemed_codes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="code_id" ColumnName="code_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="settings">
+      <EntityTypeMapping TypeName="AMB4Model.setting">
+        <MappingFragment StoreEntitySet="settings">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="key" ColumnName="key" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="track_links">
+      <EntityTypeMapping TypeName="AMB4Model.track_links">
+        <MappingFragment StoreEntitySet="track_links">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="link_id" ColumnName="link_id" />
+          <ScalarProperty Name="dynamic_id" ColumnName="dynamic_id" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="country_code" ColumnName="country_code" />
+          <ScalarProperty Name="os_name" ColumnName="os_name" />
+          <ScalarProperty Name="browser_name" ColumnName="browser_name" />
+          <ScalarProperty Name="referrer" ColumnName="referrer" />
+          <ScalarProperty Name="device_type" ColumnName="device_type" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="last_date" ColumnName="last_date" />
+          <ScalarProperty Name="browser_language" ColumnName="browser_language" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="AMB4Model.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="token_code" ColumnName="token_code" />
+          <ScalarProperty Name="twofa_secret" ColumnName="twofa_secret" />
+          <ScalarProperty Name="email_activation_code" ColumnName="email_activation_code" />
+          <ScalarProperty Name="lost_password_code" ColumnName="lost_password_code" />
+          <ScalarProperty Name="facebook_id" ColumnName="facebook_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="package_id" ColumnName="package_id" />
+          <ScalarProperty Name="package_expiration_date" ColumnName="package_expiration_date" />
+          <ScalarProperty Name="package_settings" ColumnName="package_settings" />
+          <ScalarProperty Name="package_trial_done" ColumnName="package_trial_done" />
+          <ScalarProperty Name="payment_subscription_id" ColumnName="payment_subscription_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="last_activity" ColumnName="last_activity" />
+          <ScalarProperty Name="last_user_agent" ColumnName="last_user_agent" />
+          <ScalarProperty Name="total_logins" ColumnName="total_logins" />
+          <ScalarProperty Name="timezone" ColumnName="timezone" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="country" ColumnName="country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users_logs">
+      <EntityTypeMapping TypeName="AMB4Model.users_logs">
+        <MappingFragment StoreEntitySet="users_logs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="public" ColumnName="public" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

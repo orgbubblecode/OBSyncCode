@@ -15,6 +15,8 @@ namespace OBSync.Models
 
         public int OBAPIEntityTypeID { get; set; } = 0;
 
+
+
         public string OBAPISugarCRMID { get; set; } = "";
 
         public int OBAPISugarModuleID { get; set; } = 0;

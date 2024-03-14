@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\OBSync",
-    "\\OBSyncService",
-    "\\OBSync\\Models"
+    ""
   ],
-  "SelectedNode": "\\OBSyncService",
+  "SelectedNode": "\\OBSync.sln",
   "PreviewInSolutionExplorer": false
 }
